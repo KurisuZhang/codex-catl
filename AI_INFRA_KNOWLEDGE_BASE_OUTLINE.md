@@ -1,391 +1,389 @@
 # AI Infra 知识库：从 GPU 服务器选型到 Token 交付
 
-## 目录
 
-- [1. 业务需求、工作负载与资源建模](#1-业务需求工作负载与资源建模)
-- [2. 加速器选型、服务器架构与机房工程](#2-加速器选型服务器架构与机房工程)
-- [3. 集群网络、分布式通信与存储分发](#3-集群网络分布式通信与存储分发)
-- [4. 到货验收、主机基线与计算软件栈](#4-到货验收主机基线与计算软件栈)
-- [5. 算力平台、资源编排与集群调度](#5-算力平台资源编排与集群调度)
-- [6. 模型制品、量化校准与编译优化](#6-模型制品量化校准与编译优化)
-- [7. 推理执行链路、引擎机制与请求调度](#7-推理执行链路引擎机制与请求调度)
-- [8. KV Cache、前缀复用与长上下文管理](#8-kv-cache前缀复用与长上下文管理)
-- [9. 分布式并行、MoE 与推理阶段分离](#9-分布式并行moe-与推理阶段分离)
-- [10. API 网关、多租户服务与 Token 交付](#10-api-网关多租户服务与-token-交付)
-- [11. 性能工程、质量评测与生产容量规划](#11-性能工程质量评测与生产容量规划)
-- [12. 可观测性、分层诊断与根因分析](#12-可观测性分层诊断与根因分析)
-- [13. 发布管理、弹性伸缩与故障自愈](#13-发布管理弹性伸缩与故障自愈)
-- [14. 安全隔离、供应链与数据治理](#14-安全隔离供应链与数据治理)
-- [15. Token 计量、成本核算与运营决策](#15-token-计量成本核算与运营决策)
+## 1. 业务需求建模
 
-## 1. 业务需求、工作负载与资源建模
+### 1.1 场景边界
+在线推理、离线批处理与训练／微调
 
-### 1.1 场景边界：在线推理、离线批处理与训练／微调的交付接口
+### 1.2 模型类型
+Dense／MoE、总参数与激活参数、注意力结构与多模态
+存储精度、量化、GPU 数量、并行规模、副本数量、运行时容量
+KV 容量、层数、KV Head、上下文长度、并发、存储精度
+Prefill／Decode 的计算强度、HBM 访存与通信开销
 
-### 1.2 模型画像：Dense／MoE、总参数与激活参数、注意力结构与多模态
+### 1.3 请求画像
+输入输出长度联合分布、到达率、并发、突发与会话复用
 
-### 1.3 请求画像：输入输出长度联合分布、到达率、并发、突发与会话复用
+### 1.4 服务目标
+质量门槛、延迟分位数、吞吐、可用性与服务级目标（SLO）
 
-### 1.4 服务目标：质量门槛、延迟分位数、吞吐、可用性与服务级目标（SLO）
+### 1.5 应用负载
+RAG 检索与重排、Agent 多轮调用
 
-### 1.5 应用负载：RAG 检索与重排、Agent 多轮调用、推理预算与多模态编解码
+### 1.6 建设约束：
+自建／租赁、预算、软件生态
 
-### 1.6 建设约束：自建／租赁、预算、供货周期、机房条件与软件生态
+### 1.12 初步容量方案
+GPU 数量、并行规模、副本数量与故障冗余
 
-### 1.7 权重容量：存储精度、量化元数据、并行分片与专家驻留
+## 2. GPU选型
 
-### 1.8 KV 容量：层数、KV Head、上下文长度、并发、存储精度与分片方式
+### 2.1 GPU／NPU 计算能力
+精度支持、有效算力、算子覆盖与能效
 
-### 1.9 运行时容量：激活、工作区、计算图、适配器、内存碎片与安全余量
+### 2.2 GPU内存体系
+HBM／GDDR、容量与带宽、统一内存支持与 ECC
 
-### 1.10 阶段资源模型：Prefill／Decode 的计算强度、HBM 访存与通信开销
+### 2.3 整机配置
+GPU 形态、CPU、内存通道、NIC、NVMe 与扩展槽位
 
-### 1.11 配套资源模型：CPU 预处理、主机内存、模型加载与网络带宽
+### 2.4 单机数据通路
+NUMA、PCIe Root Complex、GPU—NIC／NVMe
 
-### 1.12 初步容量方案：GPU 数量、并行规模、副本数量与故障冗余
+### 2.5 机柜级拓扑：
+[NVLink、NVSwitch 与 NVLink Switch 拓扑](https://docs.nvidia.com/dgx/dgxgb200-user-guide/)、互联域与扩展边界
 
-## 2. 加速器选型、服务器架构与机房工程
+### 2.6 机柜物理条件
+空间、布线、维护通道
 
-### 2.1 GPU／NPU 计算能力：精度支持、有效算力、算子覆盖与能效
+### 2.7 机房供电
+功率估算
 
-### 2.2 加速器内存体系：HBM／GDDR、容量与带宽、统一内存支持与 ECC
+### 2.8 散热架构
+风冷、冷板液冷、浸没式液冷与残余风冷需求
 
-### 2.3 整机配置：GPU 形态、CPU、内存通道、NIC、NVMe 与扩展槽位
-
-### 2.4 单机数据通路：NUMA、PCIe Root Complex、GPU—NIC／NVMe 亲和性与带宽争用
-
-### 2.5 机柜级 Scale-up：[NVLink、NVSwitch 与 NVLink Switch 拓扑](https://docs.nvidia.com/dgx/dgxgb200-user-guide/)、互联域与扩展边界
-
-### 2.6 机柜物理条件：空间、承重、布线、维护通道与故障域划分
-
-### 2.7 高密度供电：功率预算、供电冗余、瞬态负载、功率限制与降频
-
-### 2.8 散热架构：风冷、冷板液冷、浸没式液冷与残余风冷需求
-
-### 2.9 液冷工程：[FWS／TCS 回路、CDU 与歧管](https://www.opencompute.org/documents/ocp-acf-reference-design-guidance-white-paper-r1-pdf)、供回液温度、压差、流量、水质、露点与泄漏检测
-
-### 2.10 带外管理：BMC／Redfish、管理网络、固件生命周期与备件体系
-
-### 2.11 异构平台验证：模型迁移、数值一致性、引擎适配与性能回归
-
-### 2.12 采购与交付条款：样机 PoC、物料清单、验收指标、供货、维保与总体拥有成本
+### 2.12 采购与交付
+物料清单、验收、供货、维保与成本
 
 ## 3. 集群网络、分布式通信与存储分发
 
-### 3.1 网络分层与平面：Scale-up／Scale-out、管理、业务、存储与计算网络
+### 3.1 网络分层与平面
+Scale-up／Scale-out
+管理、业务、存储与计算网络
 
-### 3.2 网络技术选型：以太网、InfiniBand、RoCEv2 与 RDMA 能力边界
+### 3.2 网络技术选型
+以太网、InfiniBand、RoCEv2 与 RDMA 能力边界
+Scale-out 拓扑：[Rail-aligned 与 Leaf-Spine](https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html)
+GPU 直连通信：[GPUDirect RDMA](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/gpu_troubleshooting.html)
 
-### 3.3 Scale-out 拓扑：[Rail-aligned 与 Leaf-Spine](https://docs.nvidia.com/dgx-superpod/reference-architecture-scalable-infrastructure-gb200/latest/network-fabrics.html)、超售比、多路径与故障域
 
-### 3.4 GPU 直连通信：[GPUDirect RDMA](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/troubleshooting/gpu_troubleshooting.html)、DMA-BUF／peermem、ACS／IOMMU 适配与传输路径
+### 3.5 网络性能控制
+ECN／PFC 适用配置、拥塞控制、MTU 与带宽隔离
 
-### 3.5 网络性能控制：ECN／PFC 适用配置、拥塞控制、MTU 与带宽隔离
+### 3.6 大模型通信方式
+AllReduce、AllGather、ReduceScatter、All-to-All 与点对点传输
 
-### 3.6 通信原语：AllReduce、AllGather、ReduceScatter、All-to-All 与点对点传输
+### 3.7 通信软件栈
+NCCL／RCCL／HCCL、NVSHMEM、通信算法与拓扑映射
 
-### 3.7 通信软件栈：NCCL／RCCL／HCCL、NVSHMEM、通信算法与拓扑映射
+### 3.8 存储对象与介质
+权重、镜像、评测数据、日志，对象存储、并行文件系统与本地 NVMe
+数据生命周期：版本保留、容量配额、备份恢复
 
-### 3.8 存储对象与介质：权重、镜像、评测数据、日志，对象存储、并行文件系统与本地 NVMe
+### 3.9 存储服务能力
+吞吐、IOPS、元数据性能、并发访问与故障冗余
 
-### 3.9 存储服务能力：吞吐、IOPS、元数据性能、并发访问与故障冗余
+### 3.11 模型加载通路：
+并行读取、反序列化、 [GPUDirect Storage 适配](https://docs.nvidia.com/gpudirect-storage/overview-guide/)
 
-### 3.10 制品分发：分片传输、P2P 分发、节点缓存、预取与冷启动风暴控制
+## 4. 主机基线与计算软件栈
 
-### 3.11 模型加载通路：并行读取、反序列化、锁页内存、异步 H2D 与 [GPUDirect Storage 适配](https://docs.nvidia.com/gpudirect-storage/overview-guide/)
+### 4.2 Linux 基线
+内核、资源限制、文件系统、时间同步与自动化装机
+主机调优：BIOS、NUMA、CPU／IRQ 亲和性、大页与电源策略
 
-### 3.12 数据生命周期：版本保留、容量配额、备份恢复、缓存清理与介质退役
+### 4.4 GPU基础软件
+固件、内核模块、驱动、CUDA／ROCm／CANN 与版本兼容性
 
-## 4. 到货验收、主机基线与计算软件栈
+### 4.5 互联基础软件
+RDMA 驱动、NIC 固件、Fabric Manager
 
-### 4.1 资产核验：配置、序列号、物理拓扑、链路速率与固件清单
+### 4.6 深度学习依赖
+数学库、算子库、通信库、框架与二进制接口兼容性
 
-### 4.2 Linux 基线：内核、资源限制、文件系统、时间同步与自动化装机
+### 4.7 容器运行环境
+OCI Runtime、GPU Container Toolkit、CDI 与设备暴露
 
-### 4.3 主机调优：BIOS、NUMA、CPU／IRQ 亲和性、大页与电源策略
+### 4.8 镜像工程
+可复现构建、依赖锁定、兼容性矩阵与版本回滚
 
-### 4.4 加速器基础软件：固件、内核模块、驱动、CUDA／ROCm／CANN 与版本兼容性
+### 4.9 整体测试：
+GPU 数值正确性、显存、CPU、内存、磁盘与独占式 [DCGM 主动诊断](https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html)
+链路验收：GPU P2P、NVLink Fabric、RDMA、NCCL Tests 与拓扑一致性
+集群稳定性验收：持续压测、功率波动、性能波动
 
-### 4.5 互联基础软件：RDMA 驱动、NIC 固件、Fabric Manager、NVLSM 与 IMEX 适配
-
-### 4.6 用户态依赖：数学库、算子库、通信库、框架与二进制接口兼容性
-
-### 4.7 容器运行环境：OCI Runtime、GPU Container Toolkit、CDI 与设备暴露
-
-### 4.8 镜像工程：可复现构建、依赖锁定、兼容性矩阵与版本回滚
-
-### 4.9 单机验收：GPU 数值正确性、显存、CPU、内存、磁盘与独占式 [DCGM 主动诊断](https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html)
-
-### 4.10 链路验收：GPU P2P、NVLink Fabric、RDMA、NCCL Tests 与拓扑一致性
-
-### 4.11 集群稳定性验收：持续压测、热稳态、功率波动、性能离群与故障切换
-
-### 4.12 交付基线：验收报告、资产档案、配置快照、性能阈值与回归复测
 
 ## 5. 算力平台、资源编排与集群调度
 
-### 5.1 部署形态：裸机、容器、Kubernetes 与托管算力的适用边界
+### 5.1 部署与设备接入
+裸机、容器、Kubernetes 与托管算力
+GPU Operator、设备发现、健康状态与可分配资源
+Device Plugin、[动态资源分配（DRA）](https://kubernetes.io/docs/concepts/resource-management/dynamic-resource-allocation/)与 ResourceClaim
 
-### 5.2 设备生命周期：GPU Operator、设备发现、健康状态与可分配资源
+### 5.4 GPU切片
+整卡、MIG、MPS、时间切片与性能隔离边界
 
-### 5.3 资源声明：Device Plugin、[动态资源分配（DRA）](https://kubernetes.io/docs/concepts/resource-management/dynamic-resource-allocation/)与 ResourceClaim
+### 5.5 节点内资源对齐
+[Topology Manager](https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/)、CPU／Memory Manager 与 GPU—NIC 亲和分配
 
-### 5.4 共享与隔离机制：整卡、MIG、MPS、时间切片与性能隔离边界
+### 5.6 分布式工作组调度
+Gang Scheduling、拓扑域约束与多节点协同分配
 
-### 5.5 节点内资源对齐：[Topology Manager](https://kubernetes.io/docs/tasks/administer-cluster/topology-manager/)、CPU／Memory Manager 与 GPU—NIC 亲和分配
+### 5.8 租户资源治理
+配额、优先级、抢占、排队、公平共享与超售边界
 
-### 5.6 分布式工作组调度：Gang Scheduling、拓扑域约束与多节点协同分配
 
-### 5.7 放置与碎片治理：装箱、亲和／反亲和、异构资源池与资源预留
+## 6. 模型下载、量化校准与编译优化
 
-### 5.8 租户资源治理：配额、优先级、抢占、排队、公平共享与超售边界
+### 6.1 模型来源与许可：
+权重来源、使用授权、来源证明与交付责任
 
-### 5.9 工作负载协调：在线服务、离线批任务、训练／微调与干扰控制
+### 6.2 制品完整性：
+权重、配置、Tokenizer、Chat Template、处理器与 LoRA 适配器
 
-### 5.10 服务组件编排：副本、分布式工作组、多组件依赖与服务发现
+### 6.3 训练产物接入：
+数据版本、Checkpoint 归并、训练状态剥离与推理制品转换
 
-### 5.11 平台控制面：声明式配置、状态协调、控制器高可用与元数据恢复
+### 6.4 模型版本管理：
+模型仓库、内容校验、权重分片与部署版本关联
 
-## 6. 模型制品、量化校准与编译优化
+### 6.5 量化策略：
+PTQ／QAT、权重／激活量化、AWQ／GPTQ 与校准集设计
 
-### 6.1 模型来源与许可：权重来源、使用授权、来源证明与交付责任
+### 6.6 低精度格式：
+INT8／INT4、FP8／FP4、缩放粒度与硬件／内核支持矩阵
 
-### 6.2 制品完整性：权重、配置、Tokenizer、Chat Template、处理器与 LoRA 适配器
+### 6.7 量化质量验证：
+数值误差、任务指标、长上下文退化与回退门槛
 
-### 6.3 训练产物接入：数据版本、Checkpoint 归并、训练状态剥离与推理制品转换
+### 6.8 算子与内核：
+GEMM、Attention、MoE Grouped GEMM、算子融合与自定义算子
 
-### 6.4 模型版本管理：模型仓库、内容校验、权重分片与部署版本关联
+### 6.9 内核实现体系：
+FlashAttention、FlashInfer、Triton、CUTLASS 与后端适配
 
-### 6.5 量化策略：PTQ／QAT、权重／激活量化、AWQ／GPTQ 与校准集设计
+### 6.10 图编译与引擎构建：
+torch.compile、TensorRT、动态形状分桶、编译缓存与制品可移植性
 
-### 6.6 低精度格式：INT8／INT4、FP8／FP4、缩放粒度与硬件／内核支持矩阵
+### 6.11 图捕获与执行重放：
+CUDA Graphs、完整／分段捕获、形状约束与显存开销
 
-### 6.7 量化质量验证：数值误差、任务指标、长上下文退化与回退门槛
-
-### 6.8 算子与内核：GEMM、Attention、MoE Grouped GEMM、算子融合与自定义算子
-
-### 6.9 内核实现体系：FlashAttention、FlashInfer、Triton、CUTLASS 与后端适配
-
-### 6.10 图编译与引擎构建：torch.compile、TensorRT、动态形状分桶、编译缓存与制品可移植性
-
-### 6.11 图捕获与执行重放：CUDA Graphs、完整／分段捕获、形状约束与显存开销
-
-### 6.12 可复现部署制品：模型、量化配置、引擎、镜像、硬件架构与构建参数锁定
+### 6.12 可复现部署制品：
+模型、量化配置、引擎、镜像、硬件架构与构建参数锁定
 
 ## 7. 推理执行链路、引擎机制与请求调度
 
-### 7.1 引擎能力矩阵：vLLM、SGLang、[TensorRT-LLM](https://nvidia.github.io/TensorRT-LLM/features/feature-combination-matrix.html)、模型／硬件支持、版本成熟度与功能组合
+### 7.1 引擎能力矩阵：
+vLLM、SGLang、[TensorRT-LLM](https://nvidia.github.io/TensorRT-LLM/features/feature-combination-matrix.html)、模型／硬件支持、版本成熟度与功能组合
 
-### 7.2 请求预处理：协议解析、模板拼装、Tokenization 与多模态编码
+### 7.2 请求预处理：
+协议解析、模板拼装、Tokenization 与多模态编码
 
-### 7.3 Prefill 执行：上下文前向计算、KV 建立与首 Token 生成
+### 7.3 Prefill 执行：
+上下文前向计算、KV 建立与首 Token 生成
 
-### 7.4 Decode 执行：增量前向、KV 读写、自回归迭代与生成状态维护
+### 7.4 Decode 执行：
+增量前向、KV 读写、自回归迭代与生成状态维护
 
-### 7.5 连续批处理：Continuous Batching、迭代级调度、Token 预算与并发上限
+### 7.5 连续批处理：
+Continuous Batching、迭代级调度、Token 预算与并发上限
 
-### 7.6 分块预填充：[Chunked Prefill](https://docs.vllm.ai/en/latest/configuration/optimization/)、混合批次、Decode 优先与首 Token／逐 Token 延迟权衡
+### 7.6 分块预填充：
+[Chunked Prefill](https://docs.vllm.ai/en/latest/configuration/optimization/)、混合批次、Decode 优先与首 Token／逐 Token 延迟权衡
 
-### 7.7 异步执行调度：CPU／GPU 重叠、双批次重叠、提交开销与执行依赖
+### 7.7 异步执行调度：
+CPU／GPU 重叠、双批次重叠、提交开销与执行依赖
 
-### 7.8 请求服务策略：优先级、长短请求公平性、截止时间与饥饿控制
+### 7.8 请求服务策略：
+优先级、长短请求公平性、截止时间与饥饿控制
 
-### 7.9 生成约束：温度、Top-k／Top-p、结构化解码、工具调用格式与停止条件
+### 7.9 生成约束：
+温度、Top-k／Top-p、结构化解码、工具调用格式与停止条件
 
-### 7.10 投机解码：[草稿模型、EAGLE／MTP、目标模型验证与接受／拒绝采样](https://docs.vllm.ai/en/stable/features/speculative_decoding/)、分布保持条件与收益边界
+### 7.10 投机解码：
+[草稿模型、EAGLE／MTP、目标模型验证与接受／拒绝采样](https://docs.vllm.ai/en/stable/features/speculative_decoding/)、分布保持条件与收益边界
 
-### 7.11 多模型与多 LoRA 服务：适配器装载、批次兼容性、切换开销与干扰控制
-
-### 7.12 引擎请求收尾：Detokenization、完成／取消状态、输出队列与资源释放
+### 7.12 引擎请求收尾：
+Detokenization、完成／取消状态、输出队列与资源释放
 
 ## 8. KV Cache、前缀复用与长上下文管理
 
-### 8.1 分页显存管理：PagedAttention、块分配、共享引用、写时复制与碎片控制
+### 8.1 分页显存管理：
+PagedAttention、块分配、共享引用、写时复制与碎片控制
 
-### 8.2 前缀缓存：[Prefix Caching 的缓存键与一致性](https://docs.vllm.ai/en/stable/design/prefix_caching/)、Radix Cache、命中判定与失效策略
+### 8.2 前缀缓存：
+[Prefix Caching 的缓存键与一致性](https://docs.vllm.ai/en/stable/design/prefix_caching/)、Radix Cache、命中判定与失效策略
 
-### 8.3 KV 容量调度：水位控制、块淘汰、请求抢占、重计算与 OOM 防护
+### 8.3 KV 容量调度：
+水位控制、块淘汰、请求抢占、重计算与 OOM 防护
 
-### 8.4 分级缓存：[HBM、主机内存与外部存储](https://docs.sglang.io/docs/advanced_features/hicache_best_practices)、预取、异步卸载与共享范围
+### 8.4 分级缓存：
+[HBM、主机内存与外部存储](https://docs.sglang.io/docs/advanced_features/hicache_best_practices)、预取、异步卸载与共享范围
 
-### 8.5 KV 量化：[存储精度、缩放粒度与尺度校准](https://docs.vllm.ai/en/stable/features/quantization/quantized_kvcache/)、Attention 后端兼容性与质量回归
+### 8.5 KV 量化：
+[存储精度、缩放粒度与尺度校准](https://docs.vllm.ai/en/stable/features/quantization/quantized_kvcache/)、Attention 后端兼容性与质量回归
 
-### 8.6 模型原生状态结构：MHA／GQA／MQA／MLA、滑动窗口、稀疏注意力与混合状态缓存
+### 8.6 模型原生状态结构：
+MHA／GQA／MQA／MLA、滑动窗口、稀疏注意力与混合状态缓存
 
-### 8.7 上下文长度边界：训练窗口、RoPE 扩展、位置编码一致性与长文本质量
+### 8.7 上下文长度边界：
+训练窗口、RoPE 扩展、位置编码一致性与长文本质量
 
-### 8.8 有损上下文缩减：Token 选择、KV 淘汰与压缩的语义损失和适用条件
+### 8.8 有损上下文缩减：
+Token 选择、KV 淘汰与压缩的语义损失和适用条件
 
-### 8.9 多轮会话状态：增量上下文、缓存驻留、版本失效与会话过期
+### 8.9 多轮会话状态：
+增量上下文、缓存驻留、版本失效与会话过期
 
-### 8.10 多模态缓存：预处理结果、Encoder Embedding 与语言模型 KV 的生命周期边界
+### 8.10 多模态缓存：
+预处理结果、Encoder Embedding 与语言模型 KV 的生命周期边界
 
-### 8.11 缓存收益评估：命中率、复用长度、节省计算量、传输代价与有效容量
+### 8.11 缓存收益评估：
+命中率、复用长度、节省计算量、传输代价与有效容量
 
 ## 9. 分布式并行、MoE 与推理阶段分离
 
-### 9.1 并行架构选择：单卡、单机多卡、多机多卡与模型／拓扑约束
+### 9.1 并行架构选择：
+单卡、单机多卡、多机多卡与模型／拓扑约束
 
-### 9.2 张量与流水线并行：TP／PP、层内分片、微批次、流水线气泡与通信开销
+### 9.2 张量与流水线并行：
+TP／PP、层内分片、微批次、流水线气泡与通信开销
 
-### 9.3 上下文并行：Prefill／Decode Context Parallelism、KV 分片与长序列扩展
+### 9.3 上下文并行：
+Prefill／Decode Context Parallelism、KV 分片与长序列扩展
 
-### 9.4 数据并行与副本：DP、独立服务副本、请求分发与吞吐扩展边界
+### 9.4 数据并行与副本：
+DP、独立服务副本、请求分发与吞吐扩展边界
 
-### 9.5 MoE 专家并行：EP、Token Dispatch／Combine、All-to-All 与拓扑映射
+### 9.5 MoE 专家并行：
+EP、Token Dispatch／Combine、All-to-All 与拓扑映射
 
-### 9.6 专家负载均衡：[EPLB、专家复制与重放置](https://docs.sglang.io/docs/advanced_features/expert_parallelism)、负载偏斜与计算通信重叠
+### 9.6 专家负载均衡：
+[EPLB、专家复制与重放置](https://docs.sglang.io/docs/advanced_features/expert_parallelism)、负载偏斜与计算通信重叠
 
-### 9.7 预填充／解码分离：PD 独立资源池、异构硬件、阶段 SLO 与部署适用边界
+### 9.7 预填充／解码分离：
+PD 独立资源池、异构硬件、阶段 SLO 与部署适用边界
 
-### 9.8 KV 跨实例传输：[NIXL 传输层](https://github.com/ai-dynamo/nixl)、KV Connector、布局转换、传输计算重叠与回退路径
+### 9.8 KV 跨实例传输：
+[NIXL 传输层](https://github.com/ai-dynamo/nixl)、KV Connector、布局转换、传输计算重叠与回退路径
 
-### 9.9 多模态阶段分离：[编码器／预填充／解码分离（EPD）](https://docs.sglang.io/docs/advanced_features/epd_disaggregation)、Embedding 传输与独立资源配置
+### 9.9 多模态阶段分离：
+[编码器／预填充／解码分离（EPD）](https://docs.sglang.io/docs/advanced_features/epd_disaggregation)、Embedding 传输与独立资源配置
 
-### 9.10 多维并行组合：TP／PP／DP／EP／CP、阶段独立配置与功能兼容性
+### 9.10 多维并行组合：
+TP／PP／DP／EP／CP、阶段独立配置与功能兼容性
 
-### 9.11 分布式运行协调：Rank／进程组、通信初始化、超时、同步与组级一致性
+### 9.11 分布式运行协调：
+Rank／进程组、通信初始化、超时、同步与组级一致性
 
 ## 10. API 网关、多租户服务与 Token 交付
 
-### 10.1 服务协议：API 兼容性、模型能力声明、SSE／流式响应与错误语义
+### 10.1 服务协议：
+API 兼容性、模型能力声明、SSE／流式响应与错误语义
 
-### 10.2 请求入口治理：身份认证、模型授权、上下文校验与多模态输入预算
+### 10.2 请求入口治理：
+身份认证、模型授权、上下文校验与多模态输入预算
 
-### 10.3 模型与版本路由：模型目录、版本别名、灰度分流与后端能力匹配
+### 10.3 模型与版本路由：
+模型目录、版本别名、灰度分流与后端能力匹配
 
-### 10.4 推理感知路由：[KV 复用与负载联合决策](https://docs.nvidia.com/dynamo/v-0-8-0/components/router)、会话亲和、拓扑距离与缓存事件
+### 10.4 推理感知路由：
+[KV 复用与负载联合决策](https://docs.nvidia.com/dynamo/v-0-8-0/components/router)、会话亲和、拓扑距离与缓存事件
 
-### 10.5 PD 流量编排：阶段端点选择、KV 交接、请求关联与跨阶段取消
+### 10.5 PD 流量编排：
+阶段端点选择、KV 交接、请求关联与跨阶段取消
 
-### 10.6 准入与公平使用：RPM／TPM、并发限制、Token 预算、优先级与租户配额
+### 10.6 准入与公平使用：
+RPM／TPM、并发限制、Token 预算、优先级与租户配额
 
-### 10.7 过载保护：有界队列、背压、熔断、负载丢弃与能力降级
+### 10.7 过载保护：
+有界队列、背压、熔断、负载丢弃与能力降级
 
-### 10.8 超时与重试：截止时间传播、重试预算、幂等性与流式重试边界
+### 10.8 超时与重试：
+截止时间传播、重试预算、幂等性与流式重试边界
 
-### 10.9 交付生命周期：首包、流式缓冲、慢客户端、断连取消与结束状态
+### 10.10 批量服务接口：
+异步作业、结果持久化、部分失败与交付确认
 
-### 10.10 批量服务接口：异步作业、结果持久化、部分失败与交付确认
-
-### 10.11 用量事件采集：请求／租户／模型版本标识、Token 分类与事件可靠投递
+### 10.11 用量事件采集：
+请求／租户／模型版本标识、Token 分类与事件可靠投递
 
 ## 11. 性能工程、质量评测与生产容量规划
 
-### 11.1 延迟口径：TTFT、ITL、TPOT、端到端延迟、测量边界与统计分位数
+### 11.1 延迟口径：
+TTFT、ITL、TPOT、端到端延迟、测量边界与统计分位数
 
-### 11.2 吞吐与有效产出：输入／输出 Token 吞吐、RPS、请求级／Token 级 Goodput 与质量门槛
+### 11.2 吞吐与有效产出：
+输入／输出 Token 吞吐、RPS、请求级／Token 级 Goodput 与质量门槛
 
-### 11.3 测试分层：硬件与通信基线、内核微基准、引擎压测与端到端服务验收
+### 11.3 测试分层：
+硬件与通信基线、内核微基准、引擎压测与端到端服务验收
 
-### 11.4 负载设计：开放到达／闭环并发、长度联合分布、冷热缓存、突发与流量回放
+### 11.4 负载设计：
+开放到达／闭环并发、长度联合分布、冷热缓存、突发与流量回放
 
-### 11.5 基准可复现性：[压测参数与 SLO 阈值](https://docs.vllm.ai/en/latest/cli/bench/serve/)、版本锁定、预热、稳态与客户端瓶颈排除
+### 11.5 基准可复现性：
+[压测参数与 SLO 阈值](https://docs.vllm.ai/en/latest/cli/bench/serve/)、版本锁定、预热、稳态与客户端瓶颈排除
 
-### 11.6 性能瓶颈定位：Roofline、CPU 火焰图、Nsight Systems／Compute 与通信时间线
+### 11.6 性能瓶颈定位：
+Roofline、CPU 火焰图、Nsight Systems／Compute 与通信时间线
 
-### 11.7 质量回归：量化误差、长上下文检索、多模态、结构化输出与任务成功率
+### 11.7 质量回归：
+量化误差、长上下文检索、多模态、结构化输出与任务成功率
 
-### 11.8 优化收益验证：质量、延迟、吞吐、显存、能耗与负载适用区间
+### 11.8 优化收益验证：
+质量、延迟、吞吐、显存、能耗与负载适用区间
 
-### 11.9 服务验收：SLO 达标率、持续压测、故障注入、过载退化与结果复现
+### 11.9 服务验收：
+SLO 达标率、持续压测、故障注入、过载退化与结果复现
 
-### 11.10 实测容量曲线：请求混合、并行配置、并发、吞吐、尾延迟与理论模型校准
+### 11.10 实测容量曲线：
+请求混合、并行配置、并发、吞吐、尾延迟与理论模型校准
 
-### 11.11 生产资源配置：GPU／副本数量、PD／EPD 配比、峰值余量与故障冗余
+### 11.11 生产资源配置：
+GPU／副本数量、PD／EPD 配比、峰值余量与故障冗余
 
-### 11.12 持续容量规划：线上分布漂移、模型升级、扩容触发与选型反馈闭环
+### 11.12 持续容量规划：
+线上分布漂移、模型升级、扩容触发与选型反馈闭环
 
 ## 12. 可观测性、分层诊断与根因分析
 
-### 12.1 遥测体系：Metrics／Logs／Traces、OpenTelemetry、关联标识与指标基数控制
+### 12.1 遥测体系：
+Metrics／Logs／Traces、OpenTelemetry、关联标识与指标基数控制
 
-### 12.2 硬件与机房监控：DCGM／BMC、SM／HBM 活跃度、功率、温度、降频与液冷状态
+### 12.2 硬件与机房监控：
+DCGM／BMC、SM／HBM 活跃度、功率、温度、降频与液冷状态
 
-### 12.3 硬件错误分类：[Xid／SXid 诊断](https://docs.nvidia.com/deploy/gpu-debug-guidelines/index.html)、ECC、行重映射、PCIe AER 与链路错误
 
-### 12.4 主机与网络诊断：CPU、内存、磁盘、IRQ、RDMA 重传、拥塞与链路退化
+### 12.4 主机与网络诊断：
+CPU、内存、磁盘、IRQ、RDMA 重传、拥塞与链路退化
 
-### 12.5 引擎运行指标：[排队、批次、KV 水位、缓存命中与抢占](https://docs.vllm.ai/en/latest/usage/metrics/)、投机接受率与 OOM
+### 12.5 引擎运行指标：
+[排队、批次、KV 水位、缓存命中与抢占](https://docs.vllm.ai/en/latest/usage/metrics/)、投机接受率与 OOM
 
-### 12.6 请求链路追踪：网关、预处理、排队、Prefill、KV 传输、Decode 与客户端交付
+### 12.6 请求链路追踪：
+网关、预处理、排队、Prefill、KV 传输、Decode 与客户端交付
 
-### 12.7 分布式诊断：Rank 性能离群、集合通信超时、死锁、专家偏斜与阶段失衡
+### 12.7 分布式诊断：
+Rank 性能离群、集合通信超时、死锁、专家偏斜与阶段失衡
 
-### 12.8 正确性异常诊断：NaN／Inf、静默数据损坏、版本差异与异常输出关联
-
-### 12.9 告警与事件关联：SLO 燃烧率、错误预算、异常聚合、拓扑定位与影响范围
-
-### 12.10 诊断证据管理：日志、转储、配置快照、复现样本与根因分析归档
-
-## 13. 发布管理、弹性伸缩与故障自愈
-
-### 13.1 上线准备：制品校验、权重加载、编译与缓存预热、启动／就绪探测
-
-### 13.2 发布策略：影子流量、灰度、滚动升级、质量门禁与自动回滚
-
-### 13.3 变更排空：长连接、在途请求、KV 驻留、工作组依赖与维护窗口
-
-### 13.4 弹性信号：排队 Token、KV 水位、TTFT／ITL 与负载预测
-
-### 13.5 弹性执行：副本／节点联动、PD／EPD 分池伸缩、预热池与缩容滞回
-
-### 13.6 故障域与高可用：GPU、节点、互联域、机柜、可用区与控制面冗余
-
-### 13.7 请求与工作组恢复：进程重建、组级重启、KV 丢失重计算与流量切换
-
-### 13.8 硬件自愈决策：错误分级、可恢复性判定、设备隔离、节点封锁与流量排空
-
-### 13.9 硬件恢复执行：GPU Reset 适用条件、节点重启、独占诊断、复检返池与 RMA 升级
-
-### 13.10 自愈控制边界：有限重试、并发修复预算、隔离状态持久化与人工接管
-
-### 13.11 容灾与演练：恢复时间／数据恢复点目标、备份恢复、故障注入与切换验证
-
-### 13.12 运维闭环：值班手册、事件复盘、配置修正、容量回收与退役交接
-
-## 14. 安全隔离、供应链与数据治理
-
-### 14.1 信任边界：管理面、控制面、数据面与最小权限
-
-### 14.2 租户计算隔离：进程、容器、设备共享边界与资源耗尽防护
-
-### 14.3 显存与缓存隔离：KV 命名空间、Cache Salt、前缀侧信道与资源释放后的数据保护
-
-### 14.4 制品供应链安全：权重／镜像签名、软件物料清单、依赖漏洞与构建来源证明
-
-### 14.5 模型执行安全：反序列化、自定义代码、算子插件与远程代码信任边界
-
-### 14.6 凭据与网络安全：密钥轮换、工作负载身份、TLS／mTLS 与出入口访问控制
-
-### 14.7 输入与工具边界：多模态解析沙箱、外部 URL 访问、SSRF 防护与工具执行隔离
-
-### 14.8 数据保护：请求、响应、日志、Trace、KV 与评测数据的脱敏、加密和保留策略
-
-### 14.9 审计与变更追踪：模型访问、配置变更、特权操作与用量事件追溯
-
-### 14.10 治理生命周期：数据驻留、授权删除、制品撤回、凭据吊销与介质清除
+### 12.10 诊断证据管理：
+日志、转储、配置快照、复现样本与根因分析归档
 
 ## 15. Token 计量、成本核算与运营决策
 
-### 15.1 产出边界：计算工作量、生成 Token、成功交付 Token、SLO 有效产出与计费 Token
+### 15.1 产出边界：
+计算工作量、生成 Token、成功交付 Token、SLO 有效产出与计费 Token
 
-### 15.2 Token 计数规则：Tokenizer 版本、模板与特殊 Token、输入／输出分类与推理 Token 归属
+### 15.7 成本构成：
+硬件折旧、租赁、能源、机房、网络、存储、软件许可与运维
 
-### 15.3 缓存计量规则：完整输入、缓存读取、缓存写入、实际重计算与重复统计排除
+### 15.9 单位经济性：
+每百万输入／输出／有效 Token 成本、任务成本与定价毛利
 
-### 15.4 投机与异常计量：草稿／拒绝 Token、失败、重试、取消与未交付生成量
+### 15.10 计算公式：
+TPM、TGS、cache、uncached
 
-### 15.5 多模态与应用计量：图像／音视频单位、等效 Token、Agent 调用链与任务级用量
-
-### 15.6 计费账本与对账：事件去重、幂等入账、迟到修正、流式结算与可追溯性
-
-### 15.7 成本构成：硬件折旧、租赁、能源、机房、网络、存储、软件许可与运维
-
-### 15.8 成本归集与分摊：模型、租户、资源池、PD／EPD 阶段与共享基础设施
-
-### 15.9 单位经济性：每百万输入／输出／有效 Token 成本、任务成本与定价毛利
-
-### 15.10 效率与损耗：Goodput、单位能耗产出、PUE、空闲、预热、失败与冗余成本
-
-### 15.11 经营与建设决策：自建／租赁、弹性突发、硬件更新、利用率敏感性与扩容投资回收
+### 15.11 经营与建设决策：
+自建／租赁、弹性突发、硬件更新、利用率敏感性与扩容投资回收
