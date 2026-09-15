@@ -1,0 +1,7 @@
+{"kind":"deck","id":"pr/gkqj7p","name":"Deck"}
+{"kind":"layout","layoutId":"fcabb824-59f9-4a08-8e48-9a5653000463","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"540d7263-0a57-4947-bdd6-f3637f8a14a7","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/bbs4ua","slide":1,"title":"GPU／NPU 租赁与大模型推理","textShapes":1}
+{"kind":"textbox","id":"sh/tsf298ny","slide":1,"text":"GPU／NPU 租赁与大模型推理","textPreview":"GPU／NPU 租赁与大模型推理","textChars":16,"textLines":1,"bbox":[60,40,1100,80]}
+{"kind":"table","id":"tb/bypcbet4","slide":1,"name":"","rows":3,"cols":3,"preview":"硬件 | 配置 | 建议","bbox":[60,160,1160,260]}
+{"kind":"notes","id":"nt/bbs4ua","slide":1,"text":""}

@@ -1,0 +1,207 @@
+{"kind":"deck","id":"pr/xc32ad","name":"Deck"}
+{"kind":"layout","layoutId":"a056db4f-64ce-44d9-961b-a5536492b274","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"c16c4cde-bc95-424e-8865-94da7bed5f88","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/5ar5up","slide":1,"title":"GPU / NPU 租赁调研","textShapes":7}
+{"kind":"textbox","id":"sh/cnytcfeh","slide":1,"text":"GPU / NPU 租赁调研","textPreview":"GPU / NPU 租赁调研","textChars":14,"textLines":1,"bbox":[64,53,1100,44]}
+{"kind":"textbox","id":"sh/bmpcjadw","slide":1,"text":"硬件配置与\n模型部署可行性","textPreview":"硬件配置与 | 模型部署可行性","textChars":13,"textLines":2,"bbox":[60,123,1150,165]}
+{"kind":"textbox","id":"sh/qlgba5wb","slide":1,"text":"2 台 × 8 卡 910B    /    4–6 台 × 8 卡 T4","textPreview":"2 台 × 8 卡 910B    /    4–6 台 × 8 卡 T4","textChars":37,"textLines":1,"bbox":[64,316,1120,47]}
+{"kind":"textbox","id":"sh/ojyt8fel","slide":1,"text":"01  硬件配置清单","textPreview":"01  硬件配置清单","textChars":10,"textLines":1,"bbox":[64,586,393,46]}
+{"kind":"textbox","id":"sh/3ipcfad0","slide":1,"text":"02  模型适配结论","textPreview":"02  模型适配结论","textChars":10,"textLines":1,"bbox":[467,586,393,46]}
+{"kind":"textbox","id":"sh/2hgb65wf","slide":1,"text":"03  判断模型适配方法论","textPreview":"03  判断模型适配方法论","textChars":13,"textLines":1,"bbox":[870,586,393,46]}
+{"kind":"textbox","id":"sh/9gbut4va","slide":1,"text":"调研修订版  ·  2026.09.14  ·  结论按具体权重、软件栈与硬件条件限定","textPreview":"调研修订版  ·  2026.09.14  ·  结论按具体权重、软件栈与硬件条件限定","textChars":43,"textLines":1,"bbox":[64,660,1150,25]}
+{"kind":"image","id":"im/wjmd0bmp","slide":1,"name":"","alt":"t4_banner.jpg","bbox":[0,397,1280,150]}
+{"kind":"notes","id":"nt/5ar5up","slide":1,"text":"全篇仅三大部分：第2–4页硬件配置清单；第5–8页模型适配结论；第9–14页判断模型适配方法论。910B按64GB/卡假设，必须向供应商确认。本报告为公开资料与源码核验，没有租赁设备实测。封面图片为NVIDIA T4官方参考图。\n\n参考来源（核验日期：2026-09-14）\nt4: https://www.nvidia.com/en-us/data-center/tesla-t4/"}
+{"kind":"slide","id":"sl/vwcq4t","slide":2,"title":"第一部分  /  硬件配置清单","textShapes":13}
+{"kind":"textbox","id":"sh/rilg3u18","slide":2,"text":"第一部分  /  硬件配置清单","textPreview":"第一部分  /  硬件配置清单","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/sjehwzit","slide":2,"text":"1.1  硬件范围与资源池","textPreview":"1.1  硬件范围与资源池","textChars":13,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/tkny54je","slide":2,"text":"交付范围覆盖服务器、互联、存储、供电散热及管理接入","textPreview":"交付范围覆盖服务器、互联、存储、供电散热及管理接入","textChars":25,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/elwzyp0z","slide":2,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/fm5g7u14","slide":2,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/gneh0zip","slide":2,"text":"02 / 14","textPreview":"02 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/1ony94ja","slide":2,"text":"统一接入与任务队列\n文本 / 检测 / 视频","textPreview":"统一接入与任务队列 | 文本 / 检测 / 视频","textChars":22,"textLines":2,"bbox":[60,225,330,90]}
+{"kind":"textbox","id":"sh/29wz290v","slide":2,"text":"910B 池：2 台 × 8 卡\n64GB/卡待确认","textPreview":"910B 池：2 台 × 8 卡 | 64GB/卡待确认","textChars":26,"textLines":2,"bbox":[480,218,335,110]}
+{"kind":"textbox","id":"sh/3a50behg","slide":2,"text":"T4 池：4–6 台 × 8 卡\n16GB/卡","textPreview":"T4 池：4–6 台 × 8 卡 | 16GB/卡","textChars":23,"textLines":2,"bbox":[480,441,335,110]}
+{"kind":"shape","id":"sh/ja1orm5s","slide":2,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/y9snih47","slide":2,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/lc36twny","slide":2,"text":"同构跨机互联\nHCCL / RDMA","textPreview":"同构跨机互联 | HCCL / RDMA","textChars":18,"textLines":2,"bbox":[906,218,309,110]}
+{"kind":"textbox","id":"sh/kba5krmd","slide":2,"text":"独立任务 / 多副本\n优先单机分配","textPreview":"独立任务 / 多副本 | 优先单机分配","textChars":17,"textLines":2,"bbox":[906,441,309,110]}
+{"kind":"shape","id":"sh/b614nm5w","slide":2,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/a5sneh4b","slide":2,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/x8j6pcnm","slide":2,"text":"模型仓库 / 输出存储\n管理网络 / BMC\n机柜 / PDU / 散热","textPreview":"模型仓库 / 输出存储 | 管理网络 / BMC | 机柜 / PDU / 散热","textChars":36,"textLines":3,"bbox":[64,384,322,157]}
+{"kind":"textbox","id":"sh/w7a5g7m1","slide":2,"text":"标称容量：910B 池 1,024GB；T4 每台 128GB。跨卡、跨机容量需要软件显式分片。","textPreview":"标称容量：910B 池 1,024GB；T4 每台 128GB。跨卡、跨机容量需要软件显式分片。","textChars":48,"textLines":1,"bbox":[62,577,1155,48]}
+{"kind":"textbox","id":"sh/v2loz6l0","slide":2,"text":"架构为本项目方案；硬件参考：Huawei Atlas 800I A2、NVIDIA T4。异构资源池分别运行模型实例","textPreview":"架构为本项目方案；硬件参考：Huawei Atlas 800I A2、NVIDIA T4。异构资源池分别运行模型实例","textChars":58,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"notes","id":"nt/vwcq4t","slide":2,"text":"每台8卡。总服务器6–8台，NPU16张，GPU32–48张。910B按64GB/卡，单机512GB、双机1024GB；T4单机128GB、全池512–768GB。不能把全部T4的容量视为单模型统一显存。逻辑接入可复用已有主机，不要求新增GPU；检测和视频生成的输出不是LLM正文Token，应分别验收。\n\n参考来源（核验日期：2026-09-14）\nhw: https://e.huawei.com/cn/products/computing/ascend/atlas-800i-a2\nt4: https://www.nvidia.com/en-us/data-center/tesla-t4/"}
+{"kind":"slide","id":"sl/osad93","slide":3,"title":"第一部分  /  硬件配置清单","textShapes":6}
+{"kind":"textbox","id":"sh/3y54z6x0","slide":3,"text":"第一部分  /  硬件配置清单","textPreview":"第一部分  /  硬件配置清单","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/4ze5sbel","slide":3,"text":"1.2  单台服务器硬件清单","textPreview":"1.2  单台服务器硬件清单","textChars":14,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/p0761gf6","slide":3,"text":"以下是完整租赁 BOM 的询价起点；主机配置为建议值，按最终模型修订","textPreview":"以下是完整租赁 BOM 的询价起点；主机配置为建议值，按最终模型修订","textChars":34,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/u9wnm1gj","slide":3,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/fa54v6xo","slide":3,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/gbe5oby9","slide":3,"text":"03 / 14","textPreview":"03 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/65cni1g7","slide":3,"text":"容量均需以可用容量交付；系统盘 RAID1 不等于两块容量相加。参考：Huawei / NVIDIA；RAM、磁盘为项目建议","textPreview":"容量均需以可用容量交付；系统盘 RAID1 不等于两块容量相加。参考：Huawei / NVIDIA；RAM、磁盘为项目建议","textChars":62,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/oj2xo769","slide":3,"name":"","rows":7,"cols":3,"preview":"硬件项目 | 910B：每台，合计 2 台 | T4：每台，合计 4–6 台","bbox":[60,207,1160,400]}
+{"kind":"notes","id":"nt/osad93","slide":3,"text":"清单要同时覆盖CPU、主板、ECC DIMM、全部加速卡、板卡内互联/PCIe riser、系统盘及RAID、模型盘、网卡、BMC、机箱、导轨、电源、风扇和电源线。双机910B总RAM2–4TB、本地NVMe可用16TB起；4–6台T4总RAM1–3TB、本地NVMe可用16–24TB起。磁盘按原始权重+转换权重+下载缓存+输出+日志累加；不是显存不足的自动补救。CPU体系结构必须匹配容器。T4为被动散热卡，不能只把卡插入缺少整机风道的主机。8卡PCIe通道与NUMA分布须交付拓扑，不承诺每卡独享CPU直连x16。\n\n参考来源（核验日期：2026-09-14）\nhw: https://e.huawei.com/cn/products/computing/ascend/atlas-800i-a2\nt4: https://www.nvidia.com/en-us/data-center/tesla-t4/"}
+{"kind":"slide","id":"sl/bb45pm","slide":4,"title":"第一部分  /  硬件配置清单","textShapes":10}
+{"kind":"textbox","id":"sh/epgnuxsv","slide":4,"text":"第一部分  /  硬件配置清单","textPreview":"第一部分  /  硬件配置清单","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/1c765srm","slide":4,"text":"1.3  集群配套与最终交付环境","textPreview":"1.3  集群配套与最终交付环境","textChars":16,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/0ry5wna1","slide":4,"text":"租赁合同应包含可运行的软件环境与对应硬件，不只交付可登录的裸机","textPreview":"租赁合同应包含可运行的软件环境与对应硬件，不只交付可登录的裸机","textChars":31,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/nepo729s","slide":4,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/mdgnyxs7","slide":4,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/9gr69cri","slide":4,"text":"04 / 14","textPreview":"04 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/3i54vy98","slide":4,"text":"910B 交付栈","textPreview":"910B 交付栈","textChars":8,"textLines":1,"bbox":[62,465,550,38]}
+{"kind":"textbox","id":"sh/ihwnmdsn","slide":4,"text":"Linux + 驱动 / 固件 + CANN\n模型专用容器、HCCL / RDMA、设备权限","textPreview":"Linux + 驱动 / 固件 + CANN | 模型专用容器、HCCL / RDMA、设备权限","textChars":46,"textLines":2,"bbox":[62,511,559,73]}
+{"kind":"textbox","id":"sh/4za1k72l","slide":4,"text":"T4 交付栈","textPreview":"T4 交付栈","textChars":6,"textLines":1,"bbox":[681,465,538,38]}
+{"kind":"textbox","id":"sh/50j2tcjq","slide":4,"text":"Linux + NVIDIA 驱动 + CUDA 容器\nTransformers / TensorRT / Diffusers 按任务固定","textPreview":"Linux + NVIDIA 驱动 + CUDA 容器 | Transformers / TensorRT / Diffusers 按任务固定","textChars":69,"textLines":2,"bbox":[681,511,538,73]}
+{"kind":"textbox","id":"sh/ixsjihkf","slide":4,"text":"每套环境记录镜像 digest、框架 commit、依赖锁文件和启动脚本；不同模型可使用不同容器","textPreview":"每套环境记录镜像 digest、框架 commit、依赖锁文件和启动脚本；不同模型可使用不同容器","textChars":48,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/547ahsvy","slide":4,"name":"","rows":4,"cols":2,"preview":"配套硬件 | 数量 / 接口 / 交付要求","bbox":[60,204,1160,231]}
+{"kind":"notes","id":"nt/bb45pm","slide":4,"text":"不要求所有硬件都新购：交换机、镜像仓库、监控与存储可复用但必须写清资源配额。200GE是配套A2参考拓扑，最终以租赁整机实际NPU端口为准，不能只配一条高速业务网线代替NPU互联。若16条光链路，两端共32只匹配模块与16条光纤；AOC为另一方案，不重复计模块。最终交付包括设备健康、8卡可见、ECC/错误检查、拓扑、通信测试、模型文件权限、监控日志、服务启动与重启恢复。电源按厂家整机最大功耗及机房冗余规划，不把PSU铭牌相加当实际功耗。模型镜像不能混用：GLM/DeepSeek配方vLLM-Ascend v0.23.0；Qwen Flash-Next FlagOS使用另一套定制SGLang环境。\n\n参考来源（核验日期：2026-09-14）\nhw: https://e.huawei.com/cn/products/computing/ascend/atlas-800i-a2\nag: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html\nflag: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS"}
+{"kind":"slide","id":"sl/0kh85w","slide":5,"title":"第二部分  /  模型适配结论","textShapes":6}
+{"kind":"textbox","id":"sh/tor6xs7u","slide":5,"text":"第二部分  /  模型适配结论","textPreview":"第二部分  /  模型适配结论","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/6l0n2d8j","slide":5,"text":"2.1  模型适配结论总表","textPreview":"2.1  模型适配结论总表","textChars":13,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/7m9ovipo","slide":5,"text":"“官方已验证”“可进入验证”“当前原版不适配”采用不同证据标准","textPreview":"“官方已验证”“可进入验证”“当前原版不适配”采用不同证据标准","textChars":31,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/kzi503qd","slide":5,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/l0r6t87y","slide":5,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/yxgnyd87","slide":5,"text":"05 / 14","textPreview":"05 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/wvy5w3q1","slide":5,"text":"范围：910B 按 64GB/卡；均未在本项目租赁机实测。Qwen 云端 Flash 对应的公开权重为 Flash-Next","textPreview":"范围：910B 按 64GB/卡；均未在本项目租赁机实测。Qwen 云端 Flash 对应的公开权重为 Flash-Next","textChars":62,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/qhcnm9kj","slide":5,"name":"","rows":7,"cols":3,"preview":"硬件 / 模型 | 结论 | 决定结论的证据或缺口","bbox":[60,205,1160,400]}
+{"kind":"notes","id":"nt/0kh85w","slide":5,"text":"本报告没有把资料检索等同于实机成功。双机910B的三个指定超大模型目前不能全部承诺。GLM参考配置不等于严格理论下限；DeepSeek教程明确至少4A2，是当前参考路径的硬要求。Flash-Next存在昇腾定制适配，但发布页单机16设备不能直接对应双机8卡910B。YOLO官方同类T4测试是最强硬件证据，交付机仍需复验。PoC表示有实施路径但尚未全部满足验收条件。\n\n参考来源（核验日期：2026-09-14）\nag: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html\nflag: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS\nq27: https://huggingface.co/Qwen/Qwen3.8-27B\nqcode: https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py\nyolo: https://docs.ultralytics.com/models/yolo26/\nltx: https://huggingface.co/Lightricks/LTX-2.5\nmagi: https://huggingface.co/sand-ai/MAGI-2-preview"}
+{"kind":"slide","id":"sl/ojgf1w","slide":6,"title":"第二部分  /  模型适配结论","textShapes":7}
+{"kind":"textbox","id":"sh/ipkr2xcf","slide":6,"text":"第二部分  /  模型适配结论","textPreview":"第二部分  /  模型适配结论","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/5svqxsv6","slide":6,"text":"2.2  双机 910B：精度、框架与 kernel","textPreview":"2.2  双机 910B：精度、框架与 kernel","textChars":26,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/4rm94nul","slide":6,"text":"量化必须有对应权重格式和执行实现；更低比特不自动等于可部署","textPreview":"量化必须有对应权重格式和执行实现；更低比特不自动等于可部署","textChars":29,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/vmt8rid4","slide":6,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/ulkrydcj","slide":6,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/hobqtsvu","slide":6,"text":"06 / 14","textPreview":"06 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/7y98nids","slide":6,"text":"双机方案可先做 Flash-Next 验证；GLM 与 DeepSeek 需供应商提供同配置运行证据。","textPreview":"双机方案可先做 Flash-Next 验证；GLM 与 DeepSeek 需供应商提供同配置运行证据。","textChars":51,"textLines":1,"bbox":[62,588,1155,40]}
+{"kind":"textbox","id":"sh/6x07udc7","slide":6,"text":"来源：官方模型卡、vLLM-Ascend GLM5.3 / DeepSeek-V4-Pro 教程、FlagRelease 昇腾适配卡","textPreview":"来源：官方模型卡、vLLM-Ascend GLM5.3 / DeepSeek-V4-Pro 教程、FlagRelease 昇腾适配卡","textChars":66,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/l4nudsvu","slide":6,"name":"","rows":4,"cols":3,"preview":"模型 | 已查到的执行路径 | 两台 8 卡 910B 的判断","bbox":[60,207,1160,374]}
+{"kind":"notes","id":"nt/ojgf1w","slide":6,"text":"权重估算以十进制GB计，不含量化元数据、未量化模块、缓存、工作区和通信。MoE激活参数不能替代驻留总参数。GLM量化从BF16源重新生成，不应把原始FP8权重当作Ascend W8A8C8。vLLM-Ascend配方基于v0.23.0，不能仅升级latest保证兼容。DeepSeek-V4-Pro的W4A8配方已是低精度，A3每台8×128GB与A2每台8×64GB不可互换。FlagRelease发布环境为openEuler22.03 SP4、CANN8.5、torch_npu2.8、SGLang0.5.11、FlagGems5.3.0；还替换qwen4及专用算子文件，映射davinci0..15且TP4 DP4。原始BF16权重仓库不表示所有运行算子都是BF16。该页未明确验证芯片为910B或双机拓扑，不以昇腾品牌名称推定兼容。\n\n参考来源（核验日期：2026-09-14）\nglm: https://huggingface.co/zai-org/GLM-5.3-BF16\nag: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\nds: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html\nqflash: https://huggingface.co/Qwen/Qwen3.8-Flash-Next\nflag: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS"}
+{"kind":"slide","id":"sl/ti1r4x","slide":7,"title":"第二部分  /  模型适配结论","textShapes":15}
+{"kind":"textbox","id":"sh/eh0j6tkj","slide":7,"text":"第二部分  /  模型适配结论","textPreview":"第二部分  /  模型适配结论","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/14r2183a","slide":7,"text":"2.3  T4：27B 文本推理与 YOLO","textPreview":"2.3  T4：27B 文本推理与 YOLO","textChars":22,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/g3i1832p","slide":7,"text":"同一台 8 卡服务器按任务切分；模型层分配与多副本是不同方式","textPreview":"同一台 8 卡服务器按任务切分；模型层分配与多副本是不同方式","textChars":30,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/repkvel8","slide":7,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/6dgj29kn","slide":7,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/tgr2xo3y","slide":7,"text":"07 / 14","textPreview":"07 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/sfi14j2d","slide":7,"text":"Qwen3.8-27B：单机 8 卡 PoC","textPreview":"Qwen3.8-27B：单机 8 卡 PoC","textChars":22,"textLines":1,"bbox":[62,207,562,43]}
+{"kind":"textbox","id":"sh/batk7i1c","slide":7,"text":"FP16 权重约 56GB，先用短输入、并发 1\nTransformers + Accelerate 分配模型层\nattention 用 eager，GDN 用 PyTorch 回退","textPreview":"FP16 权重约 56GB，先用短输入、并发 1 | Transformers + Accelerate 分配模型层 | attention 用 eager，GDN 用 PyTorch 回退","textChars":91,"textLines":3,"bbox":[62,273,562,133]}
+{"kind":"textbox","id":"sh/q9k3edkr","slide":7,"text":"仍需通过","textPreview":"仍需通过","textChars":4,"textLines":1,"bbox":[62,433,559,36]}
+{"kind":"textbox","id":"sh/wze54b6d","slide":7,"text":"FP16 无溢出；全部算子支持 SM75\n逐卡峰值、生成质量及实际速度\n“device_map”分层不是高效张量并行","textPreview":"FP16 无溢出；全部算子支持 SM75 | 逐卡峰值、生成质量及实际速度 | “device_map”分层不是高效张量并行","textChars":58,"textLines":3,"bbox":[62,480,559,110]}
+{"kind":"textbox","id":"sh/x0nmxgny","slide":7,"text":"YOLO26：官方 T4 路径可采用","textPreview":"YOLO26：官方 T4 路径可采用","textChars":18,"textLines":1,"bbox":[682,207,536,43]}
+{"kind":"textbox","id":"sh/axcn21o7","slide":7,"text":"视频帧 / 图片\n解码与预处理","textPreview":"视频帧 / 图片 | 解码与预处理","textChars":15,"textLines":2,"bbox":[688,271,234,87]}
+{"kind":"textbox","id":"sh/vy54v65s","slide":7,"text":"T4 / TensorRT 10\nYOLO26s FP16","textPreview":"T4 / TensorRT 10 | YOLO26s FP16","textChars":29,"textLines":2,"bbox":[974,271,239,87]}
+{"kind":"shape","id":"sh/8vu50r6h","slide":7,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/9w3mtwn2","slide":7,"text":"在目标 T4 导出 engine，640 输入起测\n按单卡实例扩展，检测不需要 8 卡 TP\nINT8 另需代表性校准集和质量回归","textPreview":"在目标 T4 导出 engine，640 输入起测 | 按单卡实例扩展，检测不需要 8 卡 TP | INT8 另需代表性校准集和质量回归","textChars":65,"textLines":3,"bbox":[686,409,529,124]}
+{"kind":"textbox","id":"sh/mtcny1ob","slide":7,"text":"官方同硬件测试 ≠ 本机交付已验收","textPreview":"官方同硬件测试 ≠ 本机交付已验收","textChars":17,"textLines":1,"bbox":[686,562,529,37]}
+{"kind":"textbox","id":"sh/nul4r65w","slide":7,"text":"来源：Qwen 官方模型卡、Transformers qwen3_5 源码；Ultralytics YOLO26 与 TensorRT 集成文档","textPreview":"来源：Qwen 官方模型卡、Transformers qwen3_5 源码；Ultralytics YOLO26 与 TensorRT 集成文档","textChars":72,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"notes","id":"nt/ti1r4x","slide":7,"text":"T4为SM75，缺原生BF16/FP8执行能力；不能照搬新GPU专用FlashAttention/FP8路径。Transformers源码有torch_chunk_gated_delta_rule与torch_recurrent_gated_delta_rule回退，包括关键A_log等float32计算；这提供候选实现，不代替完整T4数值测试。先锁定包含该实现的commit，用FP16、eager attention、不启用可选融合kernel、batch1输入512–1024和输出128测试。检查hf_device_map与每卡峰值，不允许无记录的CPU/disk卸载。YOLO26官方模型页提供T4 TensorRT10检测性能；本报告不把其速度当实际业务速度。最新Ultralytics导出接口可使用quantize=16，目标机导出并锁定依赖版本。INT8另做校准及mAP/召回率回归。\n\n参考来源（核验日期：2026-09-14）\nq27: https://huggingface.co/Qwen/Qwen3.8-27B\nqcode: https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py\nyolo: https://docs.ultralytics.com/models/yolo26/\ntrt: https://docs.ultralytics.com/integrations/tensorrt/\nt4: https://www.nvidia.com/en-us/data-center/tesla-t4/"}
+{"kind":"slide","id":"sl/5jy31h","slide":8,"title":"第二部分  /  模型适配结论","textShapes":7}
+{"kind":"textbox","id":"sh/c72dsvq1","slide":8,"text":"第二部分  /  模型适配结论","textPreview":"第二部分  /  模型适配结论","textChars":15,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/b6tczq9g","slide":8,"text":"2.4  T4 与最新开源视频模型","textPreview":"2.4  T4 与最新开源视频模型","textChars":17,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/q50vql8v","slide":8,"text":"截至调研日，以已公开权重的 LTX-2.5、MAGI-2-preview 为近期代表","textPreview":"截至调研日，以已公开权重的 LTX-2.5、MAGI-2-preview 为近期代表","textChars":42,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/p4ruxgra","slide":8,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/o3idobqp","slide":8,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/3i9cv694","slide":8,"text":"08 / 14","textPreview":"08 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/1grutwre","slide":8,"text":"若“最新视频模型”是硬性目标，应单独租赁其官方支持的 GPU 配置。","textPreview":"若“最新视频模型”是硬性目标，应单独租赁其官方支持的 GPU 配置。","textChars":34,"textLines":1,"bbox":[63,586,1154,38]}
+{"kind":"textbox","id":"sh/gfidkrqt","slide":8,"text":"来源：Lightricks LTX-2.5 / LTX-2；Sand AI MAGI-2-preview；Z.ai CogVideoX-2b 官方模型卡","textPreview":"来源：Lightricks LTX-2.5 / LTX-2；Sand AI MAGI-2-preview；Z.ai CogVideoX-2b 官方模型卡","textChars":76,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/3ihcbad8","slide":8,"name":"","rows":4,"cols":3,"preview":"模型 | 官方执行条件 / 障碍 | T4 决策","bbox":[60,208,1160,365]}
+{"kind":"notes","id":"nt/5jy31h","slide":8,"text":"LTX-2.5包含22B transformer、Gemma4-12B文本编码器、视频/音频VAE及上采样器，不能只算22B权重。官方有PyTorch SDPA回退和多GPU方案，因此不能声称必须FlashAttention或完全无多卡支持；但其默认BF16及FP8量化并无完整T4实机证明。MAGI-2官方明确8张Hopper，并非8张任意NVIDIA GPU。CogVideoX-2b官方模型卡推荐FP16，提到torchao/quanto量化使T4可运行，但显存表在A100/H100测得，不能把表中4GB直接当T4保证。选备选时按锁定Diffusers版本验证FP16与INT8后端、CPU卸载、VAE分块；不要使用FP8路径。视频验收需检查完整视频、帧数、分辨率、NaN/黑帧、生成耗时、画质，不用文本Token吞吐评价。\n\n参考来源（核验日期：2026-09-14）\nltx: https://huggingface.co/Lightricks/LTX-2.5\nltxcode: https://github.com/Lightricks/LTX-2\nmagi: https://huggingface.co/sand-ai/MAGI-2-preview\ncog: https://huggingface.co/zai-org/CogVideoX-2b"}
+{"kind":"slide","id":"sl/wz9mk2","slide":9,"title":"第三部分  /  判断模型适配方法论","textShapes":15}
+{"kind":"textbox","id":"sh/0jid4fm5","slide":9,"text":"第三部分  /  判断模型适配方法论","textPreview":"第三部分  /  判断模型适配方法论","textChars":18,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/zi9wva5k","slide":9,"text":"3.1  适配判断的完整逻辑","textPreview":"3.1  适配判断的完整逻辑","textChars":14,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/yh0v254z","slide":9,"text":"结论必须绑定：权重版本 × 软件栈 × 硬件拓扑 × 工作负载 × 质量要求","textPreview":"结论必须绑定：权重版本 × 软件栈 × 硬件拓扑 × 工作负载 × 质量要求","textChars":38,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/98be1knm","slide":9,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/872x8fmh","slide":9,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/nmtwzu5w","slide":9,"text":"09 / 14","textPreview":"09 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/mlkf6p4b","slide":9,"text":"模型文件完整\n架构可识别","textPreview":"模型文件完整 | 架构可识别","textChars":12,"textLines":2,"bbox":[60,218,270,97]}
+{"kind":"textbox","id":"sh/xcve54ny","slide":9,"text":"精度与全部算子\n支持目标芯片","textPreview":"精度与全部算子 | 支持目标芯片","textChars":14,"textLines":2,"bbox":[370,218,270,97]}
+{"kind":"textbox","id":"sh/wb2xczmd","slide":9,"text":"逐卡峰值满足\n分片与通信可行","textPreview":"逐卡峰值满足 | 分片与通信可行","textChars":14,"textLines":2,"bbox":[680,218,270,97]}
+{"kind":"textbox","id":"sh/yl8byp8v","slide":9,"text":"主机资源\n与输入输出完整","textPreview":"主机资源 | 与输入输出完整","textChars":12,"textLines":2,"bbox":[990,218,230,97]}
+{"kind":"shape","id":"sh/zmhs7u9g","slide":9,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/k7at0zq1","slide":9,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/l8ja947m","slide":9,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/m9sb2p87","slide":9,"text":"以上条件全部通过（AND）","textPreview":"以上条件全部通过（AND）","textChars":13,"textLines":1,"bbox":[61,345,1150,45]}
+{"kind":"textbox","id":"sh/7a1sbups","slide":9,"text":"静态合格\n允许进入实机验证","textPreview":"静态合格 | 允许进入实机验证","textChars":13,"textLines":2,"bbox":[90,432,312,104]}
+{"kind":"textbox","id":"sh/8bat4zqd","slide":9,"text":"真实权重生成\n质量与负载测试通过","textPreview":"真实权重生成 | 质量与负载测试通过","textChars":16,"textLines":2,"bbox":[485,432,312,104]}
+{"kind":"textbox","id":"sh/9cjad47y","slide":9,"text":"限定配置下\n已验证可部署","textPreview":"限定配置下 | 已验证可部署","textChars":12,"textLines":2,"bbox":[881,432,312,104]}
+{"kind":"shape","id":"sh/2dorq583","slide":9,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/nexsza98","slide":9,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/r6tgb2l4","slide":9,"text":"任一条件失败：当前方案不通过。缺少证据：标为待验证。修改精度或硬件后重新检查。","textPreview":"任一条件失败：当前方案不通过。缺少证据：标为待验证。修改精度或硬件后重新检查。","textChars":39,"textLines":1,"bbox":[62,575,1155,47]}
+{"kind":"textbox","id":"sh/6lkzixkj","slide":9,"text":"逻辑为本项目验收方法；“能下载”“能加载”“能生成”“满足生产负载”分别留证据","textPreview":"逻辑为本项目验收方法；“能下载”“能加载”“能生成”“满足生产负载”分别留证据","textChars":39,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"notes","id":"nt/wz9mk2","slide":9,"text":"条件集合：A权重与配置完整可获取，B架构与所有必需模块被框架正确识别，C每个算子的dtype/量化格式与芯片及运行库兼容且有实现或已验证回退，D每rank运行峰值小于实际可用显存，E并行切分及通信可行，F主机RAM/磁盘/IO足够且预处理后处理完整。静态资格=A∧B∧C∧D∧E∧F。部署验收=静态资格∧真实权重正确输出∧质量回归∧目标负载稳定运行。任何unknown不能按true处理。通过资料条件只能进入PoC，不能直接声称本机已验证。改量化、kernel、上下文、batch、节点数任一项，都需要重新检查受影响条件并重新验收。\n\n参考来源（核验日期：2026-09-14）\nquant: https://docs.vllm.ai/en/latest/features/quantization/\nqcode: https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py\nag: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html"}
+{"kind":"slide","id":"sl/hspp6q","slide":10,"title":"第三部分  /  判断模型适配方法论","textShapes":6}
+{"kind":"textbox","id":"sh/u1crq9of","slide":10,"text":"第三部分  /  判断模型适配方法论","textPreview":"第三部分  /  判断模型适配方法论","textChars":18,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/h4nal47q","slide":10,"text":"3.2  条件、证据与失败处理","textPreview":"3.2  条件、证据与失败处理","textChars":15,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/g3e9sj65","slide":10,"text":"每一项都必须回答“用什么证明通过”，不以模型名称相近代替兼容性","textPreview":"每一项都必须回答“用什么证明通过”，不以模型名称相近代替兼容性","textChars":31,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/7yl8fupo","slide":10,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/6dcrmpo3","slide":10,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/t03qh47u","slide":10,"text":"10 / 14","textPreview":"10 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/ja18bups","slide":10,"text":"证据固定到实际版本：模型 revision、容器 digest、框架 commit、驱动与 CANN / CUDA 版本","textPreview":"证据固定到实际版本：模型 revision、容器 digest、框架 commit、驱动与 CANN / CUDA 版本","textChars":60,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/dcvy1wv2","slide":10,"name":"","rows":7,"cols":3,"preview":"条件 | 通过证据 | 不通过时的动作","bbox":[60,205,1160,392]}
+{"kind":"notes","id":"nt/hspp6q","slide":10,"text":"kernel清单至少覆盖attention、GDN/循环状态、MoE路由及GEMM、量化解码、归一化、通信、MTP/视觉/VAE等实际启用模块。量化名相同不代表pack格式、group size、scale dtype、对称性、激活精度或KV精度相同。先核对checkpoint quantization_config和框架后端，再查每种算子的设备实现。合法TP不仅看卡数，要检查头数、专家数、维度整除、复制模块及框架约束。支持多GPU不等于支持任意跨节点拓扑。CPU卸载须计主机内存和PCIe传输，并在目标延迟下测试。\n\n参考来源（核验日期：2026-09-14）\nquant: https://docs.vllm.ai/en/latest/features/quantization/\nqcode: https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py\nflag: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS\nltxcode: https://github.com/Lightricks/LTX-2"}
+{"kind":"slide","id":"sl/cdge3b","slide":11,"title":"第三部分  /  判断模型适配方法论","textShapes":8}
+{"kind":"textbox","id":"sh/ovqp8fi5","slide":11,"text":"第三部分  /  判断模型适配方法论","textPreview":"第三部分  /  判断模型适配方法论","textChars":18,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/nuhofahk","slide":11,"text":"3.3  显存与精度的计算边界","textPreview":"3.3  显存与精度的计算边界","textChars":15,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/2t87650z","slide":11,"text":"模型适配使用逐卡运行峰值；总显存和平均分配只能做第一轮筛选","textPreview":"模型适配使用逐卡运行峰值；总显存和平均分配只能做第一轮筛选","textChars":29,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/18z6d0ze","slide":11,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/07qp4vit","slide":11,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/f6hobqho","slide":11,"text":"11 / 14","textPreview":"11 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/e5872l03","slide":11,"text":"每个 rank 的峰值 = 权重 + KV / 状态 + 激活 / 工作区 + 通信 / 图缓存 + 余量","textPreview":"每个 rank 的峰值 = 权重 + KV / 状态 + 激活 / 工作区 + 通信 / 图缓存 + 余量","textChars":53,"textLines":1,"bbox":[62,210,1154,73]}
+{"kind":"textbox","id":"sh/k3upgzid","slide":11,"text":"示例：DeepSeek-V4-Pro 理想全 4bit ≈ 800GB ＜ 双机 1,024GB\n但官方 W4A8 仍要求至少 4 A2，因此不能由这个不等式推出双机可部署。","textPreview":"示例：DeepSeek-V4-Pro 理想全 4bit ≈ 800GB ＜ 双机 1,024GB | 但官方 W4A8 仍要求至少 4 A2，因此不能由这个不等式推出双机可部署。","textChars":87,"textLines":2,"bbox":[62,565,1151,60]}
+{"kind":"textbox","id":"sh/epwrqtsr","slide":11,"text":"参数量 × bit / 8 仅为权重粗估，采用十进制 GB。来源：DeepSeek 官方模型卡及 Ascend 专用部署教程","textPreview":"参数量 × bit / 8 仅为权重粗估，采用十进制 GB。来源：DeepSeek 官方模型卡及 Ascend 专用部署教程","textChars":62,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/gfmpozqd","slide":11,"name":"","rows":4,"cols":2,"preview":"计算环节 | 具体做法","bbox":[60,317,1160,231]}
+{"kind":"notes","id":"nt/cdge3b","slide":11,"text":"对每rank分别累计W_r+K_r+A_r+C_r+headroom，并与设备实测可用容量比较；特别关注rank0复制组件或视觉编码器集中导致的不均衡。常规GQA KV字节=2×层数×KV头数×head_dim×缓存字节×总缓存token，实际按分片和复制规则修正；该公式不直接适用于GDN、MLA、CSA。MoE激活49B是计算口径，不是只需驻留49B。压低上下文减少KV，但不解决权重布局或缺少kernel。FP16缩小指数范围可能溢出，BF16训练模型转FP16必须质量回归。\n\n参考来源（核验日期：2026-09-14）\nds: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html\nquant: https://docs.vllm.ai/en/latest/features/quantization/"}
+{"kind":"slide","id":"sl/tl0e4m","slide":12,"title":"第三部分  /  判断模型适配方法论","textShapes":22}
+{"kind":"textbox","id":"sh/ihkrihcj","slide":12,"text":"第三部分  /  判断模型适配方法论","textPreview":"第三部分  /  判断模型适配方法论","textChars":18,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/5kbqdwba","slide":12,"text":"3.4  Hugging Face 到完整输出","textPreview":"3.4  Hugging Face 到完整输出","textChars":23,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/kj29krup","slide":12,"text":"每一步产生可保存的交付物；成功加载后仍需验证真实输出","textPreview":"每一步产生可保存的交付物；成功加载后仍需验证真实输出","textChars":26,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/vu9872t8","slide":12,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/at0rehcn","slide":12,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/xgbq9cbe","slide":12,"text":"12 / 14","textPreview":"12 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/nq9832tw","slide":12,"text":"官方模型页：模型身份与文件入口","textPreview":"官方模型页：模型身份与文件入口","textChars":15,"textLines":1,"bbox":[62,532,557,37]}
+{"kind":"textbox","id":"sh/mp0raxcr","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[662,202,54,34]}
+{"kind":"textbox","id":"sh/sr298jih","slide":12,"text":"锁定与下载","textPreview":"锁定与下载","textChars":5,"textLines":1,"bbox":[727,202,485,33]}
+{"kind":"textbox","id":"sh/dsba1oj2","slide":12,"text":"保存 repo / SHA；完整 snapshot 与索引","textPreview":"保存 repo / SHA；完整 snapshot 与索引","textChars":29,"textLines":1,"bbox":[727,238,488,38]}
+{"kind":"textbox","id":"sh/q5kr6t0r","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[662,283,54,34]}
+{"kind":"textbox","id":"sh/rqtsze1w","slide":12,"text":"静态审核","textPreview":"静态审核","textChars":4,"textLines":1,"bbox":[727,283,485,33]}
+{"kind":"textbox","id":"sh/43i94jil","slide":12,"text":"精度、kernel、内存、拓扑条件逐项过关","textPreview":"精度、kernel、内存、拓扑条件逐项过关","textChars":21,"textLines":1,"bbox":[727,319,488,38]}
+{"kind":"textbox","id":"sh/54raxoj6","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[662,364,54,34]}
+{"kind":"textbox","id":"sh/i10r290f","slide":12,"text":"固定环境并启动","textPreview":"固定环境并启动","textChars":7,"textLines":1,"bbox":[727,364,485,33]}
+{"kind":"textbox","id":"sh/3298ve10","slide":12,"text":"镜像 digest、依赖锁、设备映射与命令","textPreview":"镜像 digest、依赖锁、设备映射与命令","textChars":21,"textLines":1,"bbox":[727,400,488,38]}
+{"kind":"textbox","id":"sh/ozm9g3ip","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[662,445,54,34]}
+{"kind":"textbox","id":"sh/90va98za","slide":12,"text":"真实样本生成","textPreview":"真实样本生成","textChars":6,"textLines":1,"bbox":[727,445,485,33]}
+{"kind":"textbox","id":"sh/xgrat8re","slide":12,"text":"文本 / 检测框 / 可播放视频；检查有限值","textPreview":"文本 / 检测框 / 可播放视频；检查有限值","textChars":22,"textLines":1,"bbox":[727,481,488,38]}
+{"kind":"textbox","id":"sh/wfi903at","slide":12,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[662,526,54,34]}
+{"kind":"textbox","id":"sh/ve9sry98","slide":12,"text":"回归与负载验收","textPreview":"回归与负载验收","textChars":7,"textLines":1,"bbox":[727,526,485,33]}
+{"kind":"textbox","id":"sh/ad0ryts3","slide":12,"text":"质量基线、逐卡峰值、延迟及稳定性","textPreview":"质量基线、逐卡峰值、延迟及稳定性","textChars":16,"textLines":1,"bbox":[727,562,488,38]}
+{"kind":"textbox","id":"sh/9crqp8ri","slide":12,"text":"截图：Qwen3.8-27B 官方 Hugging Face 仓库。下载与执行示例、证据模板见配套大纲","textPreview":"截图：Qwen3.8-27B 官方 Hugging Face 仓库。下载与执行示例、证据模板见配套大纲","textChars":51,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"image","id":"im/p47epc7i","slide":12,"name":"","alt":"hf_qwen.png","bbox":[60,207,559,314]}
+{"kind":"notes","id":"nt/tl0e4m","slide":12,"text":"先解析模型main当前commit SHA，再snapshot_download指定revision SHA，归档config、索引、tokenizer、generation config、chat template及全部必要组件。记录下载文件清单/大小和校验信息，避免只下一个分片。若量化转换，记录源SHA、校准集、转换工具版本和产物配置。硬件冒烟测试与目标模型验证分开：设备正常并不证明目标架构正常。LLM输入512–1024、输出128、batch1起测，后按业务负载提升；YOLO从640 batch1；视频按官方支持的分辨率/帧数与低内存选项起测。首个Token不是最终交付，生成完整可解释结果并测质量后才进入持续负载。\n\n参考来源（核验日期：2026-09-14）\nhf: https://huggingface.co/docs/huggingface_hub/guides/cli\nq27: https://huggingface.co/Qwen/Qwen3.8-27B\nyolo: https://docs.ultralytics.com/models/yolo26/\ncog: https://huggingface.co/zai-org/CogVideoX-2b"}
+{"kind":"slide","id":"sl/0sv2as","slide":13,"title":"第三部分  /  判断模型适配方法论","textShapes":7}
+{"kind":"textbox","id":"sh/9gz61wfq","slide":13,"text":"第三部分  /  判断模型适配方法论","textPreview":"第三部分  /  判断模型适配方法论","textChars":18,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/mt8n6hgf","slide":13,"text":"3.5  三个实例的推导结果","textPreview":"3.5  三个实例的推导结果","textChars":14,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/nuhozmxk","slide":13,"text":"同一套逻辑可以得到通过、待验证或不通过，而非统一给出“能跑”","textPreview":"同一套逻辑可以得到通过、待验证或不通过，而非统一给出“能跑”","textChars":30,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/wjapcbyh","slide":13,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/xkj65gf2","slide":13,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/ah87a1gb","slide":13,"text":"13 / 14","textPreview":"13 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/cn6507yx","slide":13,"text":"完整证明 = 固定配置的证据清单 + 可复现启动 + 正确输出 + 目标负载达标。","textPreview":"完整证明 = 固定配置的证据清单 + 可复现启动 + 正确输出 + 目标负载达标。","textChars":41,"textLines":1,"bbox":[62,590,1154,37]}
+{"kind":"textbox","id":"sh/dof6tcfi","slide":13,"text":"来源：Ultralytics YOLO26；Transformers qwen3_5；vLLM-Ascend DeepSeek-V4-Pro。未进行本项目实机测试","textPreview":"来源：Ultralytics YOLO26；Transformers qwen3_5；vLLM-Ascend DeepSeek-V4-Pro。未进行本项目实机测试","textChars":81,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/qls7et8f","slide":13,"name":"","rows":5,"cols":4,"preview":"判断条件 | YOLO26s / T4 | Qwen3.8-27B / 8 T4 | V4-Pro W4A8 / 2 A2","bbox":[60,208,1160,368]}
+{"kind":"notes","id":"nt/0sv2as","slide":13,"text":"用例不是新增模型推荐，而是展示同一判定链的不同结果。YOLO同硬件官方证据覆盖基本执行，生产服务质量和本机配置仍需验收。Qwen27的总容量算术和代码回退只是部分证据，缺失项必须保留待验证状态。DeepSeek双机未达到已公布配方的硬件要求，拒绝用纯权重下界宣称可用；如供应商提供更小配置实现，需要重新核对实际权重、精度、算子、上下文、并发和质量。\n\n参考来源（核验日期：2026-09-14）\nyolo: https://docs.ultralytics.com/models/yolo26/\nq27: https://huggingface.co/Qwen/Qwen3.8-27B\nqcode: https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html"}
+{"kind":"slide","id":"sl/zot69r","slide":14,"title":"第三部分  /  判断模型适配方法论","textShapes":13}
+{"kind":"textbox","id":"sh/gf6l8vm9","slide":14,"text":"第三部分  /  判断模型适配方法论","textPreview":"第三部分  /  判断模型适配方法论","textChars":18,"textLines":1,"bbox":[60,25,900,25]}
+{"kind":"textbox","id":"sh/vud4fq5o","slide":14,"text":"3.6  最终验收与资料依据","textPreview":"3.6  最终验收与资料依据","textChars":14,"textLines":1,"bbox":[60,70,1160,66]}
+{"kind":"textbox","id":"sh/ut436l43","slide":14,"text":"交付结论应写成“某版本模型，在某配置和负载下通过”，保留复现实验","textPreview":"交付结论应写成“某版本模型，在某配置和负载下通过”，保留复现实验","textChars":32,"textLines":1,"bbox":[60,142,1160,44]}
+{"kind":"shape","id":"sh/pkfml0nq","slide":14,"bbox":[60,658,1160,1]}
+{"kind":"textbox","id":"sh/4j6lcvml","slide":14,"text":"GPU / NPU 租赁调研   ·   2026.09.14","textPreview":"GPU / NPU 租赁调研   ·   2026.09.14","textChars":31,"textLines":1,"bbox":[60,674,1000,20]}
+{"kind":"textbox","id":"sh/3ix4ja50","slide":14,"text":"14 / 14","textPreview":"14 / 14","textChars":7,"textLines":1,"bbox":[1110,674,110,20]}
+{"kind":"textbox","id":"sh/dozmpkn2","slide":14,"text":"共同证据包","textPreview":"共同证据包","textChars":5,"textLines":1,"bbox":[63,432,1147,38]}
+{"kind":"textbox","id":"sh/cnqlgfmh","slide":14,"text":"硬件与拓扑清单 · 权重 SHA · 环境版本 · 启动脚本 · 原始日志 · 每卡峰值\n固定负载测试与重启恢复；持续测试建议至少 1 小时，阈值由业务确认","textPreview":"硬件与拓扑清单 · 权重 SHA · 环境版本 · 启动脚本 · 原始日志 · 每卡峰值 | 固定负载测试与重启恢复；持续测试建议至少 1 小时，阈值由业务确认","textChars":78,"textLines":2,"bbox":[63,482,1150,76]}
+{"kind":"textbox","id":"sh/6l07a14v","slide":14,"text":"昇腾配方","textPreview":"昇腾配方","textChars":4,"textLines":1,"bbox":[63,584,225,32]}
+{"kind":"textbox","id":"sh/7m9836lg","slide":14,"text":"Flash-Next 适配","textPreview":"Flash-Next 适配","textChars":13,"textLines":1,"bbox":[298,584,225,32]}
+{"kind":"textbox","id":"sh/sni9cbm1","slide":14,"text":"YOLO / T4","textPreview":"YOLO / T4","textChars":9,"textLines":1,"bbox":[533,584,225,32]}
+{"kind":"textbox","id":"sh/torq5g3m","slide":14,"text":"视频模型","textPreview":"视频模型","textChars":4,"textLines":1,"bbox":[768,584,225,32]}
+{"kind":"textbox","id":"sh/u9krel47","slide":14,"text":"模型下载","textPreview":"模型下载","textChars":4,"textLines":1,"bbox":[1003,584,225,32]}
+{"kind":"textbox","id":"sh/fat87qlc","slide":14,"text":"公开资料核验日期：2026-09-14。所有来源按页置于演讲者备注；本报告不包含租赁机实际 benchmark","textPreview":"公开资料核验日期：2026-09-14。所有来源按页置于演讲者备注；本报告不包含租赁机实际 benchmark","textChars":55,"textLines":1,"bbox":[60,630,1155,21]}
+{"kind":"table","id":"tb/zyhofa1w","slide":14,"name":"","rows":4,"cols":3,"preview":"任务 | 必须交付的结果 | 性能 / 质量指标","bbox":[60,207,1160,203]}
+{"kind":"notes","id":"nt/zot69r","slide":14,"text":"最终证据包同时记录硬件设备ID/显存、CPU RAM磁盘、PCIe/NUMA/RDMA拓扑、驱动固件与运行库、镜像digest、框架commit、模型SHA、量化来源、启动参数、代表性输入输出、质量评估、每rank峰值与持续负载。建议至少1小时持续测试不等于覆盖长期可靠性。业务必须给出质量、延迟和并发阈值，未给定前仅报告实测不判定生产达标。完整参考见配套大纲，网页latest与main实施时重新核验锁定。\n\n参考来源（核验日期：2026-09-14）\nhw: https://e.huawei.com/cn/products/computing/ascend/atlas-800i-a2\nt4: https://www.nvidia.com/en-us/data-center/tesla-t4/\nquant: https://docs.vllm.ai/en/latest/features/quantization/\nq27: https://huggingface.co/Qwen/Qwen3.8-27B\nqflash: https://huggingface.co/Qwen/Qwen3.8-Flash-Next\nglm: https://huggingface.co/zai-org/GLM-5.3-BF16\nds: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro\nag: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\nad: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4-Pro.html\nhf: https://huggingface.co/docs/huggingface_hub/guides/cli\nflag: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS\nqcode: https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py\nyolo: https://docs.ultralytics.com/models/yolo26/\ntrt: https://docs.ultralytics.com/integrations/tensorrt/\nltx: https://huggingface.co/Lightricks/LTX-2.5\nltxcode: https://github.com/Lightricks/LTX-2\nmagi: https://huggingface.co/sand-ai/MAGI-2-preview\ncog: https://huggingface.co/zai-org/CogVideoX-2b"}

@@ -1,0 +1,150 @@
+Object.assign(refs,{
+ flag:'https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-ascend-FlagOS',
+ qcode:'https://raw.githubusercontent.com/huggingface/transformers/main/src/transformers/models/qwen3_5/modeling_qwen3_5.py',
+ yolo:'https://docs.ultralytics.com/models/yolo26/',
+ trt:'https://docs.ultralytics.com/integrations/tensorrt/',
+ ltx:'https://huggingface.co/Lightricks/LTX-2.5',
+ ltxcode:'https://github.com/Lightricks/LTX-2',
+ magi:'https://huggingface.co/sand-ai/MAGI-2-preview',
+ cog:'https://huggingface.co/zai-org/CogVideoX-2b'
+});
+{
+ const s=p.slides.add();s.background.fill=C.navy;
+ txt(s,'GPU / NPU 租赁调研',64,53,1100,44,28,'#7CCFC8');
+ txt(s,'硬件配置与\n模型部署可行性',60,123,1150,165,62,C.white,true);
+ txt(s,'2 台 × 8 卡 910B    /    4–6 台 × 8 卡 T4',64,316,1120,47,28,'#CCDCE8');
+ await img(s,'t4_banner.jpg',0,397,1280,150);
+ const labels=['01  硬件配置清单','02  模型适配结论','03  判断模型适配方法论'];
+ labels.forEach((v,i)=>txt(s,v,64+i*403,586,393,46,25,C.white,true));
+ txt(s,'调研修订版  ·  2026.09.14  ·  结论按具体权重、软件栈与硬件条件限定',64,660,1150,25,17,'#A9BDCE');
+ notes(s,'全篇仅三大部分：第2–4页硬件配置清单；第5–8页模型适配结论；第9–14页判断模型适配方法论。910B按64GB/卡假设，必须向供应商确认。本报告为公开资料与源码核验，没有租赁设备实测。封面图片为NVIDIA T4官方参考图。',['t4']);
+}
+{
+ const s=header(2,'1.1  硬件范围与资源池','第一部分  /  硬件配置清单','交付范围覆盖服务器、互联、存储、供电散热及管理接入');
+ const a=node(s,'统一接入与任务队列\n文本 / 检测 / 视频',60,225,330,90,C.navy,C.white);
+ const b=node(s,'910B 池：2 台 × 8 卡\n64GB/卡待确认',480,218,335,110,C.pale);
+ const c=node(s,'T4 池：4–6 台 × 8 卡\n16GB/卡',480,441,335,110,'#EBF2FA');
+ conn(s,a,b);conn(s,a,c);
+ const d=node(s,'同构跨机互联\nHCCL / RDMA',906,218,309,110);
+ const e=node(s,'独立任务 / 多副本\n优先单机分配',906,441,309,110);
+ conn(s,b,d);conn(s,c,e);
+ txt(s,'模型仓库 / 输出存储\n管理网络 / BMC\n机柜 / PDU / 散热',64,384,322,157,27,C.muted);
+ txt(s,'标称容量：910B 池 1,024GB；T4 每台 128GB。跨卡、跨机容量需要软件显式分片。',62,577,1155,48,25,C.ink,true);
+ cite(s,'架构为本项目方案；硬件参考：Huawei Atlas 800I A2、NVIDIA T4。异构资源池分别运行模型实例');
+ notes(s,'每台8卡。总服务器6–8台，NPU16张，GPU32–48张。910B按64GB/卡，单机512GB、双机1024GB；T4单机128GB、全池512–768GB。不能把全部T4的容量视为单模型统一显存。逻辑接入可复用已有主机，不要求新增GPU；检测和视频生成的输出不是LLM正文Token，应分别验收。',['hw','t4']);
+}
+{
+ const s=header(3,'1.2  单台服务器硬件清单','第一部分  /  硬件配置清单','以下是完整租赁 BOM 的询价起点；主机配置为建议值，按最终模型修订');
+ table(s,[['硬件项目','910B：每台，合计 2 台','T4：每台，合计 4–6 台'],['加速卡与承载','8 × 64GB；配套板卡互联','8 × 16GB；足量 PCIe 插槽 / 转接板'],['CPU / ECC 内存','厂家配套 CPU；1–2TB RAM','32–64 物理核；256–512GB RAM'],['系统盘','2 × 960GB SSD，RAID1','2 × 960GB SSD，RAID1'],['模型与缓存盘','本地 NVMe 可用容量 8TB 起','本地 NVMe 可用容量 4TB 起'],['网卡 / 管理口','配套 NPU RDMA；业务口；BMC','双口 25GbE；独立 BMC 管理口'],['机箱 / 电源 / 散热','完整机箱、导轨、冗余 PSU、风扇','支持 8 张被动散热卡的整机风道']],60,207,1160,400,[221,466,473],23);
+ cite(s,'容量均需以可用容量交付；系统盘 RAID1 不等于两块容量相加。参考：Huawei / NVIDIA；RAM、磁盘为项目建议');
+ notes(s,'清单要同时覆盖CPU、主板、ECC DIMM、全部加速卡、板卡内互联/PCIe riser、系统盘及RAID、模型盘、网卡、BMC、机箱、导轨、电源、风扇和电源线。双机910B总RAM2–4TB、本地NVMe可用16TB起；4–6台T4总RAM1–3TB、本地NVMe可用16–24TB起。磁盘按原始权重+转换权重+下载缓存+输出+日志累加；不是显存不足的自动补救。CPU体系结构必须匹配容器。T4为被动散热卡，不能只把卡插入缺少整机风道的主机。8卡PCIe通道与NUMA分布须交付拓扑，不承诺每卡独享CPU直连x16。',['hw','t4']);
+}
+{
+ const s=header(4,'1.3  集群配套与最终交付环境','第一部分  /  硬件配置清单','租赁合同应包含可运行的软件环境与对应硬件，不只交付可登录的裸机');
+ table(s,[['配套硬件','数量 / 接口 / 交付要求'],['910B 互联网络','按整机 RDMA 端口配齐交换机、AOC 或光模块与光纤\n若每台 8 × 200GE：共 16 条接入链路，交换容量同步核验'],['业务与管理网络','T4 双口 25G 共 8–12 个接入口；BMC 共 6–8 个接入口\n补齐上联、网线、IP、路由；已有设备可复用'],['共享存储与机房','模型镜像与输出存储、备份目标；容量按留存量计算\n机柜空间、导轨、双路供电 / PDU、散热与远程控制']],60,204,1160,231,[248,912],23);
+ txt(s,'910B 交付栈',62,465,550,38,28,C.teal,true);
+ txt(s,'Linux + 驱动 / 固件 + CANN\n模型专用容器、HCCL / RDMA、设备权限',62,511,559,73,24);
+ txt(s,'T4 交付栈',681,465,538,38,28,C.blue,true);
+ txt(s,'Linux + NVIDIA 驱动 + CUDA 容器\nTransformers / TensorRT / Diffusers 按任务固定',681,511,538,73,24);
+ cite(s,'每套环境记录镜像 digest、框架 commit、依赖锁文件和启动脚本；不同模型可使用不同容器');
+ notes(s,'不要求所有硬件都新购：交换机、镜像仓库、监控与存储可复用但必须写清资源配额。200GE是配套A2参考拓扑，最终以租赁整机实际NPU端口为准，不能只配一条高速业务网线代替NPU互联。若16条光链路，两端共32只匹配模块与16条光纤；AOC为另一方案，不重复计模块。最终交付包括设备健康、8卡可见、ECC/错误检查、拓扑、通信测试、模型文件权限、监控日志、服务启动与重启恢复。电源按厂家整机最大功耗及机房冗余规划，不把PSU铭牌相加当实际功耗。模型镜像不能混用：GLM/DeepSeek配方vLLM-Ascend v0.23.0；Qwen Flash-Next FlagOS使用另一套定制SGLang环境。',['hw','ag','ad','flag']);
+}
+{
+ const s=header(5,'2.1  模型适配结论总表','第二部分  /  模型适配结论','“官方已验证”“可进入验证”“当前原版不适配”采用不同证据标准');
+ const t=table(s,[['硬件 / 模型','结论','决定结论的证据或缺口'],['双机 910B · GLM-5.3','双机未确认','W8A8C8 官方参考 4 台 A2；双机需新验证'],['双机 910B · DeepSeek-V4-Pro','不满足官方配方','官方 W4A8 已要求至少 4 台 A2'],['双机 910B · Qwen3.8-Flash-Next','有适配，拓扑待核','FlagOS 有昇腾实现；未证明双机 8 卡 910B'],['T4 · Qwen3.8-27B','可进入 PoC','FP16 + PyTorch 回退；数值与逐卡峰值待测'],['T4 · YOLO26','官方 T4 已验证','官方提供 T4 TensorRT 10 检测测试'],['T4 · LTX-2.5 / MAGI-2','不作生产承诺','前者缺 T4 完整证据；后者要求 Hopper']],60,205,1160,400,[409,229,522],23);
+ for(let r=1;r<=6;r++)colorCell(t,r,1,r===5?C.teal:(r===2||r===6?C.red:C.amber));
+ cite(s,'范围：910B 按 64GB/卡；均未在本项目租赁机实测。Qwen 云端 Flash 对应的公开权重为 Flash-Next');
+ notes(s,'本报告没有把资料检索等同于实机成功。双机910B的三个指定超大模型目前不能全部承诺。GLM参考配置不等于严格理论下限；DeepSeek教程明确至少4A2，是当前参考路径的硬要求。Flash-Next存在昇腾定制适配，但发布页单机16设备不能直接对应双机8卡910B。YOLO官方同类T4测试是最强硬件证据，交付机仍需复验。PoC表示有实施路径但尚未全部满足验收条件。',['ag','ad','flag','q27','qcode','yolo','ltx','magi']);
+}
+{
+ const s=header(6,'2.2  双机 910B：精度、框架与 kernel','第二部分  /  模型适配结论','量化必须有对应权重格式和执行实现；更低比特不自动等于可部署');
+ table(s,[['模型','已查到的执行路径','两台 8 卡 910B 的判断'],['GLM-5.3\n约 753B','BF16 约 1,506GB，双机装不下\nAscend W8A8C8；vLLM-Ascend\n官方参考 4 A2，标为实验性','W8 理想权重约 753GB\n容量可能，但运行余量 / 拓扑待证\n未找到双机 W4 完整配方'],['DeepSeek-V4-Pro\n约 1.6T / 激活 49B','原权重 FP4 / FP8 不等于 INT4\nAscend 专用 W4A8 + 对应算子\n官方要求至少 4 A2 或 2 A3','理想全 4bit 已约 800GB\n且另有非量化模块与运行开销\n两台 A2 不满足该配方'],['Qwen3.8-Flash-Next\n完整约 180B 起','BF16 仓库 + 定制 SGLang\nFlagGems / CANN / NPU GMM\n示例运行时 MoE 启用 W8A16','BF16 粗估约 360GB 起\n示例单机 16 设备，TP4 / DP4\n缺双机 910B 同拓扑验证']],60,207,1160,374,[263,466,431],23);
+ txt(s,'双机方案可先做 Flash-Next 验证；GLM 与 DeepSeek 需供应商提供同配置运行证据。',62,588,1155,40,24,C.teal,true);
+ cite(s,'来源：官方模型卡、vLLM-Ascend GLM5.3 / DeepSeek-V4-Pro 教程、FlagRelease 昇腾适配卡');
+ notes(s,'权重估算以十进制GB计，不含量化元数据、未量化模块、缓存、工作区和通信。MoE激活参数不能替代驻留总参数。GLM量化从BF16源重新生成，不应把原始FP8权重当作Ascend W8A8C8。vLLM-Ascend配方基于v0.23.0，不能仅升级latest保证兼容。DeepSeek-V4-Pro的W4A8配方已是低精度，A3每台8×128GB与A2每台8×64GB不可互换。FlagRelease发布环境为openEuler22.03 SP4、CANN8.5、torch_npu2.8、SGLang0.5.11、FlagGems5.3.0；还替换qwen4及专用算子文件，映射davinci0..15且TP4 DP4。原始BF16权重仓库不表示所有运行算子都是BF16。该页未明确验证芯片为910B或双机拓扑，不以昇腾品牌名称推定兼容。',['glm','ag','ds','ad','qflash','flag']);
+}
+{
+ const s=header(7,'2.3  T4：27B 文本推理与 YOLO','第二部分  /  模型适配结论','同一台 8 卡服务器按任务切分；模型层分配与多副本是不同方式');
+ txt(s,'Qwen3.8-27B：单机 8 卡 PoC',62,207,562,43,29,C.blue,true);
+ txt(s,'FP16 权重约 56GB，先用短输入、并发 1\nTransformers + Accelerate 分配模型层\nattention 用 eager，GDN 用 PyTorch 回退',62,273,562,133,25);
+ txt(s,'仍需通过',62,433,559,36,26,C.amber,true);
+ txt(s,'FP16 无溢出；全部算子支持 SM75\n逐卡峰值、生成质量及实际速度\n“device_map”分层不是高效张量并行',62,480,559,110,24);
+ txt(s,'YOLO26：官方 T4 路径可采用',682,207,536,43,29,C.teal,true);
+ const a=node(s,'视频帧 / 图片\n解码与预处理',688,271,234,87,C.pale);
+ const b=node(s,'T4 / TensorRT 10\nYOLO26s FP16',974,271,239,87,C.pale);conn(s,a,b);
+ txt(s,'在目标 T4 导出 engine，640 输入起测\n按单卡实例扩展，检测不需要 8 卡 TP\nINT8 另需代表性校准集和质量回归',686,409,529,124,25);
+ txt(s,'官方同硬件测试 ≠ 本机交付已验收',686,562,529,37,23,C.muted);
+ cite(s,'来源：Qwen 官方模型卡、Transformers qwen3_5 源码；Ultralytics YOLO26 与 TensorRT 集成文档');
+ notes(s,'T4为SM75，缺原生BF16/FP8执行能力；不能照搬新GPU专用FlashAttention/FP8路径。Transformers源码有torch_chunk_gated_delta_rule与torch_recurrent_gated_delta_rule回退，包括关键A_log等float32计算；这提供候选实现，不代替完整T4数值测试。先锁定包含该实现的commit，用FP16、eager attention、不启用可选融合kernel、batch1输入512–1024和输出128测试。检查hf_device_map与每卡峰值，不允许无记录的CPU/disk卸载。YOLO26官方模型页提供T4 TensorRT10检测性能；本报告不把其速度当实际业务速度。最新Ultralytics导出接口可使用quantize=16，目标机导出并锁定依赖版本。INT8另做校准及mAP/召回率回归。',['q27','qcode','yolo','trt','t4']);
+}
+{
+ const s=header(8,'2.4  T4 与最新开源视频模型','第二部分  /  模型适配结论','截至调研日，以已公开权重的 LTX-2.5、MAGI-2-preview 为近期代表');
+ table(s,[['模型','官方执行条件 / 障碍','T4 决策'],['LTX-2.5','22B 视频模型 + 12B 文本编码器等\nBF16 主路径，低显存路径含 FP8 / 卸载\n有 SDPA 回退，但没有完整 T4 验证','不作为首批交付承诺\nCPU 卸载只缓解容量\nFP16 转换仍需算子与质量验证'],['MAGI-2-preview','114B MoE，激活 6B\n官方要求 8 张 NVIDIA Hopper\n依赖 MagiAttention / MagiCompiler','当前原版路径不适配 T4\n增加 T4 数量不能满足\nHopper 专用执行要求'],['CogVideoX-2B\n较旧的备选','官方推荐 FP16；Diffusers 路径\n模型卡提到量化可在 Colab T4 运行\nCPU 卸载 + VAE 切片 / 分块','可作为 T4 视频 PoC 备选\n不是“最新模型”的替代证明\n时长、画质和速度需实测']],60,208,1160,365,[257,500,403],23);
+ txt(s,'若“最新视频模型”是硬性目标，应单独租赁其官方支持的 GPU 配置。',63,586,1154,38,27,C.red,true);
+ cite(s,'来源：Lightricks LTX-2.5 / LTX-2；Sand AI MAGI-2-preview；Z.ai CogVideoX-2b 官方模型卡');
+ notes(s,'LTX-2.5包含22B transformer、Gemma4-12B文本编码器、视频/音频VAE及上采样器，不能只算22B权重。官方有PyTorch SDPA回退和多GPU方案，因此不能声称必须FlashAttention或完全无多卡支持；但其默认BF16及FP8量化并无完整T4实机证明。MAGI-2官方明确8张Hopper，并非8张任意NVIDIA GPU。CogVideoX-2b官方模型卡推荐FP16，提到torchao/quanto量化使T4可运行，但显存表在A100/H100测得，不能把表中4GB直接当T4保证。选备选时按锁定Diffusers版本验证FP16与INT8后端、CPU卸载、VAE分块；不要使用FP8路径。视频验收需检查完整视频、帧数、分辨率、NaN/黑帧、生成耗时、画质，不用文本Token吞吐评价。',['ltx','ltxcode','magi','cog']);
+}
+{
+ const s=header(9,'3.1  适配判断的完整逻辑','第三部分  /  判断模型适配方法论','结论必须绑定：权重版本 × 软件栈 × 硬件拓扑 × 工作负载 × 质量要求');
+ const aa=node(s,'模型文件完整\n架构可识别',60,218,270,97);
+ const bb=node(s,'精度与全部算子\n支持目标芯片',370,218,270,97);
+ const cc=node(s,'逐卡峰值满足\n分片与通信可行',680,218,270,97);
+ const dd=node(s,'主机资源\n与输入输出完整',990,218,230,97);
+ conn(s,aa,bb);conn(s,bb,cc);conn(s,cc,dd);
+ txt(s,'以上条件全部通过（AND）',61,345,1150,45,30,C.teal,true,'center');
+ const e=node(s,'静态合格\n允许进入实机验证',90,432,312,104,C.pale);
+ const f=node(s,'真实权重生成\n质量与负载测试通过',485,432,312,104,C.pale);
+ const g=node(s,'限定配置下\n已验证可部署',881,432,312,104,C.teal,C.white);
+ conn(s,e,f);conn(s,f,g);
+ txt(s,'任一条件失败：当前方案不通过。缺少证据：标为待验证。修改精度或硬件后重新检查。',62,575,1155,47,24,C.amber,true);
+ cite(s,'逻辑为本项目验收方法；“能下载”“能加载”“能生成”“满足生产负载”分别留证据');
+ notes(s,'条件集合：A权重与配置完整可获取，B架构与所有必需模块被框架正确识别，C每个算子的dtype/量化格式与芯片及运行库兼容且有实现或已验证回退，D每rank运行峰值小于实际可用显存，E并行切分及通信可行，F主机RAM/磁盘/IO足够且预处理后处理完整。静态资格=A∧B∧C∧D∧E∧F。部署验收=静态资格∧真实权重正确输出∧质量回归∧目标负载稳定运行。任何unknown不能按true处理。通过资料条件只能进入PoC，不能直接声称本机已验证。改量化、kernel、上下文、batch、节点数任一项，都需要重新检查受影响条件并重新验收。',['quant','qcode','ag','ad']);
+}
+{
+ const s=header(10,'3.2  条件、证据与失败处理','第三部分  /  判断模型适配方法论','每一项都必须回答“用什么证明通过”，不以模型名称相近代替兼容性');
+ table(s,[['条件','通过证据','不通过时的动作'],['权重与架构','repo + SHA；分片索引齐全\nconfig 架构对应框架实现','补齐文件；选择支持该架构的版本'],['精度与 kernel','逐模块 dtype / quant 格式匹配\n目标 SM / NPU 实现或回退可运行','换后端或转换权重；重新验证数值'],['逐卡内存','权重 + 缓存 + 工作区峰值\n每个 rank 均低于可用显存','缩减负载 / 改量化 / 增卡后重算'],['并行与通信','TP / EP / 分层合法；映射明确\n设备拓扑、跨机通信测试通过','改分片；补齐互联；拒绝套用 A3 配方'],['主机与输出链','CPU / RAM / 磁盘满足加载与卸载\ntokenizer / VAE / 解码等组件齐全','补资源或组件；生成完整目标输出'],['质量与服务','固定样本回归；目标负载持续测试\n错误率、延迟、质量达成约定','定位并重测；未达标不作为生产交付']],60,205,1160,402,[202,505,453],23);
+ cite(s,'证据固定到实际版本：模型 revision、容器 digest、框架 commit、驱动与 CANN / CUDA 版本');
+ notes(s,'kernel清单至少覆盖attention、GDN/循环状态、MoE路由及GEMM、量化解码、归一化、通信、MTP/视觉/VAE等实际启用模块。量化名相同不代表pack格式、group size、scale dtype、对称性、激活精度或KV精度相同。先核对checkpoint quantization_config和框架后端，再查每种算子的设备实现。合法TP不仅看卡数，要检查头数、专家数、维度整除、复制模块及框架约束。支持多GPU不等于支持任意跨节点拓扑。CPU卸载须计主机内存和PCIe传输，并在目标延迟下测试。',['quant','qcode','flag','ltxcode']);
+}
+{
+ const s=header(11,'3.3  显存与精度的计算边界','第三部分  /  判断模型适配方法论','模型适配使用逐卡运行峰值；总显存和平均分配只能做第一轮筛选');
+ txt(s,'每个 rank 的峰值 = 权重 + KV / 状态 + 激活 / 工作区 + 通信 / 图缓存 + 余量',62,210,1154,73,28,C.navy,true);
+ table(s,[['计算环节','具体做法'],['权重','读取实际张量 dtype 与量化配置；按实际分片归属求和\n加入未量化模块、scale / zero-point、复制的 embedding'],['缓存与运行开销','按上下文、并发、图像尺寸或视频帧数估算，再实测峰值\nGDN / MLA 等按实现计算，不直接套通用 KV 公式'],['精度匹配','“INT4 权重 + FP16 激活”与“FP4 + FP8”是不同路径\n硬件、框架、打包格式、kernel 必须同时匹配']],60,317,1160,231,[257,903],23);
+ txt(s,'示例：DeepSeek-V4-Pro 理想全 4bit ≈ 800GB ＜ 双机 1,024GB\n但官方 W4A8 仍要求至少 4 A2，因此不能由这个不等式推出双机可部署。',62,565,1151,60,25,C.amber,true);
+ cite(s,'参数量 × bit / 8 仅为权重粗估，采用十进制 GB。来源：DeepSeek 官方模型卡及 Ascend 专用部署教程');
+ notes(s,'对每rank分别累计W_r+K_r+A_r+C_r+headroom，并与设备实测可用容量比较；特别关注rank0复制组件或视觉编码器集中导致的不均衡。常规GQA KV字节=2×层数×KV头数×head_dim×缓存字节×总缓存token，实际按分片和复制规则修正；该公式不直接适用于GDN、MLA、CSA。MoE激活49B是计算口径，不是只需驻留49B。压低上下文减少KV，但不解决权重布局或缺少kernel。FP16缩小指数范围可能溢出，BF16训练模型转FP16必须质量回归。',['ds','ad','quant']);
+}
+{
+ const s=header(12,'3.4  Hugging Face 到完整输出','第三部分  /  判断模型适配方法论','每一步产生可保存的交付物；成功加载后仍需验证真实输出');
+ await img(s,'hf_qwen.png',60,207,559,314);
+ txt(s,'官方模型页：模型身份与文件入口',62,532,557,37,22,C.muted);
+ const rows=[['01','锁定与下载','保存 repo / SHA；完整 snapshot 与索引'],['02','静态审核','精度、kernel、内存、拓扑条件逐项过关'],['03','固定环境并启动','镜像 digest、依赖锁、设备映射与命令'],['04','真实样本生成','文本 / 检测框 / 可播放视频；检查有限值'],['05','回归与负载验收','质量基线、逐卡峰值、延迟及稳定性']];
+ rows.forEach((a,i)=>{let y=202+i*81;txt(s,a[0],662,y,54,34,28,C.teal,true);txt(s,a[1],727,y,485,33,26,C.ink,true);txt(s,a[2],727,y+36,488,38,22,C.muted);});
+ cite(s,'截图：Qwen3.8-27B 官方 Hugging Face 仓库。下载与执行示例、证据模板见配套大纲');
+ notes(s,'先解析模型main当前commit SHA，再snapshot_download指定revision SHA，归档config、索引、tokenizer、generation config、chat template及全部必要组件。记录下载文件清单/大小和校验信息，避免只下一个分片。若量化转换，记录源SHA、校准集、转换工具版本和产物配置。硬件冒烟测试与目标模型验证分开：设备正常并不证明目标架构正常。LLM输入512–1024、输出128、batch1起测，后按业务负载提升；YOLO从640 batch1；视频按官方支持的分辨率/帧数与低内存选项起测。首个Token不是最终交付，生成完整可解释结果并测质量后才进入持续负载。',['hf','q27','yolo','cog']);
+}
+{
+ const s=header(13,'3.5  三个实例的推导结果','第三部分  /  判断模型适配方法论','同一套逻辑可以得到通过、待验证或不通过，而非统一给出“能跑”');
+ table(s,[['判断条件','YOLO26s / T4','Qwen3.8-27B / 8 T4','V4-Pro W4A8 / 2 A2'],['权重 / 框架','官方权重与 TensorRT 路径','官方权重与 Transformers 实现','有 Ascend 专用量化路径'],['精度 / kernel','官方 T4 TensorRT10 测试','FP16 / eager / GDN 回退\n完整数值与 SM75 待测','W4A8 不等于原生 FP4\n按官方 Ascend 算子配套'],['容量 / 拓扑','单卡官方路径有依据\n目标输入 / batch 复验','约 56GB 权重有容量空间\n逐卡分层与峰值待实测','未满足参考至少 4 A2\n理想 800GB 不是运行峰值'],['推导结论','官方同硬件可部署路径\n交付机器仍需验收','允许 PoC\n不能标“已确认可部署”','当前配方不通过\n增至参考硬件或另找证明']],60,208,1160,368,[209,305,327,319],23);
+ txt(s,'完整证明 = 固定配置的证据清单 + 可复现启动 + 正确输出 + 目标负载达标。',62,590,1154,37,26,C.teal,true);
+ cite(s,'来源：Ultralytics YOLO26；Transformers qwen3_5；vLLM-Ascend DeepSeek-V4-Pro。未进行本项目实机测试');
+ notes(s,'用例不是新增模型推荐，而是展示同一判定链的不同结果。YOLO同硬件官方证据覆盖基本执行，生产服务质量和本机配置仍需验收。Qwen27的总容量算术和代码回退只是部分证据，缺失项必须保留待验证状态。DeepSeek双机未达到已公布配方的硬件要求，拒绝用纯权重下界宣称可用；如供应商提供更小配置实现，需要重新核对实际权重、精度、算子、上下文、并发和质量。',['yolo','q27','qcode','ad']);
+}
+{
+ const s=header(14,'3.6  最终验收与资料依据','第三部分  /  判断模型适配方法论','交付结论应写成“某版本模型，在某配置和负载下通过”，保留复现实验');
+ table(s,[['任务','必须交付的结果','性能 / 质量指标'],['文本生成','真实请求与完整回答；输入 / 输出 Token 计数','TTFT、TPOT、吞吐、错误率、质量回归'],['目标检测','检测框 / 类别 / 置信度；固定评估集结果','端到端延迟、FPS、mAP / 召回率'],['视频生成','可播放文件；帧数 / 尺寸 / FPS 与随机种子','秒 / 视频、峰值显存、黑帧与画质检查']],60,207,1160,203,[193,498,469],23);
+ txt(s,'共同证据包',63,432,1147,38,28,C.navy,true);
+ txt(s,'硬件与拓扑清单 · 权重 SHA · 环境版本 · 启动脚本 · 原始日志 · 每卡峰值\n固定负载测试与重启恢复；持续测试建议至少 1 小时，阈值由业务确认',63,482,1150,76,25);
+ const links=[['昇腾配方',refs.ad],['Flash-Next 适配',refs.flag],['YOLO / T4',refs.yolo],['视频模型',refs.ltx],['完整来源见大纲',refs.hf]];
+ links.forEach((a,i)=>{const t=txt(s,a[0],63+i*235,584,225,32,22,C.blue);t.text.get(a[0]).link={uri:a[1],isExternal:true};});
+ cite(s,'公开资料核验日期：2026-09-14。所有来源按页置于演讲者备注；本报告不包含租赁机实际 benchmark');
+ notes(s,'最终证据包同时记录硬件设备ID/显存、CPU RAM磁盘、PCIe/NUMA/RDMA拓扑、驱动固件与运行库、镜像digest、框架commit、模型SHA、量化来源、启动参数、代表性输入输出、质量评估、每rank峰值与持续负载。建议至少1小时持续测试不等于覆盖长期可靠性。业务必须给出质量、延迟和并发阈值，未给定前仅报告实测不判定生产达标。完整参考见配套大纲，网页latest与main实施时重新核验锁定。',[...Object.keys(refs).filter(k=>!['dsconfig','aq','base','baseconfig','recipe'].includes(k))]);
+}
+await fs.mkdir(B+'/revision-render',{recursive:true});
+await (await PresentationFile.exportPptx(p)).save(B+'/revision-candidate.pptx');
+for(let i=0;i<p.slides.items.length;i++){
+ const im=await p.export({slide:p.slides.items[i],format:'png',scale:1.5});
+ await fs.writeFile(B+'/revision-render/'+String(i+1).padStart(2,'0')+'.png',new Uint8Array(await im.arrayBuffer()));
+ console.log('Rendered '+(i+1));
+}
+await fs.writeFile(B+'/revision-notes.json',JSON.stringify(refs,null,2));
