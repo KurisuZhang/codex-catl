@@ -1,0 +1,56 @@
+{"kind":"deck","id":"pr/rflcmq","name":"Deck"}
+{"kind":"layout","layoutId":"a2890787-dcdc-459d-8191-696d14f40680","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"c8ca8f8b-3b45-4a3d-beb2-dfc79c2718bb","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/zc014y","slide":1,"title":"A5  模型部署","textShapes":45}
+{"kind":"textbox","id":"sh/72p8zyxg","slide":1,"text":"A5  模型部署","textPreview":"A5  模型部署","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/83ips3e1","slide":1,"text":"模型部署全流程","textPreview":"模型部署全流程","textChars":7,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/torq18v6","slide":1,"text":"从模型仓库到 MASS 服务：四个阶段推进，验收通过后发布。","textPreview":"从模型仓库到 MASS 服务：四个阶段推进，验收通过后发布。","textChars":30,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/yxg7mtwj","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/jyp8vyx4","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/kzypojep","slide":1,"text":"10 / 18","textPreview":"10 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/l07qxofa","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[60,208,53,45]}
+{"kind":"textbox","id":"sh/it07ydw3","slide":1,"text":"模型准备","textPreview":"模型准备","textChars":4,"textLines":1,"bbox":[116,208,210,45]}
+{"kind":"shape","id":"sh/3u987ido","slide":1,"bbox":[60,263,266,3]}
+{"kind":"textbox","id":"sh/fqtozmpc","slide":1,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[330,214,27,32]}
+{"kind":"textbox","id":"sh/epk76h8r","slide":1,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[358,208,53,45]}
+{"kind":"textbox","id":"sh/1sb61c7i","slide":1,"text":"运行环境","textPreview":"运行环境","textChars":4,"textLines":1,"bbox":[414,208,210,45]}
+{"kind":"shape","id":"sh/gr2p8rqx","slide":1,"bbox":[358,263,266,3]}
+{"kind":"textbox","id":"sh/3uto3mp8","slide":1,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[628,214,27,32]}
+{"kind":"textbox","id":"sh/2tk7aho3","slide":1,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[656,208,53,45]}
+{"kind":"textbox","id":"sh/pwv65w7e","slide":1,"text":"推理服务","textPreview":"推理服务","textChars":4,"textLines":1,"bbox":[712,208,210,45]}
+{"kind":"shape","id":"sh/ovmpcr6t","slide":1,"bbox":[656,263,266,3]}
+{"kind":"textbox","id":"sh/byd876pk","slide":1,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[926,214,27,32]}
+{"kind":"textbox","id":"sh/qx47e1oz","slide":1,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[954,208,53,45]}
+{"kind":"textbox","id":"sh/mtor6587","slide":1,"text":"验收与交付","textPreview":"验收与交付","textChars":5,"textLines":1,"bbox":[1010,208,210,45]}
+{"kind":"shape","id":"sh/nuxsza9s","slide":1,"bbox":[954,263,266,3]}
+{"kind":"textbox","id":"sh/8fq98vqd","slide":1,"text":"确定规格","textPreview":"确定规格","textChars":4,"textLines":1,"bbox":[60,283,266,29]}
+{"kind":"textbox","id":"sh/9gza10ry","slide":1,"text":"仓库 / revision、精度与卡数\n上下文 / 并发、许可与权限","textPreview":"仓库 / revision、精度与卡数 | 上下文 / 并发、许可与权限","textChars":34,"textLines":2,"bbox":[60,316,266,48]}
+{"kind":"textbox","id":"sh/ypor2lsb","slide":1,"text":"下载与校验","textPreview":"下载与校验","textChars":5,"textLines":1,"bbox":[60,369,266,29]}
+{"kind":"textbox","id":"sh/zqxsvq9g","slide":1,"text":"Hugging Face / ModelScope\n权重分片、配置、SHA256","textPreview":"Hugging Face / ModelScope | 权重分片、配置、SHA256","textChars":40,"textLines":2,"bbox":[60,402,266,48]}
+{"kind":"textbox","id":"sh/0r694vq1","slide":1,"text":"准备权重","textPreview":"准备权重","textChars":4,"textLines":1,"bbox":[60,455,266,29]}
+{"kind":"textbox","id":"sh/lsfax0rm","slide":1,"text":"按需量化 / 格式转换\n补齐 tokenizer 与视觉组件","textPreview":"按需量化 / 格式转换 | 补齐 tokenizer 与视觉组件","textChars":30,"textLines":2,"bbox":[60,488,266,48]}
+{"kind":"textbox","id":"sh/il8bep8f","slide":1,"text":"节点与驱动","textPreview":"节点与驱动","textChars":5,"textLines":1,"bbox":[358,283,266,29]}
+{"kind":"textbox","id":"sh/jm1s7u90","slide":1,"text":"OS、IP / 时间、磁盘 / 权限\n驱动与固件、设备健康","textPreview":"OS、IP / 时间、磁盘 / 权限 | 驱动与固件、设备健康","textChars":29,"textLines":2,"bbox":[358,316,266,48]}
+{"kind":"textbox","id":"sh/tg3udob2","slide":1,"text":"模型与镜像分发","textPreview":"模型与镜像分发","textChars":7,"textLines":1,"bbox":[358,369,266,29]}
+{"kind":"textbox","id":"sh/sfud4jah","slide":1,"text":"各节点权重一致、固定路径\n镜像配套、固定 digest","textPreview":"各节点权重一致、固定路径 | 镜像配套、固定 digest","textChars":27,"textLines":2,"bbox":[358,402,266,48]}
+{"kind":"textbox","id":"sh/7elcbetw","slide":1,"text":"容器接入设备","textPreview":"容器接入设备","textChars":6,"textLines":1,"bbox":[358,455,266,29]}
+{"kind":"textbox","id":"sh/6dsv29sb","slide":1,"text":"透传卡与驱动库、挂载目录\n共享内存 / 端口、容器内验卡","textPreview":"透传卡与驱动库、挂载目录 | 共享内存 / 端口、容器内验卡","textChars":28,"textLines":2,"bbox":[358,488,266,48]}
+{"kind":"textbox","id":"sh/5cju94b6","slide":1,"text":"910B 分支","textPreview":"910B 分支","textChars":7,"textLines":1,"bbox":[656,283,266,29]}
+{"kind":"textbox","id":"sh/kbad0zal","slide":1,"text":"Ascend 镜像＋vLLM Ascend\n按 A2 配方配置精度与并行","textPreview":"Ascend 镜像＋vLLM Ascend | 按 A2 配方配置精度与并行","textChars":36,"textLines":2,"bbox":[656,316,266,48]}
+{"kind":"textbox","id":"sh/ja1c7ut0","slide":1,"text":"T4 分支：按适配选引擎","textPreview":"T4 分支：按适配选引擎","textChars":12,"textLines":1,"bbox":[656,369,266,29]}
+{"kind":"textbox","id":"sh/i9svy9sf","slide":1,"text":"vLLM / SGLang（核验支持）\nOllama / llama.cpp（候选）","textPreview":"vLLM / SGLang（核验支持） | Ollama / llama.cpp（候选）","textChars":42,"textLines":2,"bbox":[656,402,266,48]}
+{"kind":"textbox","id":"sh/p8nel8ba","slide":1,"text":"启动与扩展","textPreview":"启动与扩展","textChars":5,"textLines":1,"bbox":[656,455,266,29]}
+{"kind":"textbox","id":"sh/o7edc3ap","slide":1,"text":"先单机低负载；双机先验 RoCE\n再配 rank / TP / DP / EP","textPreview":"先单机低负载；双机先验 RoCE | 再配 rank / TP / DP / EP","textChars":39,"textLines":2,"bbox":[656,488,266,48]}
+{"kind":"textbox","id":"sh/wr2lc3al","slide":1,"text":"接口与质量","textPreview":"接口与质量","textChars":5,"textLines":1,"bbox":[954,283,266,29]}
+{"kind":"textbox","id":"sh/xsb258bq","slide":1,"text":"健康检查、模型列表、推理 API\n固定样本、流式输出、停止条件","textPreview":"健康检查、模型列表、推理 API | 固定样本、流式输出、停止条件","textChars":31,"textLines":2,"bbox":[954,316,266,48]}
+{"kind":"textbox","id":"sh/apk3atsf","slide":1,"text":"负载与稳定性","textPreview":"负载与稳定性","textChars":6,"textLines":1,"bbox":[954,369,266,29]}
+{"kind":"textbox","id":"sh/bqtk3yt0","slide":1,"text":"增加上下文 / 并发，记录显存\nTTFT / TPOT / 吞吐，视觉另测","textPreview":"增加上下文 / 并发，记录显存 | TTFT / TPOT / 吞吐，视觉另测","textChars":37,"textLines":2,"bbox":[954,402,266,48]}
+{"kind":"textbox","id":"sh/kf2lg3ah","slide":1,"text":"MASS 接入与发布","textPreview":"MASS 接入与发布","textChars":10,"textLines":1,"bbox":[954,455,266,29]}
+{"kind":"textbox","id":"sh/lgbm98b2","slide":1,"text":"鉴权 / 路由 / 计量、端到端验证\n进程托管、监控、小流量与回退","textPreview":"鉴权 / 路由 / 计量、端到端验证 | 进程托管、监控、小流量与回退","textChars":33,"textLines":2,"bbox":[954,488,266,48]}
+{"kind":"shape","id":"sh/ydk3edsb","slide":1,"bbox":[60,555,1160,1]}
+{"kind":"textbox","id":"sh/jet47itw","slide":1,"text":"✓  权重完整且可追溯","textPreview":"✓  权重完整且可追溯","textChars":11,"textLines":1,"bbox":[60,568,266,31]}
+{"kind":"textbox","id":"sh/8jmlknad","slide":1,"text":"✓  容器内设备可用","textPreview":"✓  容器内设备可用","textChars":10,"textLines":1,"bbox":[358,568,266,31]}
+{"kind":"textbox","id":"sh/tkvmdsby","slide":1,"text":"✓  服务启动且可调用","textPreview":"✓  服务启动且可调用","textChars":11,"textLines":1,"bbox":[656,568,266,31]}
+{"kind":"textbox","id":"sh/3exo3mdg","slide":1,"text":"✓  效果达标并可恢复","textPreview":"✓  效果达标并可恢复","textChars":11,"textLines":1,"bbox":[954,568,266,31]}
+{"kind":"textbox","id":"sh/2donahcv","slide":1,"text":"文本引擎按模型 / 量化 / 算子支持选型；YOLO / Wan 使用独立管线。详细命令见配套操作清单。","textPreview":"文本引擎按模型 / 量化 / 算子支持选型；YOLO / Wan 使用独立管线。详细命令见配套操作清单。","textChars":52,"textLines":1,"bbox":[62,617,1156,29]}
+{"kind":"notes","id":"nt/zc014y","slide":1,"text":"本页将已确认的12步部署流程整合为四阶段。每阶段三项操作，底部为对应完成标准，勾号表示要求而非已经完成。保留权重下载、量化、分发、环境准备、容器设备透传、推理、扩展、验收、平台接入和故障恢复全部环节。T4与910B是不同的候选执行路径，具体模型以06适配结果为准。单机先验通，双机只在需要时执行，不能将所有模型默认扩至双机。MASS实际字段、镜像digest、模型revision和节点配置尚待现场确认。T4文本引擎候选包含vLLM、SGLang、Ollama和llama.cpp。需要核验具体模型、量化格式、SM75算子、软件版本、显存及性能，不代表每个组合都已支持。GGUF是权重格式，llama.cpp仅为此前示例路径。详细操作和命令见07_模型部署_操作清单.md。\nhttps://docs.ollama.com/gpu\nhttps://docs.sglang.io/docs/get-started/install\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n官方资料：\nhttps://huggingface.co/docs/huggingface_hub/en/guides/cli\nhttps://github.com/modelscope/modelscope/blob/master/docs/source/command.md\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html\nhttps://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md\nhttps://docs.ultralytics.com/models/yolo26/\nhttps://github.com/Wan-Video/Wan2.1"}

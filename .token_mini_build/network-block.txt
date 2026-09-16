@@ -1,0 +1,42 @@
+// 5
+{
+let s=header(5,'网络拓扑','已确认：1 台 RoCE 交换机、16 条 200GE 链路、双端 32 个光模块。');
+const N={biz:'#73A943',mg:'#139CC9',calc:'#77429B',storage:'#317ABD',core:'#DC803E'};
+function wire(a,b,color,from='bottom',to='top',dash=false){return s.shapes.connect(a,b,{kind:'straight',fromSide:from,toSide:to,line:{fill:color,width:1.3,style:dash?'dashed':'solid'}})}
+function port(x,y,w=13,col=N.calc,label=''){return node(s,label,x,y,w,14,col,C.white,9)}
+let ext=node(s,'目标平台 / Internet / 压测入口',451,194,362,32,'#E8F0F9',C.navy,20);
+let fw=node(s,'边界防火墙 / 访问控制（复用或补齐）',451,239,362,32,'#F1F5E8',C.ink,18);
+let core=node(s,'核心 / 业务汇聚交换设备',451,285,362,32,'#FBECDD',C.ink,20);
+wire(ext,fw,N.core);wire(fw,core,N.core);
+let ops=node(s,'运维入口 / 管理区',61,241,273,32,'#E7F5FA',C.ink,20);
+let mg=node(s,'BMC 带外管理接入交换设备',104,351,313,35,'#D9F2FA',C.ink,20);
+let biz=node(s,'业务网接入交换设备',698,351,314,35,'#EDF5E2',C.ink,20);
+wire(ops,mg,N.mg);wire(core,biz,N.biz);
+txt(s,'交换机管理口也接入带外网',63,294,335,27,17,C.muted);
+// Legend uses network roles; only RoCE link speed is confirmed.
+for(const [i,col,v] of [[0,N.biz,'业务网：速率待盘点'],[1,N.mg,'BMC 网：速率待盘点'],[2,N.calc,'RoCE：200GE'],[3,N.storage,'存储网：可选 / 虚线']]){box(s,909,202+i*29,37,3,col,col);txt(s,v,957,192+i*29,276,24,17,C.ink);}
+// Existing CPU rack and the two planned accelerator racks.
+box(s,59,428,302,110,'#F0F4F7');box(s,380,428,404,110,'#F1F7F7');box(s,804,428,417,110,'#F1F7F7');
+txt(s,'既有通算机柜 / 6 台',70,508,280,25,18,C.muted,true,'center');
+txt(s,'A 柜 / 10 kW / 1 台 910B＋3 台 T4',385,509,395,25,17,C.muted,true,'center');
+txt(s,'B 柜 / 10 kW / 1 台 910B＋3 台 T4',810,509,402,25,17,C.muted,true,'center');
+const machines=[
+{x:70,w:82,t:'通算 1',kind:'cpu'},{x:165,w:90,t:'通算 2…5',kind:'cpu'},{x:268,w:82,t:'通算 6',kind:'cpu'},
+{x:392,w:136,t:'910B-A\n8 张 NPU',kind:'npu'},{x:540,w:73,t:'T4-1\n8 卡',kind:'gpu'},{x:619,w:73,t:'T4-2\n8 卡',kind:'gpu'},{x:698,w:73,t:'T4-3\n8 卡',kind:'gpu'},
+{x:816,w:136,t:'910B-B\n8 张 NPU',kind:'npu'},{x:964,w:73,t:'T4-4\n8 卡',kind:'gpu'},{x:1043,w:73,t:'T4-5\n8 卡',kind:'gpu'},{x:1122,w:86,t:'T4-6\n8 卡',kind:'gpu'}];
+const rocePorts=[];const storagePorts=[];
+for(const m of machines){
+const bp=port(m.x+12,431,14,N.mg);const dp=port(m.x+30,431,14,N.biz);
+wire(mg,bp,N.mg);wire(biz,dp,N.biz);
+node(s,m.t,m.x,448,m.w,49,m.kind==='npu'?'#EDE4F5':m.kind==='gpu'?'#EAF1F8':'#E3EBF4',C.ink,m.kind==='cpu'?17:18);
+if(m.kind==='npu'){let ports=[];for(let j=0;j<8;j++)ports.push(port(m.x+4+j*16,497,13,N.calc,String(j+1)));rocePorts.push(ports);}
+if(m.kind==='cpu')storagePorts.push(port(m.x+52,497,14,N.storage));
+}
+// 16 physical links, 16 server-side modules and 16 switch-side modules.
+const sw=node(s,'RoCE 交换机 ×1（拟放 A 柜）',513,593,513,33,'#EDE4F5',C.ink,20);
+for(let group=0;group<2;group++){for(let j=0;j<8;j++){const q=port(540+group*255+j*25,579,18,N.calc,String(group*8+j+1));wire(rocePorts[group][j],q,N.calc);}}
+txt(s,'8×200GE / 柜内',389,544,220,27,18,N.calc,true);txt(s,'8×200GE / 跨柜',978,544,242,27,18,N.calc,true);
+let stor=node(s,'可选存储交换设备 / 共享存储',61,586,343,39,'#E7EFF9',C.ink,19);for(const q of storagePorts)wire(q,stor,N.storage,'bottom','top',true);
+txt(s,'加速节点按需接入存储网',64,548,305,26,17,N.storage);
+txt(s,'接入层为逻辑设备组，数量、冗余与速率待盘点。通算承载 MASS 等；机柜混装须核验功率。',62,632,1154,23,17,C.muted);
+notes(s,'按用户参考图的分层拓扑画法改绘，保留本项目规模。层级：平台入口、边界访问控制、核心业务汇聚、带外与业务接入、服务器端口、RoCE及可选存储。图中防火墙、核心/业务/管理交换设备是复用或补齐的逻辑职责，不代表已确认新增采购数量，实际可合并或按冗余需求拆分。运维管理区独立接入BMC网，不将BMC暴露在业务入口。每个代表服务器上方青色/绿色小口分别为BMC/业务；中间通算2…5代表四台同配置接入关系，总通算6台。T4全部六台逐台展示，每台8卡。两台910B各8条200GE实际光链路连接同一RoCE交换机，交换机侧端口1–16编号仅作接线示意，待实际端口映射确认。16条链路需要双端32个模块。交换机拟放A柜，B柜8条跨柜；没有额外Spine交换机，不具备交换机级冗余。紫线只连910B，不将T4接入HCCL通信组。业务/BMC速率未知，不照搬参考图的1G/25G/400G。可选存储图中绘制通算侧示意，910B/T4按需要另接存储交换机。光纤、模块、距离、FEC/MTU、IP、PFC/ECN及HCCL按设备兼容方案验证。图为拟议方案，未声称已完成连通与带宽测试。参考图仅用于布局风格，不照搬其设备或规格。',['roce','optics']);}

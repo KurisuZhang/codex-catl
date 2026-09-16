@@ -1,0 +1,117 @@
+{
+  "source": "/Users/lin/Desktop/catl/output/token_mini/token魔方Mini实验台_项目报告_网络拓扑细化版.pptx",
+  "order": [
+    {
+      "file": "01_封面.pptx",
+      "originalPages": [
+        1
+      ],
+      "pageCount": 1,
+      "status": "待审阅"
+    },
+    {
+      "file": "02_目录_v2.pptx",
+      "originalPages": [
+        2
+      ],
+      "pageCount": 1,
+      "status": "已同步所有子PPT，待审阅",
+      "revision": "与当前九个内容主题逐项对应，并标注页码范围"
+    },
+    {
+      "file": "03_硬件设备_v3.pptx",
+      "originalPages": [
+        3,
+        4
+      ],
+      "pageCount": 2,
+      "status": "已按反馈修订，待审阅",
+      "revision": "仅优化机柜图，保留配置清单"
+    },
+    {
+      "file": "04_网络拓扑_v5.pptx",
+      "originalPages": [
+        5
+      ],
+      "pageCount": 1,
+      "status": "已按反馈修订，待审阅",
+      "revision": "移除核心/业务汇聚层，防火墙直连业务接入"
+    },
+    {
+      "file": "05_软件架构_v4.pptx",
+      "originalPages": [
+        6,
+        7
+      ],
+      "pageCount": 2,
+      "status": "第一页视觉修订，待审阅",
+      "revision": "以双软件栈及运维侧栏替代表格，加入官方Logo",
+      "references": "05_软件架构_参考文档.md"
+    },
+    {
+      "file": "06_模型适配_v3.pptx",
+      "originalPages": [
+        8,
+        9
+      ],
+      "pageCount": 2,
+      "status": "已按指定模型重做，待审阅",
+      "revision": "第一页详细适配方法论，第二页910B和T4模型总表；双机边界改为待验证",
+      "references": "06_模型适配_分析与参考资料.md"
+    },
+    {
+      "file": "07_模型部署_v4.pptx",
+      "originalPages": [
+        10
+      ],
+      "pageCount": 1,
+      "status": "单页四阶段流程，待审阅",
+      "revision": "T4按适配选择vLLM/SGLang/Ollama/llama.cpp，保留单页布局",
+      "references": "07_模型部署_操作清单.md"
+    },
+    {
+      "file": "08_性能测试_v2.pptx",
+      "originalPages": [
+        11,
+        12
+      ],
+      "pageCount": 2,
+      "status": "已按要求恢复上一版，待审阅",
+      "revision": "开源工具、并发阶梯、缓存专项、TTFT/TPOT及三类token/min口径",
+      "references": "08_性能测试_执行与指标口径.md"
+    },
+    {
+      "file": "09_Token收益分析_v6.pptx",
+      "originalPages": [
+        13,
+        14
+      ],
+      "pageCount": 2,
+      "status": "已调整Logo排版，待审阅",
+      "revision": "Logo与DeepSeek副标题组合对齐，调整品牌区留白",
+      "references": "09_Token收益分析_价格与算例说明.md"
+    },
+    {
+      "file": "10_商业协议.pptx",
+      "originalPages": [
+        15,
+        16
+      ],
+      "pageCount": 2,
+      "status": "待审阅"
+    },
+    {
+      "file": "11_公司流程.pptx",
+      "originalPages": [
+        17,
+        18
+      ],
+      "pageCount": 2,
+      "status": "待审阅"
+    }
+  ],
+  "workflow": "以子PPT为后续修改源，只修改受影响主题；待用户要求合并时按order顺序合并并统一页码。",
+  "mergeChecks": [
+    "机柜命名以网络拓扑v2为准：通算A、算力B/C；最终合并前同步硬件章节对应字母。"
+  ]
+}

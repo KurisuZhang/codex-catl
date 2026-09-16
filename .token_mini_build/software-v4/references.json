@@ -1,0 +1,50 @@
+[
+  [
+    "NVIDIA GPU Operator",
+    "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/"
+  ],
+  [
+    "NVIDIA Container Toolkit",
+    "https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html"
+  ],
+  [
+    "MindCluster 组件",
+    "https://www.hiascend.com/document/detail/en/mindcluster/2600/clustersched/schedulingug/docs/en/scheduling/introduction/01_component_description.md"
+  ],
+  [
+    "torch_npu 版本配套",
+    "https://github.com/Ascend/pytorch/blob/master/COMPATIBILITY.en.md"
+  ],
+  [
+    "vLLM GPU 安装",
+    "https://docs.vllm.ai/en/latest/getting_started/installation/gpu/"
+  ],
+  [
+    "vLLM 量化矩阵",
+    "https://docs.vllm.ai/en/latest/features/quantization/"
+  ],
+  [
+    "vLLM Ascend 安装",
+    "https://docs.vllm.ai/projects/ascend/en/latest/getting_started/installation.html"
+  ],
+  [
+    "vLLM Ascend 模型矩阵",
+    "https://docs.vllm.ai/projects/ascend/en/latest/user_guide/support_matrix/supported_models.html"
+  ],
+  [
+    "SGLang 安装与硬件入口",
+    "https://docs.sglang.io/docs/get-started/install"
+  ],
+  [
+    "SGLang Ascend 模型表",
+    "https://github.com/sgl-project/sglang/blob/main/docs_new/docs/hardware-platforms/ascend-npus/reference/support_models.mdx"
+  ],
+  [
+    "SGLang Ascend 安装与依赖",
+    "https://docs.sglang.io/docs/hardware-platforms/ascend-npus/getting-started/installation"
+  ],
+  [
+    "MindIE 配套要求",
+    "https://www.hiascend.com/document/detail/zh/mindie/1.0.RC1/envdeployment/instg/mindie_instg_0015.html"
+  ]
+]

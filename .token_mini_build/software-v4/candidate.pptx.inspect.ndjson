@@ -1,0 +1,111 @@
+{"kind":"deck","id":"pr/q7ldu7","name":"Deck"}
+{"kind":"layout","layoutId":"ea03fa1f-624e-4c35-9653-b725cb56c68c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"a80ca539-cbcf-4eab-b06f-f9f889153237","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/0ginmf","slide":1,"title":"A3  软件架构","textShapes":44}
+{"kind":"textbox","id":"sh/lsz2h0j6","slide":1,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/yp8jm50f","slide":1,"text":"T4 与 910B 的完整软件生态对照","textPreview":"T4 与 910B 的完整软件生态对照","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/zqhkfa10","slide":1,"text":"分析：同一模型名称背后，是两套驱动、运行库、设备管理和算子实现。","textPreview":"分析：同一模型名称背后，是两套驱动、运行库、设备管理和算子实现。","textChars":32,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/8vqlsfih","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/9gj2lkj2","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/mt83q50r","slide":1,"text":"06 / 18","textPreview":"06 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/oz61gvid","slide":1,"text":"T4 软件生态","textPreview":"T4 软件生态","textChars":7,"textLines":1,"bbox":[223,199,367,36]}
+{"kind":"textbox","id":"sh/pkf29gjy","slide":1,"text":"模型执行路径","textPreview":"模型执行路径","textChars":6,"textLines":1,"bbox":[62,246,350,25]}
+{"kind":"textbox","id":"sh/lwbu90bi","slide":1,"text":"部署与运维支撑","textPreview":"部署与运维支撑","textChars":7,"textLines":1,"bbox":[432,246,188,25]}
+{"kind":"shape","id":"sh/kv2dgvud","slide":1,"bbox":[62,278,350,60]}
+{"kind":"shape","id":"sh/jutc7qts","slide":1,"bbox":[62,278,4,60]}
+{"kind":"textbox","id":"sh/ytkvelc7","slide":1,"text":"推理与服务","textPreview":"推理与服务","textChars":5,"textLines":1,"bbox":[75,281,325,19]}
+{"kind":"textbox","id":"sh/t0ved0bu","slide":1,"text":"文本：vLLM；SGLang 需核验 T4\nYOLO：TensorRT；Wan：独立管线","textPreview":"文本：vLLM；SGLang 需核验 T4 | YOLO：TensorRT；Wan：独立管线","textChars":44,"textLines":2,"bbox":[75,298,325,40]}
+{"kind":"shape","id":"sh/8z2dkfu9","slide":1,"bbox":[234,338,2,2]}
+{"kind":"shape","id":"sh/7ytwbato","slide":1,"bbox":[62,340,350,60]}
+{"kind":"shape","id":"sh/6xkvi5c3","slide":1,"bbox":[62,340,4,60]}
+{"kind":"textbox","id":"sh/hovehkbq","slide":1,"text":"算子与量化","textPreview":"算子与量化","textChars":5,"textLines":1,"bbox":[75,343,325,19]}
+{"kind":"textbox","id":"sh/g3mdofu5","slide":1,"text":"CUDA / Triton kernel\nAWQ、GPTQ 等按 SM75 核验","textPreview":"CUDA / Triton kernel | AWQ、GPTQ 等按 SM75 核验","textChars":40,"textLines":2,"bbox":[75,360,325,40]}
+{"kind":"shape","id":"sh/0jep0n6t","slide":1,"bbox":[234,400,2,2]}
+{"kind":"shape","id":"sh/1kn69sne","slide":1,"bbox":[62,402,350,60]}
+{"kind":"shape","id":"sh/ehc7ydon","slide":1,"bbox":[62,402,4,60]}
+{"kind":"textbox","id":"sh/zi5o7i58","slide":1,"text":"框架适配","textPreview":"框架适配","textChars":4,"textLines":1,"bbox":[75,405,325,19]}
+{"kind":"textbox","id":"sh/o7ep4n6p","slide":1,"text":"PyTorch CUDA 构建\nTransformers / ONNX（按任务）","textPreview":"PyTorch CUDA 构建 | Transformers / ONNX（按任务）","textChars":40,"textLines":2,"bbox":[75,422,325,40]}
+{"kind":"shape","id":"sh/98n6dsna","slide":1,"bbox":[234,462,2,2]}
+{"kind":"shape","id":"sh/mlw72xoz","slide":1,"bbox":[62,464,350,60]}
+{"kind":"shape","id":"sh/n65ob254","slide":1,"bbox":[62,464,4,60]}
+{"kind":"textbox","id":"sh/4bu5s36l","slide":1,"text":"计算与通信","textPreview":"计算与通信","textChars":5,"textLines":1,"bbox":[75,467,325,19]}
+{"kind":"textbox","id":"sh/pc3618n6","slide":1,"text":"CUDA Runtime / Toolkit\ncuBLAS、cuDNN、NCCL","textPreview":"CUDA Runtime / Toolkit | cuBLAS、cuDNN、NCCL","textChars":40,"textLines":2,"bbox":[75,484,325,40]}
+{"kind":"shape","id":"sh/769s76po","slide":1,"bbox":[234,524,2,2]}
+{"kind":"shape","id":"sh/650ry183","slide":1,"bbox":[62,526,350,60]}
+{"kind":"shape","id":"sh/t8ba9g7u","slide":1,"bbox":[62,526,4,60]}
+{"kind":"textbox","id":"sh/87i90bq9","slide":1,"text":"宿主机","textPreview":"宿主机","textChars":3,"textLines":1,"bbox":[75,529,325,19]}
+{"kind":"textbox","id":"sh/j2983mpc","slide":1,"text":"Linux / 内核、NVIDIA Driver\nnvidia-smi / NVML","textPreview":"Linux / 内核、NVIDIA Driver | nvidia-smi / NVML","textChars":42,"textLines":2,"bbox":[75,546,325,40]}
+{"kind":"textbox","id":"sh/y10ru187","slide":1,"text":"容器接入","textPreview":"容器接入","textChars":4,"textLines":1,"bbox":[432,279,184,26]}
+{"kind":"textbox","id":"sh/l4ra5w7i","slide":1,"text":"containerd / Docker\nNVIDIA Container\nToolkit","textPreview":"containerd / Docker | NVIDIA Container | Toolkit","textChars":44,"textLines":3,"bbox":[432,305,183,72]}
+{"kind":"shape","id":"sh/k3i9wrqx","slide":1,"bbox":[432,377,183,1]}
+{"kind":"textbox","id":"sh/bep8zmpg","slide":1,"text":"K8s 资源","textPreview":"K8s 资源","textChars":6,"textLines":1,"bbox":[432,383,184,26]}
+{"kind":"textbox","id":"sh/adgrqh8v","slide":1,"text":"NVIDIA Device Plugin\nGFD / GPU Operator\n（统一管理）","textPreview":"NVIDIA Device Plugin | GFD / GPU Operator | （统一管理）","textChars":46,"textLines":3,"bbox":[432,409,183,72]}
+{"kind":"shape","id":"sh/ql0vup4f","slide":1,"bbox":[432,481,183,1]}
+{"kind":"textbox","id":"sh/bm9c3ul0","slide":1,"text":"监控与运维","textPreview":"监控与运维","textChars":5,"textLines":1,"bbox":[432,487,184,26]}
+{"kind":"textbox","id":"sh/cn2dwfml","slide":1,"text":"DCGM Exporter\nPrometheus / Nsight\n（性能定位）","textPreview":"DCGM Exporter | Prometheus / Nsight | （性能定位）","textChars":40,"textLines":3,"bbox":[432,513,183,72]}
+{"kind":"shape","id":"sh/dobe5k36","slide":1,"bbox":[432,585,183,1]}
+{"kind":"textbox","id":"sh/3i9czal4","slide":1,"text":"910B 软件生态","textPreview":"910B 软件生态","textChars":9,"textLines":1,"bbox":[813,199,367,36]}
+{"kind":"textbox","id":"sh/ojidsfmp","slide":1,"text":"模型执行路径","textPreview":"模型执行路径","textChars":6,"textLines":1,"bbox":[652,246,350,25]}
+{"kind":"textbox","id":"sh/pkru1k3u","slide":1,"text":"部署与运维支撑","textPreview":"部署与运维支撑","textChars":7,"textLines":1,"bbox":[1022,246,188,25]}
+{"kind":"shape","id":"sh/edgvm547","slide":1,"bbox":[652,278,350,60]}
+{"kind":"shape","id":"sh/fepcvals","slide":1,"bbox":[652,278,4,60]}
+{"kind":"textbox","id":"sh/x8fy18na","slide":1,"text":"推理与服务","textPreview":"推理与服务","textChars":5,"textLines":1,"bbox":[665,281,325,19]}
+{"kind":"textbox","id":"sh/w76x836p","slide":1,"text":"vLLM＋vLLM Ascend\nSGLang Ascend 后端 / MindIE","textPreview":"vLLM＋vLLM Ascend | SGLang Ascend 后端 / MindIE","textChars":42,"textLines":2,"bbox":[665,298,325,40]}
+{"kind":"shape","id":"sh/v6xgzy5k","slide":1,"bbox":[824,338,2,2]}
+{"kind":"shape","id":"sh/a54f6toz","slide":1,"bbox":[652,340,350,60]}
+{"kind":"shape","id":"sh/94vyxone","slide":1,"bbox":[652,340,4,60]}
+{"kind":"textbox","id":"sh/83mx4j6t","slide":1,"text":"算子与量化","textPreview":"算子与量化","textChars":5,"textLines":1,"bbox":[665,343,325,19]}
+{"kind":"textbox","id":"sh/nidgve58","slide":1,"text":"Ascend C / Triton-Ascend / ATB\nSGL Kernel NPU；量化按引擎核验","textPreview":"Ascend C / Triton-Ascend / ATB | SGL Kernel NPU；量化按引擎核验","textChars":53,"textLines":2,"bbox":[665,360,325,40]}
+{"kind":"shape","id":"sh/mh4f2ton","slide":1,"bbox":[824,400,2,2]}
+{"kind":"shape","id":"sh/lgvyton2","slide":1,"bbox":[652,402,350,60]}
+{"kind":"shape","id":"sh/0fmx0j6x","slide":1,"bbox":[652,402,4,60]}
+{"kind":"textbox","id":"sh/cj6xgjed","slide":1,"text":"框架适配","textPreview":"框架适配","textChars":4,"textLines":1,"bbox":[665,405,325,19]}
+{"kind":"textbox","id":"sh/dkzy9ovy","slide":1,"text":"PyTorch＋torch_npu\nMindSpore（另一条框架路径）","textPreview":"PyTorch＋torch_npu | MindSpore（另一条框架路径）","textChars":36,"textLines":2,"bbox":[665,422,325,40]}
+{"kind":"shape","id":"sh/qxofe9wn","slide":1,"bbox":[824,462,2,2]}
+{"kind":"shape","id":"sh/rixg7ed8","slide":1,"bbox":[652,464,350,60]}
+{"kind":"shape","id":"sh/4v6xczeh","slide":1,"bbox":[652,464,4,60]}
+{"kind":"textbox","id":"sh/pwfy54v2","slide":1,"text":"计算与通信","textPreview":"计算与通信","textChars":5,"textLines":1,"bbox":[665,467,325,19]}
+{"kind":"textbox","id":"sh/2tofa9wb","slide":1,"text":"CANN / AscendCL、算子包\nHCCL、ATB（按引擎）","textPreview":"CANN / AscendCL、算子包 | HCCL、ATB（按引擎）","textChars":33,"textLines":2,"bbox":[665,484,325,40]}
+{"kind":"shape","id":"sh/3uxg3edw","slide":1,"bbox":[824,524,2,2]}
+{"kind":"shape","id":"sh/oraho3el","slide":1,"bbox":[652,526,350,60]}
+{"kind":"shape","id":"sh/9sjyh8v6","slide":1,"bbox":[652,526,4,60]}
+{"kind":"textbox","id":"sh/jy5s361k","slide":1,"text":"宿主机","textPreview":"宿主机","textChars":3,"textLines":1,"bbox":[665,529,325,19]}
+{"kind":"textbox","id":"sh/ixwru1kz","slide":1,"text":"Linux / 内核、NPU Driver＋固件\nnpu-smi / DCMI","textPreview":"Linux / 内核、NPU Driver＋固件 | npu-smi / DCMI","textChars":39,"textLines":2,"bbox":[665,546,325,40]}
+{"kind":"textbox","id":"sh/5kna5wjq","slide":1,"text":"容器接入","textPreview":"容器接入","textChars":4,"textLines":1,"bbox":[1022,279,184,26]}
+{"kind":"textbox","id":"sh/kje9wr25","slide":1,"text":"containerd / Docker*\nAscend Docker Runtime\n设备挂载","textPreview":"containerd / Docker* | Ascend Docker Runtime | 设备挂载","textChars":47,"textLines":3,"bbox":[1022,305,183,72]}
+{"kind":"shape","id":"sh/7m5s761w","slide":1,"bbox":[1022,377,183,1]}
+{"kind":"textbox","id":"sh/6lwby1kb","slide":1,"text":"K8s 资源","textPreview":"K8s 资源","textChars":6,"textLines":1,"bbox":[1022,383,184,26]}
+{"kind":"textbox","id":"sh/to7a9gjm","slide":1,"text":"Ascend Device Plugin\nVolcano / Ascend\nOperator（按需）","textPreview":"Ascend Device Plugin | Volcano / Ascend | Operator（按需）","textChars":50,"textLines":3,"bbox":[1022,409,183,72]}
+{"kind":"shape","id":"sh/snet0b2h","slide":1,"bbox":[1022,481,183,1]}
+{"kind":"textbox","id":"sh/nqlsvm1c","slide":1,"text":"监控与运维","textPreview":"监控与运维","textChars":5,"textLines":1,"bbox":[1022,487,184,26]}
+{"kind":"textbox","id":"sh/mpcrmhkr","slide":1,"text":"NPU Exporter / Prometheus\nNodeD / ClusterD / msprof\n（按需）","textPreview":"NPU Exporter / Prometheus | NodeD / ClusterD / msprof | （按需）","textChars":56,"textLines":3,"bbox":[1022,513,183,72]}
+{"kind":"shape","id":"sh/q5ora1kv","slide":1,"bbox":[1022,585,183,1]}
+{"kind":"shape","id":"sh/b6x8jmlg","slide":1,"bbox":[62,601,1148,1]}
+{"kind":"textbox","id":"sh/c7q9cr2l","slide":1,"text":"驱动与运行库：设备可用     框架、算子与引擎：模型能跑     部署组件与版本须配套核验","textPreview":"驱动与运行库：设备可用     框架、算子与引擎：模型能跑     部署组件与版本须配套核验","textChars":46,"textLines":1,"bbox":[62,610,1156,31]}
+{"kind":"image","id":"im/y1wfu187","slide":1,"name":"","alt":"NVIDIA 官方 Logo","bbox":[62,196,142,43]}
+{"kind":"image","id":"im/lkfu1ofa","slide":1,"name":"","alt":"华为官方 Logo","bbox":[652,196,142,43]}
+{"kind":"notes","id":"nt/0ginmf","slide":1,"text":"Logo取自NVIDIA官方品牌页及华为官网，仅标识两家技术生态。左侧主栈自底向上展示依赖，侧栏表示部署管理支撑，组件不要求全部安装。原部署影响：OS/CPU/驱动与镜像匹配；运行库ABI、算子与多卡通信；容器访问设备但不转换CUDA；K8s分配设备但不补模型算子；监控用于健康和性能；框架负责模型算子映射；kernel核验硬件/精度/形状；引擎的模型与特性支持取交集。容器、K8s和监控是部署管理面，框架、算子、运行库是模型执行面。各列列出组件范围及替代路径，不要求全部安装。GPU Operator可管理驱动、Container Toolkit、Device Plugin、GFD、DCGM等，不应与另一个驱动生命周期管理方式重复管理。K8s提供调度，不是推理必须条件，首轮可先单容器验通再纳管。NVIDIA宿主机需可用驱动，CUDA用户态库可位于镜像，运行预编译镜像不必把完整CUDA Toolkit一概装在宿主机。Toolkit用于开发编译，不能与Container Toolkit混淆。Ascend容器接入需按运行时、MindCluster和驱动版本选择部署方式，安装工具名称不能证明任意containerd版本兼容。MindCluster中的NodeD、ClusterD、Volcano与Operator按需要配置，非本项目全部必装。NVIDIA T4不假定具备新GPU的所有精度与kernel能力，不照抄MIG方案。跨机NCCL/HCCL还受网卡、RDMA驱动及网络配置影响，双910B沿已定RoCE方案单独验通信。CANN包含运行和开发能力，ATB按引擎需求装。SGLang Ascend依赖包括匹配的Triton-Ascend及SGL Kernel NPU。PD分离还需核验MemFabric等KV传输组件，MoE场景按版本考虑DeepEP兼容实现，这些属于特性依赖，不是所有模型的必装项。MindIE为另一推理路径，不是vLLM的必装前置。SGLang列为候选生态，并未宣称当前默认镜像支持本台T4。YOLO和Wan保持任务专用推理路径，不能因vLLM支持文本就认为其支持任意视觉模型。\n\n官方参考文档（查询2026-09-16，动态页面不是本项目冻结版本）：\n[1] NVIDIA GPU Operator\nhttps://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/\n[2] NVIDIA Container Toolkit\nhttps://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html\n[3] MindCluster 组件\nhttps://www.hiascend.com/document/detail/en/mindcluster/2600/clustersched/schedulingug/docs/en/scheduling/introduction/01_component_description.md\n[4] torch_npu 版本配套\nhttps://github.com/Ascend/pytorch/blob/master/COMPATIBILITY.en.md\n[5] vLLM GPU 安装\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n[7] vLLM Ascend 安装\nhttps://docs.vllm.ai/projects/ascend/en/latest/getting_started/installation.html\n[9] SGLang 安装与硬件入口\nhttps://docs.sglang.io/docs/get-started/install\n[11] SGLang Ascend 安装与依赖\nhttps://docs.sglang.io/docs/hardware-platforms/ascend-npus/getting-started/installation\n[12] MindIE 配套要求\nhttps://www.hiascend.com/document/detail/zh/mindie/1.0.RC1/envdeployment/instg/mindie_instg_0015.html"}
+{"kind":"slide","id":"sl/rcf2zc","slide":2,"title":"A3  软件架构","textShapes":16}
+{"kind":"textbox","id":"sh/y587qtkz","slide":2,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/l8j6183q","slide":2,"text":"软件支持如何转化为模型可部署","textPreview":"软件支持如何转化为模型可部署","textChars":14,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/k7aps325","slide":2,"text":"方法论：对“模型＋权重格式＋硬件＋引擎版本＋服务规格”验证，而非只查模型名称。","textPreview":"方法论：对“模型＋权重格式＋硬件＋引擎版本＋服务规格”验证，而非只查模型名称。","textChars":39,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/7a1o3ilg","slide":2,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/m9s7udkb","slide":2,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/9cj6583m","slide":2,"text":"07 / 18","textPreview":"07 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/8bapw321","slide":2,"text":"01  定义任务","textPreview":"01  定义任务","textChars":8,"textLines":1,"bbox":[62,202,275,36]}
+{"kind":"shape","id":"sh/velo7ils","slide":2,"bbox":[62,242,265,2]}
+{"kind":"textbox","id":"sh/uds7ydk7","slide":2,"text":"固定模型 revision、精度 / 量化\n上下文、并发、TP / PP、接口","textPreview":"固定模型 revision、精度 / 量化 | 上下文、并发、TP / PP、接口","textChars":39,"textLines":2,"bbox":[62,253,275,65]}
+{"kind":"textbox","id":"sh/w3ahw76d","slide":2,"text":"02  查支持交集","textPreview":"02  查支持交集","textChars":9,"textLines":1,"bbox":[356,202,275,36]}
+{"kind":"shape","id":"sh/x4ji5c7y","slide":2,"bbox":[356,242,265,2]}
+{"kind":"textbox","id":"sh/a1szuh8n","slide":2,"text":"核对硬件、模型与特性矩阵\n反查算子、框架及运行库版本","textPreview":"核对硬件、模型与特性矩阵 | 反查算子、框架及运行库版本","textChars":26,"textLines":2,"bbox":[356,253,275,65]}
+{"kind":"textbox","id":"sh/b2103mps","slide":2,"text":"03  冻结软件组合","textPreview":"03  冻结软件组合","textChars":10,"textLines":1,"bbox":[650,202,275,36]}
+{"kind":"shape","id":"sh/kru10r6p","slide":2,"bbox":[650,242,265,2]}
+{"kind":"textbox","id":"sh/ls3i9w7a","slide":2,"text":"驱动 / 固件、镜像 digest\n框架、引擎 / 插件、权重 hash","textPreview":"驱动 / 固件、镜像 digest | 框架、引擎 / 插件、权重 hash","textChars":36,"textLines":2,"bbox":[650,253,275,65]}
+{"kind":"textbox","id":"sh/ypcjyhoj","slide":2,"text":"04  实机验收","textPreview":"04  实机验收","textChars":8,"textLines":1,"bbox":[944,202,275,36]}
+{"kind":"shape","id":"sh/jql07mp4","slide":2,"bbox":[944,242,265,2]}
+{"kind":"textbox","id":"sh/8vu14r6l","slide":2,"text":"单卡 / 单容器起测，再多卡 / K8s\n质量、显存、TTFT / TPOT、稳定性","textPreview":"单卡 / 单容器起测，再多卡 / K8s | 质量、显存、TTFT / TPOT、稳定性","textChars":42,"textLines":2,"bbox":[944,253,275,65]}
+{"kind":"textbox","id":"sh/hcjihwza","slide":2,"text":"结论：同一个模型，两套软件环境；能加载、答得对、速度达标，才算部署通过。","textPreview":"结论：同一个模型，两套软件环境；能加载、答得对、速度达标，才算部署通过。","textChars":36,"textLines":1,"bbox":[62,563,1156,48]}
+{"kind":"textbox","id":"sh/gbahoryp","slide":2,"text":"官方依据：[1] GPU Operator  [3] MindCluster  [4] torch_npu 配套  [5–6] vLLM 硬件 / 量化","textPreview":"官方依据：[1] GPU Operator  [3] MindCluster  [4] torch_npu 配套  [5–6] vLLM 硬件 / 量化","textChars":76,"textLines":1,"bbox":[62,612,1156,21]}
+{"kind":"textbox","id":"sh/fah0fmh4","slide":2,"text":"[7–8] vLLM Ascend 安装 / 模型矩阵  [9–10] SGLang 安装 / Ascend 模型表   完整链接见备注与参考文档","textPreview":"[7–8] vLLM Ascend 安装 / 模型矩阵  [9–10] SGLang 安装 / Ascend 模型表   完整链接见备注与参考文档","textChars":73,"textLines":1,"bbox":[62,636,1156,20]}
+{"kind":"table","id":"tb/ml836xwr","slide":2,"name":"","rows":4,"cols":3,"preview":"例子：部署 Qwen3-8B | T4 上怎么做 | 910B 上怎么做","bbox":[60,337,1160,215]}
+{"kind":"notes","id":"nt/rcf2zc","slide":2,"text":"示例Qwen/Qwen3-8B用于解释软件依赖，不声称已经部署成功。8B参数×2字节约16GB是粗略十进制权重估算，不是实际模型文件精确大小；T4单卡16GB还需KV缓存及工作区，所以FP16可能超出容量。量化需有兼容权重格式和kernel，不能只改参数名称。910B具体显存仍待核验。方法论是本项目的归纳：可部署集合为模型结构、硬件、精度/量化实现、推理特性和依赖版本的交集，还要满足容量和服务目标。先固定模型revision与权重格式，再选择候选引擎release并反查其依赖，避免把每层latest任意拼接。启动后先测确定性小样本与质量，再观察逐卡权重、KV Cache和工作区峰值；多卡验证并行与通信；最后纳入K8s后复验资源分配、健康检查、失败恢复与同规格性能。T4的SM75满足vLLM基础门槛，不代表任何attention后端、量化或模型特性均可用。当前量化矩阵对Turing的支持随版本变化，不能长期沿用旧版Marlin结论。SGLang有NVIDIA和Ascend入口，但本次资料不能建立当前SGLang/T4完整可运行组合，故保留核验，不标成已支持或绝对不支持。910B按A2路径选择匹配算子和镜像；vLLM Ascend矩阵有Qwen、DeepSeek、GLM家族条目，必须核验具体结构、精度、TP/PP、PD、缓存等特性。SGLang Ascend与MindIE各有自己的版本和模型矩阵，不能相互外推。示例均为筛选判断，未做实机部署或基准测试。YOLO/Wan需以任务仓库、许可和所选后端验收；不新增对具体版本的兼容承诺。最终产物为按设备族和任务区分的镜像清单、模型支持表、测试记录及回退版本。\n\n官方参考文档（查询2026-09-16，动态页面不是本项目冻结版本）：\n[4] torch_npu 版本配套\nhttps://github.com/Ascend/pytorch/blob/master/COMPATIBILITY.en.md\n[5] vLLM GPU 安装\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n[6] vLLM 量化矩阵\nhttps://docs.vllm.ai/en/latest/features/quantization/\n[7] vLLM Ascend 安装\nhttps://docs.vllm.ai/projects/ascend/en/latest/getting_started/installation.html\n[8] vLLM Ascend 模型矩阵\nhttps://docs.vllm.ai/projects/ascend/en/latest/user_guide/support_matrix/supported_models.html\n[9] SGLang 安装与硬件入口\nhttps://docs.sglang.io/docs/get-started/install\n[10] SGLang Ascend 模型表\nhttps://github.com/sgl-project/sglang/blob/main/docs_new/docs/hardware-platforms/ascend-npus/reference/support_models.mdx\n[11] SGLang Ascend 安装与依赖\nhttps://docs.sglang.io/docs/hardware-platforms/ascend-npus/getting-started/installation\n[12] MindIE 配套要求\nhttps://www.hiascend.com/document/detail/zh/mindie/1.0.RC1/envdeployment/instg/mindie_instg_0015.html"}

@@ -1,0 +1,44 @@
+{"kind":"deck","id":"pr/sn6chm","name":"Deck"}
+{"kind":"layout","layoutId":"de12e10c-233a-409e-aac2-59e5e962ece3","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"96bc52ec-cec3-432c-aeb0-4ec152032e01","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/2j5fp8","slide":1,"title":"B2  Token 收益分析","textShapes":17}
+{"kind":"textbox","id":"sh/3q9cfah0","slide":1,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/4rid8fil","slide":1,"text":"月收入测算：三类 Token 分开计价，再求和","textPreview":"月收入测算：三类 Token 分开计价，再求和","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/psruhkz6","slide":1,"text":"统一使用同一负载下整套服务的吞吐（token/min），单价取数值，单位为元 / 百万 Token。","textPreview":"统一使用同一负载下整套服务的吞吐（token/min），单价取数值，单位为元 / 百万 Token。","textChars":50,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/qt0va5gr","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/ru9cjahc","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/cvidcfyx","slide":1,"text":"13 / 18","textPreview":"13 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"shape","id":"sh/dwrulkz2","slide":1,"bbox":[60,199,1160,91]}
+{"kind":"textbox","id":"sh/yxkvepgn","slide":1,"text":"输出月收入＝","textPreview":"输出月收入＝","textChars":6,"textLines":1,"bbox":[78,204,1124,27]}
+{"kind":"textbox","id":"sh/zytwnuh8","slide":1,"text":"［整套服务输出吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textPreview":"［整套服务输出吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textChars":35,"textLines":1,"bbox":[78,232,1124,26]}
+{"kind":"textbox","id":"sh/ju1or6p4","slide":1,"text":"  × 可计费产出比例 × 输出单价］÷ 1,000,000","textPreview":"× 可计费产出比例 × 输出单价］÷ 1,000,000","textChars":30,"textLines":1,"bbox":[78,259,1124,26]}
+{"kind":"shape","id":"sh/ytsni1oj","slide":1,"bbox":[60,302,1160,91]}
+{"kind":"textbox","id":"sh/lwj6tg7a","slide":1,"text":"未命中输入月收入＝","textPreview":"未命中输入月收入＝","textChars":9,"textLines":1,"bbox":[78,307,1124,27]}
+{"kind":"textbox","id":"sh/kva5kb6p","slide":1,"text":"［整套服务未命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textPreview":"［整套服务未命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textChars":38,"textLines":1,"bbox":[78,335,1124,26]}
+{"kind":"textbox","id":"sh/b6h4n6p8","slide":1,"text":"  × 可计费产出比例 × 未命中输入单价］÷ 1,000,000","textPreview":"× 可计费产出比例 × 未命中输入单价］÷ 1,000,000","textChars":33,"textLines":1,"bbox":[78,362,1124,26]}
+{"kind":"shape","id":"sh/a58nu1on","slide":1,"bbox":[60,405,1160,91]}
+{"kind":"textbox","id":"sh/xsjmpw7y","slide":1,"text":"缓存命中输入月收入＝","textPreview":"缓存命中输入月收入＝","textChars":10,"textLines":1,"bbox":[78,410,1124,27]}
+{"kind":"textbox","id":"sh/wrq5gr6t","slide":1,"text":"［整套服务缓存命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textPreview":"［整套服务缓存命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textChars":39,"textLines":1,"bbox":[78,438,1124,26]}
+{"kind":"textbox","id":"sh/v2lozqpc","slide":1,"text":"  × 可计费产出比例 × 缓存命中输入单价］÷ 1,000,000","textPreview":"× 可计费产出比例 × 缓存命中输入单价］÷ 1,000,000","textChars":34,"textLines":1,"bbox":[78,465,1124,26]}
+{"kind":"textbox","id":"sh/u1cnqlor","slide":1,"text":"吞吐用 token/min；单价取数值（元 / 百万 Token）。整套服务吞吐已包含卡数，不再乘卡数。","textPreview":"吞吐用 token/min；单价取数值（元 / 百万 Token）。整套服务吞吐已包含卡数，不再乘卡数。","textChars":52,"textLines":1,"bbox":[62,515,1156,29]}
+{"kind":"textbox","id":"sh/qhwryp8z","slide":1,"text":"可计费产出比例：实际月度可计费用量，占按该压测速度持续运行30天的理论用量比例。","textPreview":"可计费产出比例：实际月度可计费用量，占按该压测速度持续运行30天的理论用量比例。","textChars":40,"textLines":1,"bbox":[62,549,1156,28]}
+{"kind":"shape","id":"sh/ri58ru9k","slide":1,"bbox":[60,588,1160,52]}
+{"kind":"textbox","id":"sh/sjy90zq5","slide":1,"text":"文本月收入＝输出月收入＋未命中输入月收入＋缓存命中输入月收入","textPreview":"文本月收入＝输出月收入＋未命中输入月收入＋缓存命中输入月收入","textChars":30,"textLines":1,"bbox":[75,598,1130,32]}
+{"kind":"notes","id":"nt/2j5fp8","slide":1,"text":"本页为量纲一致的收入估算，不是实测收入。定义每类整套服务吞吐为成功请求口径token/min，30天为43200分钟，每百万token价格除1000000。各类可计费产出比例分别估计，代表实际月可计费量除该类压测速率乘43200的参考量；不是简单设备利用率，应包含需求、在线时长和可结算范围中尚未体现的差异，避免重复扣减已有损失。混部时三类速率必须来自同一负载，且不能把每类独立峰值当作同时可交付。缓存命中输入是逻辑复用量，按缓存结算价，不是完整prefill计算量。使用整套服务吞吐不乘卡数，只有卡均吞吐才在其他口径下需要乘卡数。同一币种税口径结算。本版删除未经本轮核验的外部价格表，改为合同价格输入。算例60000×43200×0.5×2/1000000=2592元。"}
+{"kind":"slide","id":"sl/n09znq","slide":2,"title":"B2  Token 收益分析","textShapes":10}
+{"kind":"textbox","id":"sh/utkjy1k3","slide":2,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/hwb2tgju","slide":2,"text":"DeepSeek-V4.1-Flash：官方价格与文本收入算例","textPreview":"DeepSeek-V4.1-Flash：官方价格与文本收入算例","textChars":31,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/wv210b29","slide":2,"text":"人民币 / 百万 Token，查询日期 2026-09-16。API 模型名：deepseek-flash。","textPreview":"人民币 / 百万 Token，查询日期 2026-09-16。API 模型名：deepseek-flash。","textChars":54,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/jytkvq10","slide":2,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/ixkj2lkf","slide":2,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/5kv2xgjq","slide":2,"text":"14 / 18","textPreview":"14 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/6l436lkb","slide":2,"text":"高峰：北京时间周一至周五 9:00–12:00、14:00–18:00；其余为空闲时段。","textPreview":"高峰：北京时间周一至周五 9:00–12:00、14:00–18:00；其余为空闲时段。","textChars":44,"textLines":1,"bbox":[62,310,1156,27]}
+{"kind":"textbox","id":"sh/4nml8fyt","slide":2,"text":"假设同一负载：输入600,000 token/min，90%命中；输出60,000 token/min，产出比例50%。","textPreview":"假设同一负载：输入600,000 token/min，90%命中；输出60,000 token/min，产出比例50%。","textChars":60,"textLines":1,"bbox":[62,350,1156,31]}
+{"kind":"shape","id":"sh/2l436pgn","slide":2,"bbox":[60,552,1160,49]}
+{"kind":"textbox","id":"sh/3md4fuh8","slide":2,"text":"文本月收入估值＝1,296.00＋233.28＋5,184.00＝6,713.28元","textPreview":"文本月收入估值＝1,296.00＋233.28＋5,184.00＝6,713.28元","textChars":42,"textLines":1,"bbox":[75,560,1130,33]}
+{"kind":"textbox","id":"sh/crmlczy5","slide":2,"text":"吞吐与产出比例均为假设，非设备实测。此处统一按空闲价估值；实际跨时段须按各时段用量分别计价。","textPreview":"吞吐与产出比例均为假设，非设备实测。此处统一按空闲价估值；实际跨时段须按各时段用量分别计价。","textChars":46,"textLines":1,"bbox":[62,610,1156,25]}
+{"kind":"textbox","id":"sh/dsfml4za","slide":2,"text":"公开 API 零售价仅作参照，不等于平台采购价或已实现收入。官方价格链接见备注与配套说明。","textPreview":"公开 API 零售价仅作参照，不等于平台采购价或已实现收入。官方价格链接见备注与配套说明。","textChars":45,"textLines":1,"bbox":[62,638,1156,19]}
+{"kind":"table","id":"tb/qhwju54z","slide":2,"name":"","rows":3,"cols":4,"preview":"官方公开 API 单价 | 输入未命中 | 输入缓存命中 | 输出","bbox":[60,200,1160,103]}
+{"kind":"table","id":"tb/2l0z69k7","slide":2,"name":"","rows":4,"cols":3,"preview":"按空闲时段单价估值 | 月收入计算（元） | 结果","bbox":[60,394,1160,141]}
+{"kind":"image","id":"im/lsvu9s3y","slide":2,"name":"","alt":"DeepSeek 官方标识","bbox":[1144,28,70,70]}
+{"kind":"notes","id":"nt/n09znq","slide":2,"text":"本主题仅计算文本收入，不纳入YOLO或视频收入。官方中文价格页截至2026-09-16列DeepSeek-V4.1-Flash（deepseek-flash）：每百万token空闲输入未命中1元、命中0.02元、输出4元，高峰分别2、0.04、8元。高峰北京时间周一至周五9-12和14-18，其余空闲。来源https://api-docs.deepseek.com/zh-cn/quick_start/pricing/?article_id=article_1779470751466_8 。Logo来自官方GitHub账号https://github.com/deepseek-ai.png 。示例是以空闲价为统一基准的产能估值，不能将全天实际服务全部按空闲价视为真实结算。真实结算将高峰和空闲的实际可计费量分别乘相应价格后求和，合同采购价另按约定。全部吞吐是同一假设负载，输入600000分为未命中60000和命中540000；输出60000与输入不同类别，不从输入中扣除。乘50%只一次，全部吞吐为集群值不乘卡数。月理论分钟用30×24×60，三类金额1296、233.28、5184，总6713.28。尚未证明此模型能在项目两台910B按该负载部署，数值不代表容量或性能承诺。"}

@@ -1,0 +1,40 @@
+{"kind":"deck","id":"pr/1if3po","name":"Deck"}
+{"kind":"layout","layoutId":"f5689b17-1f99-4852-97da-e29d517233b6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"e1bf513b-4c50-481b-a945-918ce70c55e2","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ilgcni","slide":1,"title":"目录","textShapes":34}
+{"kind":"textbox","id":"sh/8fe5sbeh","slide":1,"text":"目录","textPreview":"目录","textChars":2,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/7el4j6dw","slide":1,"text":"技术验证与商业验证","textPreview":"技术验证与商业验证","textChars":9,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/6dcnq1wb","slide":1,"text":"从设备与软件适配，到部署、压测、文本收入与结算回款。","textPreview":"从设备与软件适配，到部署、压测、文本收入与结算回款。","textChars":26,"textLines":1,"bbox":[62,148,1156,38]}
+{"kind":"textbox","id":"sh/hkn6pgvy","slide":1,"text":"A  技术验证","textPreview":"A  技术验证","textChars":7,"textLines":1,"bbox":[60,205,550,44]}
+{"kind":"textbox","id":"sh/gje5wbud","slide":1,"text":"B  商业验证","textPreview":"B  商业验证","textChars":7,"textLines":1,"bbox":[675,205,545,44]}
+{"kind":"textbox","id":"sh/vi54nqds","slide":1,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,267,460,29]}
+{"kind":"textbox","id":"sh/uhwnulw7","slide":1,"text":"03–04","textPreview":"03–04","textChars":5,"textLines":1,"bbox":[530,267,80,29]}
+{"kind":"textbox","id":"sh/xo3mdwvu","slide":1,"text":"机柜布局、服务器配置与上架配套","textPreview":"机柜布局、服务器配置与上架配套","textChars":15,"textLines":1,"bbox":[60,300,550,26]}
+{"kind":"textbox","id":"sh/wnu5kre9","slide":1,"text":"A2  网络拓扑","textPreview":"A2  网络拓扑","textChars":8,"textLines":1,"bbox":[60,340,460,29]}
+{"kind":"textbox","id":"sh/a90je1gr","slide":1,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[530,340,80,29]}
+{"kind":"textbox","id":"sh/ba9kn6xc","slide":1,"text":"业务、带外管理、RoCE 与存储连接","textPreview":"业务、带外管理、RoCE 与存储连接","textChars":18,"textLines":1,"bbox":[60,373,550,26]}
+{"kind":"textbox","id":"sh/wbi1gbyx","slide":1,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,413,460,29]}
+{"kind":"textbox","id":"sh/xcb2pgfi","slide":1,"text":"06–07","textPreview":"06–07","textChars":5,"textLines":1,"bbox":[530,413,80,29]}
+{"kind":"textbox","id":"sh/ydkjilw3","slide":1,"text":"T4 / 910B 软件生态与模型部署支持","textPreview":"T4 / 910B 软件生态与模型部署支持","textChars":21,"textLines":1,"bbox":[60,446,550,26]}
+{"kind":"textbox","id":"sh/jetkrqxo","slide":1,"text":"A4  模型适配","textPreview":"A4  模型适配","textChars":8,"textLines":1,"bbox":[60,486,460,29]}
+{"kind":"textbox","id":"sh/kf21kvet","slide":1,"text":"08–09","textPreview":"08–09","textChars":5,"textLines":1,"bbox":[530,486,80,29]}
+{"kind":"textbox","id":"sh/lgb2t0fe","slide":1,"text":"适配方法论与现有设备候选模型清单","textPreview":"适配方法论与现有设备候选模型清单","textChars":16,"textLines":1,"bbox":[60,519,550,26]}
+{"kind":"textbox","id":"sh/6hkjmlwz","slide":1,"text":"A5  模型部署","textPreview":"A5  模型部署","textChars":8,"textLines":1,"bbox":[60,559,460,29]}
+{"kind":"textbox","id":"sh/7itkvqxk","slide":1,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[530,559,80,29]}
+{"kind":"textbox","id":"sh/3md03qds","slide":1,"text":"模型下载、环境准备、部署与验收","textPreview":"模型下载、环境准备、部署与验收","textChars":15,"textLines":1,"bbox":[60,592,550,26]}
+{"kind":"textbox","id":"sh/il4ja5c7","slide":1,"text":"B1  性能测试","textPreview":"B1  性能测试","textChars":8,"textLines":1,"bbox":[675,267,455,29]}
+{"kind":"textbox","id":"sh/58vi50vi","slide":1,"text":"11–12","textPreview":"11–12","textChars":5,"textLines":1,"bbox":[1140,267,80,29]}
+{"kind":"textbox","id":"sh/47m1cvud","slide":1,"text":"压测方法、最大并发与关键指标记录","textPreview":"压测方法、最大并发与关键指标记录","textChars":16,"textLines":1,"bbox":[675,300,545,26]}
+{"kind":"textbox","id":"sh/vit0zqdg","slide":1,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[675,340,455,29]}
+{"kind":"textbox","id":"sh/uhkj6lcv","slide":1,"text":"13–14","textPreview":"13–14","textChars":5,"textLines":1,"bbox":[1140,340,80,29]}
+{"kind":"textbox","id":"sh/hkvi10vm","slide":1,"text":"文本收入公式与 DeepSeek 价格算例","textPreview":"文本收入公式与 DeepSeek 价格算例","textChars":21,"textLines":1,"bbox":[675,373,545,26]}
+{"kind":"textbox","id":"sh/gjm18vu1","slide":1,"text":"B3  商业协议","textPreview":"B3  商业协议","textChars":8,"textLines":1,"bbox":[675,413,455,29]}
+{"kind":"textbox","id":"sh/7et0v6dk","slide":1,"text":"15–16","textPreview":"15–16","textChars":5,"textLines":1,"bbox":[1140,413,80,29]}
+{"kind":"textbox","id":"sh/6dkj2lcz","slide":1,"text":"计量结算、服务承诺与责任边界","textPreview":"计量结算、服务承诺与责任边界","textChars":14,"textLines":1,"bbox":[675,446,545,26]}
+{"kind":"textbox","id":"sh/wjixc7ax","slide":1,"text":"B4  公司流程","textPreview":"B4  公司流程","textChars":8,"textLines":1,"bbox":[675,486,455,29]}
+{"kind":"textbox","id":"sh/xkry5cbi","slide":1,"text":"17–18","textPreview":"17–18","textChars":5,"textLines":1,"bbox":[1140,486,80,29]}
+{"kind":"textbox","id":"sh/ahgfahsr","slide":1,"text":"角色协作、凭证交接与闭环验收","textPreview":"角色协作、凭证交接与闭环验收","textChars":14,"textLines":1,"bbox":[675,519,545,26]}
+{"kind":"shape","id":"sh/bipg32tc","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/knixgrat","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/lory9wbe","slide":1,"text":"02 / 18","textPreview":"02 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"notes","id":"nt/ilgcni","slide":1,"text":"目录与当前11份子PPT的顺序一致。封面及目录占第1、2页，九个内容主题占第3至18页。模型适配与模型部署分别列示。收益分析限定文本收入。页码按照当前合并顺序计算。"}

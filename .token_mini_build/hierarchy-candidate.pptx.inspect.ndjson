@@ -1,0 +1,274 @@
+{"kind":"deck","id":"pr/gya1r1","name":"Deck"}
+{"kind":"layout","layoutId":"866f6443-b8a8-4bd8-840d-7b86d340ddfc","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"f3d3f111-9357-40a4-ba96-a2fad8a1fdaa","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/tgwt69","slide":1,"title":"token 魔方","textShapes":4}
+{"kind":"textbox","id":"sh/r6d0jax4","slide":1,"text":"token 魔方\nMini实验台","textPreview":"token 魔方 | Mini实验台","textChars":16,"textLines":2,"bbox":[70,142,1120,200]}
+{"kind":"textbox","id":"sh/s7m1cfyp","slide":1,"text":"Token 生产与平台销售闭环验证","textPreview":"Token 生产与平台销售闭环验证","textChars":17,"textLines":1,"bbox":[74,385,1110,60]}
+{"kind":"shape","id":"sh/d8vil0fa","slide":1,"bbox":[74,520,1128,1]}
+{"kind":"textbox","id":"sh/e94je5gv","slide":1,"text":"prepare:张帅","textPreview":"prepare:张帅","textChars":10,"textLines":1,"bbox":[74,568,800,40]}
+{"kind":"textbox","id":"sh/fad0naxg","slide":1,"text":"2026年9月16日","textPreview":"2026年9月16日","textChars":10,"textLines":1,"bbox":[74,621,900,32]}
+{"kind":"notes","id":"nt/tgwt69","slide":1,"text":"内部立项与跨部门评审。依据已确认的执行文档v1.5制作，保留11个主题，合计18页。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/q2n87l","slide":2,"title":"目录","textShapes":10}
+{"kind":"textbox","id":"sh/4zmdw7il","slide":2,"text":"目录","textPreview":"目录","textChars":2,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/jydcn210","slide":2,"text":"技术验证与商业验证的范围及评审目标","textPreview":"技术验证与商业验证的范围及评审目标","textChars":17,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/ix4vux0f","slide":2,"text":"首轮用一个文本服务贯通生产、计量与平台对账，再验证真实结算回款。","textPreview":"首轮用一个文本服务贯通生产、计量与平台对账，再验证真实结算回款。","textChars":32,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/t4vetcj2","slide":2,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/s3md07ih","slide":2,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/r2dcrm1w","slide":2,"text":"02 / 18","textPreview":"02 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/614vyh0r","slide":2,"text":"A  技术验证","textPreview":"A  技术验证","textChars":7,"textLines":1,"bbox":[64,214,540,48]}
+{"kind":"textbox","id":"sh/1sfexwje","slide":2,"text":"B  商业验证","textPreview":"B  商业验证","textChars":7,"textLines":1,"bbox":[668,214,550,48]}
+{"kind":"textbox","id":"sh/g76d4rit","slide":2,"text":"硬件设备与功率边界\n网络拓扑与跨柜 RoCE\n软件架构与 MASS 接入\n模型适配与部署验收","textPreview":"硬件设备与功率边界 | 网络拓扑与跨柜 RoCE | 软件架构与 MASS 接入 | 模型适配与部署验收","textChars":46,"textLines":4,"bbox":[65,288,530,208]}
+{"kind":"textbox","id":"sh/et87alkf","slide":2,"text":"性能测算与可售产能\nToken 收益与盈亏边界\n商业协议与结算证据\n公司流程与回款验收","textPreview":"性能测算与可售产能 | Token 收益与盈亏边界 | 商业协议与结算证据 | 公司流程与回款验收","textChars":43,"textLines":4,"bbox":[669,288,542,208]}
+{"kind":"shape","id":"sh/fuh83ql0","slide":2,"bbox":[62,533,1155,1]}
+{"kind":"textbox","id":"sh/0vqpcv2l","slide":2,"text":"本次评审形成：首轮服务范围、必补资源资料、平台试供给通过条件。","textPreview":"本次评审形成：首轮服务范围、必补资源资料、平台试供给通过条件。","textChars":31,"textLines":1,"bbox":[63,555,1155,62]}
+{"kind":"notes","id":"nt/q2n87l","slide":2,"text":"优先建议Qwen3-8B作为910B文本联调候选，具体平台采购规格尚未确认。YOLO和Wan独立PoC，不阻塞首个文本计量案例。技术验证完成不代表商业闭环完成。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/drrw5s","slide":3,"title":"A1  硬件设备","textShapes":16}
+{"kind":"textbox","id":"sh/tg321g7e","slide":3,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/6ds3q183","slide":3,"text":"双机柜资源配置：910B 分柜，T4 均衡布置","textPreview":"双机柜资源配置：910B 分柜，T4 均衡布置","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/7elkz6p8","slide":3,"text":"已确认 14 台服务器：16 张 910B NPU、48 张 T4 GPU及 6 台通算服务器。","textPreview":"已确认 14 台服务器：16 张 910B NPU、48 张 T4 GPU及 6 台通算服务器。","textChars":48,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/kbalorqx","slide":3,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/5cj2xwri","slide":3,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/i9s3mh8r","slide":3,"text":"03 / 18","textPreview":"03 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"shape","id":"sh/ja1kvm9c","slide":3,"bbox":[64,211,236,363]}
+{"kind":"textbox","id":"sh/w7alkrql","slide":3,"text":"机柜 A  /  10 kW","textPreview":"机柜 A  /  10 kW","textChars":14,"textLines":1,"bbox":[74,220,216,40]}
+{"kind":"textbox","id":"sh/x8j2twr6","slide":3,"text":"910B 服务器 ×1\n8 张 NPU","textPreview":"910B 服务器 ×1 | 8 张 NPU","textChars":19,"textLines":2,"bbox":[80,277,204,81]}
+{"kind":"textbox","id":"sh/5crilkzi","slide":3,"text":"T4 ×1  /  8 张 GPU","textPreview":"T4 ×1  /  8 张 GPU","textChars":17,"textLines":1,"bbox":[80,372,204,40]}
+{"kind":"textbox","id":"sh/4bi1sfix","slide":3,"text":"T4 ×1  /  8 张 GPU","textPreview":"T4 ×1  /  8 张 GPU","textChars":17,"textLines":1,"bbox":[80,421,204,40]}
+{"kind":"textbox","id":"sh/jap0jahc","slide":3,"text":"T4 ×1  /  8 张 GPU","textPreview":"T4 ×1  /  8 张 GPU","textChars":17,"textLines":1,"bbox":[80,470,204,40]}
+{"kind":"shape","id":"sh/i9gjq50r","slide":3,"bbox":[324,211,236,363]}
+{"kind":"textbox","id":"sh/h87ih0z6","slide":3,"text":"机柜 B  /  10 kW","textPreview":"机柜 B  /  10 kW","textChars":14,"textLines":1,"bbox":[334,220,216,40]}
+{"kind":"textbox","id":"sh/w7y1ovil","slide":3,"text":"910B 服务器 ×1\n8 张 NPU","textPreview":"910B 服务器 ×1 | 8 张 NPU","textChars":19,"textLines":2,"bbox":[340,277,204,81]}
+{"kind":"textbox","id":"sh/v6p0fqh0","slide":3,"text":"T4 ×1  /  8 张 GPU","textPreview":"T4 ×1  /  8 张 GPU","textChars":17,"textLines":1,"bbox":[340,372,204,40]}
+{"kind":"textbox","id":"sh/u5gjml0f","slide":3,"text":"T4 ×1  /  8 张 GPU","textPreview":"T4 ×1  /  8 张 GPU","textChars":17,"textLines":1,"bbox":[340,421,204,40]}
+{"kind":"textbox","id":"sh/947id0za","slide":3,"text":"T4 ×1  /  8 张 GPU","textPreview":"T4 ×1  /  8 张 GPU","textChars":17,"textLines":1,"bbox":[340,470,204,40]}
+{"kind":"textbox","id":"sh/0ni10vql","slide":3,"text":"每柜 1 台 910B＋3 台八卡 T4 为拟议装载，须通过整机功率和安装核验。","textPreview":"每柜 1 台 910B＋3 台八卡 T4 为拟议装载，须通过整机功率和安装核验。","textChars":40,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/nypkzu5k","slide":3,"name":"","rows":5,"cols":2,"preview":"设备 | 数量与核心配置","bbox":[605,211,614,363]}
+{"kind":"notes","id":"nt/drrw5s","slide":3,"text":"机柜图为资源布置示意，不代表U位尺寸。通算服务器仅列配置类别，不画进两新柜。910B整机单台超过5kW为用户输入，因此两台不可装入同一10kW机柜。卡数计算2×8=16，6×8=48。T4多卡显存不是天然连续显存。RoCE交换机拟放A柜，图上不占服务器槽，功率另计。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\nt4: https://www.nvidia.cn/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet.pdf"}
+{"kind":"slide","id":"sl/7jh4ut","slide":4,"title":"A1  硬件设备","textShapes":7}
+{"kind":"textbox","id":"sh/mhonu5or","slide":4,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/9kfmpkni","slide":4,"text":"功率与配套：逐柜整机峰值决定混装容量","textPreview":"功率与配套：逐柜整机峰值决定混装容量","textChars":18,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/oj65wf6x","slide":4,"text":"10 kW 是机柜容量等级。八卡 T4 的 CPU、风扇和电源损耗都要纳入。","textPreview":"10 kW 是机柜容量等级。八卡 T4 的 CPU、风扇和电源损耗都要纳入。","textChars":38,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/b6h4ru58","slide":4,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/a58nypo3","slide":4,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/x8zmt4ne","slide":4,"text":"04 / 18","textPreview":"04 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/w7q50z6t","slide":4,"text":"P910B + 3 × PT4 + P网络 + P预留 ≤ P机柜可用","textPreview":"P910B + 3 × PT4 + P网络 + P预留 ≤ P机柜可用","textChars":35,"textLines":1,"bbox":[65,214,1150,66]}
+{"kind":"textbox","id":"sh/y98n29oz","slide":4,"text":"上架门槛：设备/运维提供两柜功率表和配件差缺清单，超限则调整 T4 分布。","textPreview":"上架门槛：设备/运维提供两柜功率表和配件差缺清单，超限则调整 T4 分布。","textChars":37,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/idwvu5o3","slide":4,"name":"","rows":5,"cols":3,"preview":"配套类别 | 上线前必备项 | 核验重点","bbox":[60,285,1160,304]}
+{"kind":"notes","id":"nt/7jh4ut","slide":4,"text":"P均为相应整机/设备的设计负载峰值，不能用GPU板卡功耗代替整机，不能将冗余PSU铭牌额定值简单相加。P机柜可用由机房在回路、PDU、故障供电及制冷条件下确认，不自动等于标称10kW。A柜网络负载含RoCE交换机，B柜按实际驻留设备计。覆盖14台整机及网络设备管理。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/4m02d4","slide":5,"title":"A2  网络拓扑","textShapes":23}
+{"kind":"textbox","id":"sh/5k3e9cre","slide":5,"text":"A2  网络拓扑","textPreview":"A2  网络拓扑","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/ihcveh83","slide":5,"text":"跨柜 RoCE：两台 910B 共用一台交换机","textPreview":"跨柜 RoCE：两台 910B 共用一台交换机","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/3ilw7298","slide":5,"text":"业务、带外管理与高速计算分网。柜体边界不增加交换跳数。","textPreview":"业务、带外管理与高速计算分网。柜体边界不增加交换跳数。","textChars":27,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/wvadc7qx","slide":5,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/hgje5cri","slide":5,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/utsvax8r","slide":5,"text":"05 / 18","textPreview":"05 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/vu1c329c","slide":5,"text":"目标平台 / 压测入口","textPreview":"目标平台 / 压测入口","textChars":11,"textLines":1,"bbox":[62,207,260,55]}
+{"kind":"textbox","id":"sh/0redorq1","slide":5,"text":"业务交换设备","textPreview":"业务交换设备","textChars":6,"textLines":1,"bbox":[410,207,300,55]}
+{"kind":"shape","id":"sh/1cnehw7m","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/5crql0nm","slide":5,"text":"既有通算资源池 6 台\nMASS 与接入服务","textPreview":"既有通算资源池 6 台 | MASS 与接入服务","textChars":22,"textLines":2,"bbox":[864,207,355,64]}
+{"kind":"shape","id":"sh/4by9cv61","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/3ap8ja5g","slide":5,"bbox":[63,300,543,228]}
+{"kind":"shape","id":"sh/i9g7a5ob","slide":5,"bbox":[653,300,567,228]}
+{"kind":"textbox","id":"sh/h87qh0nq","slide":5,"text":"A 柜","textPreview":"A 柜","textChars":3,"textLines":1,"bbox":[77,308,65,32]}
+{"kind":"textbox","id":"sh/g7yp8v65","slide":5,"text":"B 柜","textPreview":"B 柜","textChars":3,"textLines":1,"bbox":[667,308,65,32]}
+{"kind":"textbox","id":"sh/v6p8fq5k","slide":5,"text":"910B ×1\n8 张 NPU","textPreview":"910B ×1 | 8 张 NPU","textChars":15,"textLines":2,"bbox":[84,359,166,70]}
+{"kind":"textbox","id":"sh/u5g76loz","slide":5,"text":"RoCE 交换机 ×1\n≥16 个 200GE 接口","textPreview":"RoCE 交换机 ×1 | ≥16 个 200GE 接口","textChars":26,"textLines":2,"bbox":[326,360,260,70]}
+{"kind":"textbox","id":"sh/14bqtknu","slide":5,"text":"910B ×1\n8 张 NPU","textPreview":"910B ×1 | 8 张 NPU","textChars":15,"textLines":2,"bbox":[678,360,166,70]}
+{"kind":"shape","id":"sh/03i9kfm9","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/kja1cnyx","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/lkj25szi","slide":5,"text":"8×200GE","textPreview":"8×200GE","textChars":7,"textLines":1,"bbox":[249,329,165,30]}
+{"kind":"textbox","id":"sh/yxsjaxgr","slide":5,"text":"8×200GE 跨柜","textPreview":"8×200GE 跨柜","textChars":10,"textLines":1,"bbox":[580,438,260,30]}
+{"kind":"textbox","id":"sh/zi1k3ihc","slide":5,"text":"T4 ×3，每台 8 卡","textPreview":"T4 ×3，每台 8 卡","textChars":12,"textLines":1,"bbox":[84,473,240,40]}
+{"kind":"textbox","id":"sh/cva18nyl","slide":5,"text":"T4 ×3，每台 8 卡","textPreview":"T4 ×3，每台 8 卡","textChars":12,"textLines":1,"bbox":[941,473,258,40]}
+{"kind":"shape","id":"sh/xwj21sz6","slide":5,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/atsj6dgf","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/bu1kzih0","slide":5,"text":"业务网同时接入全部 T4","textPreview":"业务网同时接入全部 T4","textChars":12,"textLines":1,"bbox":[855,306,345,37]}
+{"kind":"textbox","id":"sh/orq143yp","slide":5,"text":"运维入口 / 管理交换设备","textPreview":"运维入口 / 管理交换设备","textChars":13,"textLines":1,"bbox":[62,550,350,39]}
+{"kind":"textbox","id":"sh/psz2x8za","slide":5,"text":"全部 14 台服务器 BMC＋交换设备管理口","textPreview":"全部 14 台服务器 BMC＋交换设备管理口","textChars":22,"textLines":1,"bbox":[452,550,767,39]}
+{"kind":"shape","id":"sh/rmhk7y1w","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/qlo3etkb","slide":5,"text":"各资源池存储接口","textPreview":"各资源池存储接口","textChars":8,"textLines":1,"bbox":[62,597,350,37]}
+{"kind":"textbox","id":"sh/doz298j2","slide":5,"text":"可选存储网 / 共享存储与备份","textPreview":"可选存储网 / 共享存储与备份","textChars":15,"textLines":1,"bbox":[452,597,767,37]}
+{"kind":"shape","id":"sh/snqlg32h","slide":5,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/fqhkbi18","slide":5,"text":"16 条光链路，双端 32 个模块","textPreview":"16 条光链路，双端 32 个模块","textChars":17,"textLines":1,"bbox":[876,415,330,48]}
+{"kind":"notes","id":"nt/4m02d4","slide":5,"text":"蓝色为业务网，青色为910B高速计算网，灰色为BMC带外管理。业务网覆盖图示910B与通算，T4业务接入以文字说明。可选存储独立网按模型分发需要启用。跨柜共用同一交换机无新增交换跳数。单RoCE交换机无交换机级冗余。验收：接口与模块兼容、实际距离/光纤/波长/FEC/光功率；16端口速率与映射、MTU/IP、按厂家方案配置PFC/ECN；光误码和丢包检查，再做双机HCCL带宽与实际并行任务。不得仅凭ping。T4不自动接入昇腾HCCL通信组。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\nroce: https://e.huawei.com/cn/products/computing/ascend/atlas-800t-a2\noptics: https://e.huawei.com/cn/products/dcn-modules/200g"}
+{"kind":"slide","id":"sl/l647zh","slide":6,"title":"A3  软件架构","textShapes":6}
+{"kind":"textbox","id":"sh/x8vylkj6","slide":6,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/al4fq5kf","slide":6,"text":"生态与部署路径：软件依赖决定模型适配","textPreview":"生态与部署路径：软件依赖决定模型适配","textChars":18,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/bmdgja10","slide":6,"text":"完整版本组合需要匹配驱动、运行时、模型算子和推理引擎。","textPreview":"完整版本组合需要匹配驱动、运行时、模型算子和推理引擎。","textChars":27,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/ojmxof2p","slide":6,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/pkvyh0ja","slide":6,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/2h4fm5kj","slide":6,"text":"06 / 18","textPreview":"06 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/0f2xkv2d","slide":6,"text":"先冻结可运行镜像再扩功能。T4 的 TensorRT 路径不能推导为 TensorRT-LLM 支持。","textPreview":"先冻结可运行镜像再扩功能。T4 的 TensorRT 路径不能推导为 TensorRT-LLM 支持。","textChars":51,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/i9ojmx0f","slide":6,"name":"","rows":5,"cols":3,"preview":"层次 | NVIDIA T4 路径 | 昇腾 910B 路径","bbox":[60,209,1160,366]}
+{"kind":"notes","id":"nt/l647zh","slide":6,"text":"两列为候选替代路径，不要求全部组件同时安装。T4支持FP16及经核验的INT4/INT8路径；BF16/FP8原生能力不能按新卡假定。CUDA专用kernel无法直接搬到Ascend。固定OS/CPU架构、驱动、固件、CUDA或CANN、框架、引擎和镜像digest，按选定release支持矩阵验收。当前文档快照只是研究来源，不宣称latest镜像已在本机验证。vLLM不作为YOLO或Wan统一引擎。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\ngpu: https://docs.vllm.ai/en/latest/getting_started/installation/gpu/\nquant: https://docs.vllm.ai/en/latest/features/quantization/\ntrt: https://nvidia.github.io/TensorRT-LLM/reference/support-matrix.html\ninstall: https://docs.vllm.ai/projects/ascend/en/main/getting_started/installation.html"}
+{"kind":"slide","id":"sl/1waaxa","slide":7,"title":"A3  软件架构","textShapes":15}
+{"kind":"textbox","id":"sh/p436hoze","slide":7,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/21snmt03","slide":7,"text":"MASS 接入与计量：请求到用量的证据链","textPreview":"MASS 接入与计量：请求到用量的证据链","textChars":20,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/32lofyho","slide":7,"text":"6 台既有通算承载逻辑组件，具体能力归属和逐台部署待平台文档确认。","textPreview":"6 台既有通算承载逻辑组件，具体能力归属和逐台部署待平台文档确认。","textChars":33,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/c7u5s3i5","slide":7,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/d836l8zq","slide":7,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/q5cnqt0z","slide":7,"text":"07 / 18","textPreview":"07 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/r6lojyhk","slide":7,"text":"管理配置：模型登记、资源配额、版本发布","textPreview":"管理配置：模型登记、资源配额、版本发布","textChars":19,"textLines":1,"bbox":[63,212,1156,53]}
+{"kind":"textbox","id":"sh/0ve5wni1","slide":7,"text":"平台请求\n租户 / 请求 ID","textPreview":"平台请求 | 租户 / 请求 ID","textChars":15,"textLines":2,"bbox":[63,319,224,82]}
+{"kind":"textbox","id":"sh/1wn6p8zm","slide":7,"text":"接入鉴权\n模型路由 / 限流","textPreview":"接入鉴权 | 模型路由 / 限流","textChars":14,"textLines":2,"bbox":[349,319,263,82]}
+{"kind":"textbox","id":"sh/d8nylsva","slide":7,"text":"910B / T4 推理服务\n模型与版本","textPreview":"910B / T4 推理服务 | 模型与版本","textChars":20,"textLines":2,"bbox":[681,319,295,82]}
+{"kind":"textbox","id":"sh/s7uxsnup","slide":7,"text":"服务结果","textPreview":"服务结果","textChars":4,"textLines":1,"bbox":[1033,319,185,82]}
+{"kind":"shape","id":"sh/r6lgjid4","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/qlcfqdcj","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/1cnypsvm","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/0bexw7u1","slide":7,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/fa5gn2dg","slide":7,"text":"原始用量事件\n输入 / 输出 / 缓存","textPreview":"原始用量事件 | 输入 / 输出 / 缓存","textChars":19,"textLines":2,"bbox":[348,480,264,82]}
+{"kind":"textbox","id":"sh/e9wfuxcv","slide":7,"text":"去重与规则计算\n保留原始记录","textPreview":"去重与规则计算 | 保留原始记录","textChars":14,"textLines":2,"bbox":[681,480,295,82]}
+{"kind":"textbox","id":"sh/hg3yd8v2","slide":7,"text":"账单明细\n对账差异","textPreview":"账单明细 | 对账差异","textChars":9,"textLines":2,"bbox":[1033,480,185,82]}
+{"kind":"shape","id":"sh/gfaxk3uh","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/8zex032d","slide":7,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/90ny983y","slide":7,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/mxwfytk7","slide":7,"text":"拟集成职责\nMASS 已有能力\n需逐项核对","textPreview":"拟集成职责 | MASS 已有能力 | 需逐项核对","textChars":21,"textLines":3,"bbox":[64,467,241,105]}
+{"kind":"textbox","id":"sh/ny5g7yls","slide":7,"text":"同一请求 ID 关联版本、状态、用量与账单。事件去重和重试计费分别处理。","textPreview":"同一请求 ID 关联版本、状态、用量与账单。事件去重和重试计费分别处理。","textChars":36,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"notes","id":"nt/1waaxa","slide":7,"text":"图为逻辑架构，未声称全部功能属于MASS或已部署。管理/配置、请求、计量三个职责分开。计量字段：tenant_id、request_id、attempt_id、event_id、model/version、tokenizer版本、开始结束时间、状态、input/output/cache_hit/cache_miss、规则版本、原始证据引用。缓存量按双方计费规则核对，框架缓存块计数不得直接当计费Token。YOLO与Wan使用task_id和图片/视频任务单位。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/ie1lji","slide":8,"title":"A4  模型适配","textShapes":7}
+{"kind":"textbox","id":"sh/43ahoju5","slide":8,"text":"A4  模型适配","textPreview":"A4  模型适配","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/32h0vetk","slide":8,"text":"910B 国产模型：先验证稠密模型，再扩候选","textPreview":"910B 国产模型：先验证稠密模型，再扩候选","textChars":22,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/i18zm9cz","slide":8,"text":"筛选顺序：许可与平台规格、引擎支持、逐卡容量、通信、质量与负载验证。","textPreview":"筛选顺序：许可与平台规格、引擎支持、逐卡容量、通信、质量与负载验证。","textChars":34,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/h0zit4be","slide":8,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/wfqhkzut","slide":8,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/veh0reto","slide":8,"text":"08 / 18","textPreview":"08 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/1w3i58by","slide":8,"text":"逐卡峰值 = 本卡权重＋KV Cache＋激活/工作区＋通信缓冲＋余量","textPreview":"逐卡峰值 = 本卡权重＋KV Cache＋激活/工作区＋通信缓冲＋余量","textChars":35,"textLines":1,"bbox":[64,532,1150,52]}
+{"kind":"textbox","id":"sh/0buhw3ud","slide":8,"text":"16 张卡是资源总量。910B 显存未知，暂不承诺完整 DeepSeek 大模型的双机容量。","textPreview":"16 张卡是资源总量。910B 显存未知，暂不承诺完整 DeepSeek 大模型的双机容量。","textChars":46,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/3y1g3qdw","slide":8,"name":"","rows":4,"cols":3,"preview":"候选模型 | 精度与起测路径 | 本轮判断与证据边界","bbox":[60,213,1160,299]}
+{"kind":"notes","id":"nt/ie1lji","slide":8,"text":"固定候选ID：Qwen/Qwen3-8B；deepseek-ai/DeepSeek-R1-Distill-Qwen-32B；zai-org/GLM-4.5-Air。权重revision/hash、目标引擎release与镜像digest待设备验证阶段冻结，不能把研究候选称为已验收配置。Qwen3-Dense在当前A2/A3矩阵支持；DeepSeek Distill标为experimental。GLM-4.5-Air主干总参数106B、激活12B，仓库张量统计约110B，容量以实际权重字节与加载策略为准，不能按激活参数估算。优先单机支持的并行配置，只有容量或性能需要时再双机HCCL。备选完整DeepSeek-R1/V3.2须另算量化/双机容量，当前不承诺。所有模型均未本机实测。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\nasc: https://docs.vllm.ai/projects/ascend/en/latest/user_guide/support_matrix/supported_models.html\nqwen: https://huggingface.co/Qwen/Qwen3-8B\nds: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B\nglm: https://huggingface.co/zai-org/GLM-4.5-Air"}
+{"kind":"slide","id":"sl/msvv9d","slide":9,"title":"A4  模型适配","textShapes":6}
+{"kind":"textbox","id":"sh/t87m94z6","slide":9,"text":"A4  模型适配","textPreview":"A4  模型适配","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/65g3ep0f","slide":9,"text":"T4 模型分工：文本、检测、视频分别验收","textPreview":"T4 模型分工：文本、检测、视频分别验收","textChars":20,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/76p47uh0","slide":9,"text":"6 台八卡服务器共 48 张 GPU。单卡 16GB，多副本和多卡并行按任务选择。","textPreview":"6 台八卡服务器共 48 张 GPU。单卡 16GB，多副本和多卡并行按任务选择。","textChars":41,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/gbi5kjyh","slide":9,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/hcrmd4z2","slide":9,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/u90ni9gr","slide":9,"text":"09 / 18","textPreview":"09 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/4zi5ojyt","slide":9,"text":"文本模型按总参数 <20B 筛选。Wan 低显存参考不能证明 T4 的生成速度可交付。","textPreview":"文本模型按总参数 <20B 筛选。Wan 低显存参考不能证明 T4 的生成速度可交付。","textChars":43,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/qtsb6hcn","slide":9,"name":"","rows":4,"cols":3,"preview":"任务 / 首选候选 | 起测路径 | 验收指标与判断","bbox":[60,211,1160,346]}
+{"kind":"notes","id":"nt/msvv9d","slide":9,"text":"完整ID：Qwen/Qwen2.5-7B-Instruct-AWQ，Ultralytics YOLO26n，Wan-AI/Wan2.1-T2V-1.3B。7B AWQ先验证单卡容量与SM75 kernel，不保证任意上下文/并发。量化只降低字节数，不减少参数量。可增加同系列14B量化作为备选，需重新核验。YOLO官方表有T4/TensorRT列，不搬用其速度作为本台结果；模型/软件许可及商用供给方式待核。Wan仓库低显存参考约8.19GB，非T4完整兼容证据，需检验FP16数值、注意力后端和卸载开销；不搬用4090速度。各任务固定独立镜像，不默认TP8。48卡在任务之间按卡时分配，不重复满额计收入。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\nt4: https://www.nvidia.cn/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet.pdf\nawq: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ\nquant: https://docs.vllm.ai/en/latest/features/quantization/\nyolo: https://docs.ultralytics.com/models/yolo26\nwan: https://github.com/Wan-Video/Wan2.1"}
+{"kind":"slide","id":"sl/rw9lbt","slide":10,"title":"A5  模型部署","textShapes":18}
+{"kind":"textbox","id":"sh/u5w3ilcv","slide":10,"text":"A5  模型部署","textPreview":"A5  模型部署","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/hsnmdgbm","slide":10,"text":"部署与发布：以阶段证据作为上线门槛","textPreview":"部署与发布：以阶段证据作为上线门槛","textChars":17,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/grelkbu1","slide":10,"text":"部署流程从设备验收开始，到可回退的服务版本结束。以下为待执行流程。","textPreview":"部署流程从设备验收开始，到可回退的服务版本结束。以下为待执行流程。","textChars":33,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/3u54fqtc","slide":10,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/2tw3mlcr","slide":10,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/pw7mh0bi","slide":10,"text":"10 / 18","textPreview":"10 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/4vylovux","slide":10,"text":"01  设备与网络","textPreview":"01  设备与网络","textChars":9,"textLines":1,"bbox":[62,217,367,45]}
+{"kind":"textbox","id":"sh/jylk3mt8","slide":10,"text":"资产与健康记录\n功率 / 光链路 / HCCL","textPreview":"资产与健康记录 | 功率 / 光链路 / HCCL","textChars":23,"textLines":2,"bbox":[62,271,365,84]}
+{"kind":"shape","id":"sh/ixc3a1cn","slide":10,"bbox":[62,365,361,1]}
+{"kind":"textbox","id":"sh/orepkz2l","slide":10,"text":"02  环境与模型","textPreview":"02  环境与模型","textChars":9,"textLines":1,"bbox":[463,217,367,45]}
+{"kind":"textbox","id":"sh/psnqt43q","slide":10,"text":"镜像与权重校验\n许可 / Tokenizer / 模板","textPreview":"镜像与权重校验 | 许可 / Tokenizer / 模板","textChars":27,"textLines":2,"bbox":[463,271,365,84]}
+{"kind":"shape","id":"sh/2pw7i9kf","slide":10,"bbox":[463,365,361,1]}
+{"kind":"textbox","id":"sh/3q5orel0","slide":10,"text":"03  服务启动","textPreview":"03  服务启动","textChars":8,"textLines":1,"bbox":[864,217,367,45]}
+{"kind":"textbox","id":"sh/cvypoj2h","slide":10,"text":"精度 / 上下文 / 并行\n健康检查与启动日志","textPreview":"精度 / 上下文 / 并行 | 健康检查与启动日志","textChars":23,"textLines":2,"bbox":[864,271,365,84]}
+{"kind":"shape","id":"sh/dw7qxo32","slide":10,"bbox":[864,365,361,1]}
+{"kind":"textbox","id":"sh/qtw7m9kb","slide":10,"text":"04  正确性","textPreview":"04  正确性","textChars":7,"textLines":1,"bbox":[62,386,367,45]}
+{"kind":"textbox","id":"sh/bup8velw","slide":10,"text":"中文 / 多轮 / 流式\n质量集与异常请求","textPreview":"中文 / 多轮 / 流式 | 质量集与异常请求","textChars":21,"textLines":2,"bbox":[62,440,365,84]}
+{"kind":"shape","id":"sh/szupcf2d","slide":10,"bbox":[62,534,361,1]}
+{"kind":"textbox","id":"sh/t036lk3y","slide":10,"text":"05  MASS 与平台","textPreview":"05  MASS 与平台","textChars":12,"textLines":1,"bbox":[463,386,367,45]}
+{"kind":"textbox","id":"sh/94betcra","slide":10,"text":"鉴权 / 路由 / 计量\n同批请求联调记录","textPreview":"鉴权 / 路由 / 计量 | 同批请求联调记录","textChars":21,"textLines":2,"bbox":[463,440,365,84]}
+{"kind":"shape","id":"sh/832d0rap","slide":10,"bbox":[463,534,361,1]}
+{"kind":"textbox","id":"sh/7itwrm94","slide":10,"text":"06  性能与发布","textPreview":"06  性能与发布","textChars":9,"textLines":1,"bbox":[864,386,367,45]}
+{"kind":"textbox","id":"sh/mhkvyhsz","slide":10,"text":"稳定性 / 限流 / 恢复\n配额、告警与回退版本","textPreview":"稳定性 / 限流 / 恢复 | 配额、告警与回退版本","textChars":24,"textLines":2,"bbox":[864,440,365,84]}
+{"kind":"shape","id":"sh/h8vexwrm","slide":10,"bbox":[864,534,361,1]}
+{"kind":"textbox","id":"sh/w7md4ra1","slide":10,"text":"每阶段不通过即定位修复并回归。可发布产物是版本包、验收记录与回退配置。","textPreview":"每阶段不通过即定位修复并回归。可发布产物是版本包、验收记录与回退配置。","textChars":35,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"notes","id":"nt/rw9lbt","slide":10,"text":"建议操作记录包含nvidia-smi或npu-smi设备识别、每台8卡、PCIe/NUMA与网络，版本与镜像digest，模型文件hash与许可证。服务配置固定max_model_len、精度、量化、TP/PP/副本及CPU/内存限制。文本验证流式chunk边界、模板、截断、超时和输入输出计数。YOLO额外核验预/后处理、类别和坐标；Wan异步队列、任务状态、生成参数及结果文件交付。单模型成功不能外推所有候选。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/u3rh1u","slide":11,"title":"B1  性能测试","textShapes":12}
+{"kind":"textbox","id":"sh/mh43e94j","slide":11,"text":"B1  性能测试","textPreview":"B1  性能测试","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/94vm9o3u","slide":11,"text":"压测设计：分别扫描并发与请求到达率","textPreview":"压测设计：分别扫描并发与请求到达率","textChars":17,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/8jmlgjm9","slide":11,"text":"先固定模型、任务规格和服务目标，再从单实例扩到资源池和平台入口。","textPreview":"先固定模型、任务规格和服务目标，再从单实例扩到资源池和平台入口。","textChars":32,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/v6x4byl0","slide":11,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/a5o3it4f","slide":11,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/x8fmd836","slide":11,"text":"11 / 18","textPreview":"11 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/w76lk3ml","slide":11,"text":"并发初探","textPreview":"并发初探","textChars":4,"textLines":1,"bbox":[63,209,288,45]}
+{"kind":"textbox","id":"sh/jax4fylw","slide":11,"text":"1 / 2 / 4 / 8 / 16 / 32","textPreview":"1 / 2 / 4 / 8 / 16 / 32","textChars":23,"textLines":1,"bbox":[358,210,860,46]}
+{"kind":"textbox","id":"sh/i9onmt4r","slide":11,"text":"四类输入输出组合，分别测试未命中与重复前缀。边界未出现时继续加压。","textPreview":"四类输入输出组合，分别测试未命中与重复前缀。边界未出现时继续加压。","textChars":33,"textLines":1,"bbox":[64,267,1147,55]}
+{"kind":"textbox","id":"sh/47e58nmt","slide":11,"text":"vllm bench serve --backend openai\n--model <服务模型> --base-url <地址>\n--max-concurrency 8 --request-rate inf\n--save-result --save-detailed","textPreview":"vllm bench serve --backend openai | --model <服务模型> --base-url <地址> | --max-concurrency 8 --request-rate inf | --save-result --save-detailed","textChars":133,"textLines":4,"bbox":[62,341,691,208]}
+{"kind":"textbox","id":"sh/58nmhs3e","slide":11,"text":"执行与记录","textPreview":"执行与记录","textChars":5,"textLines":1,"bbox":[801,345,400,42]}
+{"kind":"textbox","id":"sh/i5wn6d4n","slide":11,"text":"预热后至少重复 3 次\n记录样本数和测试窗口\n保留实际到达率与错误率\n检查客户端和接入层瓶颈","textPreview":"预热后至少重复 3 次 | 记录样本数和测试窗口 | 保留实际到达率与错误率 | 检查客户端和接入层瓶颈","textChars":46,"textLines":4,"bbox":[801,399,403,143]}
+{"kind":"textbox","id":"sh/3654fil8","slide":11,"text":"完整可复制脚本在备注及随附文件。示例参数是初探设定，正式阈值由平台需求确定。","textPreview":"完整可复制脚本在备注及随附文件。示例参数是初探设定，正式阈值由平台需求确定。","textChars":38,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"notes","id":"nt/u3rh1u","slide":11,"text":"完整压测脚本模板（未执行）：\n#!/usr/bin/env bash\n# Text-service benchmark template; not executed against any service during PPT creation.\n# CLI reference: vLLM 0.27.0. Pin the client and verify --help before use.\nset -euo pipefail\n: \"${MODEL:?Set MODEL to the deployed service model ID}\"\n: \"${TOKENIZER:?Set TOKENIZER to the matching local tokenizer path or ID}\"\nBENCH_URL=\"${BENCH_URL:-http://127.0.0.1:8000}\"\nBENCH_DIR=\"${BENCH_DIR:-./benchmark-results-$(date +%Y%m%d-%H%M%S)}\"\nBENCH_PROMPTS=\"${BENCH_PROMPTS:-500}\"\nmkdir -p \"$BENCH_DIR\"\nvllm --version > \"$BENCH_DIR/client-version.txt\"\nvllm bench serve --help > \"$BENCH_DIR/client-help.txt\"\n\n# Initial exploration only. Small-sample P99 is not a stable SLA estimate.\n# No cache-hit claim: repeat-prefix workloads and server usage evidence are separate.\nfor lengths in '256 128' '1024 128' '256 512' '1024 512'; do\n  read -r input_len output_len <<< \"$lengths\"\n  for concurrency in 1 2 4 8 16 32; do\n    for repeat in 1 2 3; do\n      vllm bench serve \\\n        --backend openai --endpoint /v1/completions \\\n        --base-url \"$BENCH_URL\" --model \"$MODEL\" --tokenizer \"$TOKENIZER\" \\\n        --dataset-name random --input-len \"$input_len\" --output-len \"$output_len\" \\\n        --num-prompts \"$BENCH_PROMPTS\" --num-warmups 20 \\\n        --max-concurrency \"$concurrency\" --request-rate inf \\\n        --percentile-metrics ttft,tpot,itl,e2el --metric-percentiles 50,95,99 \\\n        --save-result --save-detailed --result-dir \"$BENCH_DIR\" \\\n        --result-filename \"in${input_len}-out${output_len}-c${concurrency}-r${repeat}.json\"\n    done\n  done\ndone\n# Run a separate arrival-rate experiment by replacing inf with chosen rates.\n# Preserve actual arrival rate, errors, duration, sample counts and server telemetry.\n# For authenticated/chat-only endpoints, adapt the backend, endpoint, template and\n# authentication using the installed client's help before running this script.\n# request_goodput is requests/s. Aggregate qualified input/output/cache tokens\n# separately, using the same request set and time window, before revenue analysis.\n\n官方参数依据：https://docs.vllm.ai/en/v0.27.0/cli/bench/serve/\n查询日期：2026-09-16。缓存命中另用重复前缀工作负载并核对服务端实际计数。"}
+{"kind":"slide","id":"sl/nid9d0","slide":12,"title":"B1  性能测试","textShapes":6}
+{"kind":"textbox","id":"sh/sva5wnuh","slide":12,"text":"B1  性能测试","textPreview":"B1  性能测试","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/ru14nidw","slide":12,"text":"结果判读：服务目标约束下的可售产能","textPreview":"结果判读：服务目标约束下的可售产能","textChars":17,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/qtsnudcb","slide":12,"text":"结果判读方法：在同一请求集合、同一统计窗口内汇总，当前没有实测结果。","textPreview":"结果判读方法：在同一请求集合、同一统计窗口内汇总，当前没有实测结果。","textChars":34,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/1k36tcvy","slide":12,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/0za507ud","slide":12,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/fy1or2d8","slide":12,"text":"12 / 18","textPreview":"12 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/hozmh8vu","slide":12,"text":"产能交付表应绑定模型版本、卡数、任务规格、SLO、样本数和原始用量证据。","textPreview":"产能交付表应绑定模型版本、卡数、任务规格、SLO、样本数和原始用量证据。","textChars":36,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/v210bi1o","slide":12,"name":"","rows":5,"cols":3,"preview":"指标 | 计算或判读 | 对经营测算的影响","bbox":[60,200,1160,382]}
+{"kind":"notes","id":"nt/nid9d0","slide":12,"text":"TPOT仅用于输出Token数≥2的样本，stream chunk不等于Token。统计所有请求错误与超时，分位数记录样本量。合格Token/s采用事先约定的合格请求集合，质量门槛不能仅靠客户端耗时替代。输入总数=命中+未命中（按约定计费边界）。client request_goodput为满足SLO请求数/秒，不能直接代入Token公式；输出吞吐是实际输出Token/秒。单卡吞吐不线性外推48卡，分别实测资源池和MASS入口。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\nmetrics: https://docs.vllm.ai/en/latest/api/vllm/benchmarks/serve/\nbench: https://docs.vllm.ai/en/v0.27.0/cli/bench/serve/"}
+{"kind":"slide","id":"sl/bpt3kt","slide":13,"title":"B2  Token 收益分析","textShapes":8}
+{"kind":"textbox","id":"sh/mtobm90j","slide":13,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/9wzahozu","slide":13,"text":"产能估值：三类 Token 分别计算","textPreview":"产能估值：三类 Token 分别计算","textChars":18,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/ovqtojip","slide":13,"text":"以下为产能计算口径。S = 30×24×3600 = 2,592,000 秒。","textPreview":"以下为产能计算口径。S = 30×24×3600 = 2,592,000 秒。","textChars":39,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/zqxsbe1s","slide":13,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/e5ori907","slide":13,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/1sfad4zy","slide":13,"text":"13 / 18","textPreview":"13 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/0r6tkjid","slide":13,"text":"Decode 月价值 = TGSout × S × Nout × Pout ÷ 10⁶ × ηout\n未命中 Prefill 月价值 = TGSunc × S × Nunc × Punc ÷ 10⁶ × ηunc\n命中 Prefill 月价值 = TGScache × S × Ncache × Pcache ÷ 10⁶ × ηcache","textPreview":"Decode 月价值 = TGSout × S × Nout × Pout ÷ 10⁶ × ηout | 未命中 Prefill 月价值 = TGSunc × S × Nunc × Punc ÷ 10⁶ × ηunc | 命中 Prefill 月价值 = TGScache ...","textChars":169,"textLines":3,"bbox":[63,207,1155,149]}
+{"kind":"textbox","id":"sh/y18but0r","slide":13,"text":"价格查询：2026-09-16，仅作市场参照。该 API 与本台候选并非同一模型，不能代入报价。","textPreview":"价格查询：2026-09-16，仅作市场参照。该 API 与本台候选并非同一模型，不能代入报价。","textChars":48,"textLines":1,"bbox":[64,554,1145,38]}
+{"kind":"textbox","id":"sh/8zqdk3u1","slide":13,"text":"TGS 按单卡才乘卡数；混合部署三类速率共用同一负载，已含损耗时不再乘同一 η。","textPreview":"TGS 按单卡才乘卡数；混合部署三类速率共用同一负载，已含损耗时不再乘同一 η。","textChars":40,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/qd87610v","slide":13,"name":"","rows":3,"cols":4,"preview":"公开市场参照（USD / 百万 Token） | 输出 | 输入未命中 | 输入命中","bbox":[60,391,1160,150]}
+{"kind":"notes","id":"nt/bpt3kt","slide":13,"text":"原公式完整保留：Decode集群月价值=Decode TGS×30×24×3600×Decode GPU总卡数×Decode单价/1000000×产出率。Prefill非命中与cache各用相应TGS、GPU总卡数、单价及计费产出率。910B资源卡为NPU，N泛指该资源池实际参与卡数。若直接使用集群Token/s则不再乘N。Mini基线Prefill/Decode混合部署，三类产能来自同一工作负载，不相加独立压测峰值。缓存TGS为可计费逻辑命中Token速率，不代表实际执行完整Prefill。η仅反映未在测量中体现的可用性/需求/可计费损失，避免重复打折。市场价格适用deepseek-flash(DeepSeek-V4.1-Flash)，高峰UTC工作日01:00–04:00及06:00–10:00，其余非高峰。公开API美元零售价不是本项目平台采购价，且与首选Qwen3-8B及蒸馏模型不同，不可直接估收入。YOLO按图片/任务，Wan按视频任务或合同单位另算。实际结算=双方认可用量×约定采购价±调整，实际回款以银行凭证为准。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\nprice: https://api-docs.deepseek.com/quick_start/pricing/"}
+{"kind":"slide","id":"sl/euaz0j","slide":14,"title":"B2  Token 收益分析","textShapes":8}
+{"kind":"textbox","id":"sh/3qlc3ud8","slide":14,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/4rutczet","slide":14,"text":"经济性判断：增量收支、全成本与盈亏边界","textPreview":"经济性判断：增量收支、全成本与盈亏边界","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/ps3u54ve","slide":14,"text":"缺少实测产能、采购价与成本，当前能够给出盈亏条件，不能给出确定利润。","textPreview":"缺少实测产能、采购价与成本，当前能够给出盈亏条件，不能给出确定利润。","textChars":34,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/qdcbe9cz","slide":14,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/relc7edk","slide":14,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/cfutgju5","slide":14,"text":"14 / 18","textPreview":"14 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/dg3u94vq","slide":14,"text":"月经营结果 = 文本收入＋检测收入＋视频收入−项目成本","textPreview":"月经营结果 = 文本收入＋检测收入＋视频收入−项目成本","textChars":27,"textLines":1,"bbox":[65,211,1150,63]}
+{"kind":"textbox","id":"sh/zi5cbedg","slide":14,"text":"盈亏边界：固定业务组合时，采购价系数 k* = 月成本 ÷ 基准月收入","textPreview":"盈亏边界：固定业务组合时，采购价系数 k* = 月成本 ÷ 基准月收入","textChars":35,"textLines":1,"bbox":[64,526,1152,41]}
+{"kind":"textbox","id":"sh/jqp8zexo","slide":14,"text":"采购价、需求利用、缓存比例和卡时分配分别做敏感性分析，资源重分配后需重测产能。","textPreview":"采购价、需求利用、缓存比例和卡时分配分别做敏感性分析，资源重分配后需重测产能。","textChars":39,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/fqxwz6lg","slide":14,"name":"","rows":3,"cols":3,"preview":"决策视角 | 纳入成本 | 能回答的问题","bbox":[60,302,1160,199]}
+{"kind":"notes","id":"nt/euaz0j","slide":14,"text":"令R0是同一模型组合、同币种税口径、固定卡时与负载下以基准采购价计算的月收入，若三类单价同比例乘k且成本不变，则盈亏k*=C/R0；R0=0时无此边界。若收入uRfull、成本F+uV，则u*=F/(Rfull−V)，仅当Rfull>V且u*≤1才存在该区间的盈亏可能。缓存比例改变会影响计费价格和产能，不可只改一个数就声称真实利润。月电量=实测平均kW×小时，机柜10kW不是持续负载。CAPEX与折旧不得同月重复全额计成本。实际T4卡时在文本/检测/视频间分配，总和不超过48张×可用时间。利润、应收与回款分别记录；共享CPU机柜已有资源按项目分摊，避免重复新增。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/8ayfu5","slide":15,"title":"B3  商业协议","textShapes":11}
+{"kind":"textbox","id":"sh/ofq5knuh","slide":15,"text":"B3  商业协议","textPreview":"B3  商业协议","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/3eh4bitw","slide":15,"text":"计量与结算：请求如何形成双方认可的账单","textPreview":"计量与结算：请求如何形成双方认可的账单","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/2d8nixcb","slide":15,"text":"拟议条款从平台接受的服务目录开始，连接双方认可的用量证据。","textPreview":"拟议条款从平台接受的服务目录开始，连接双方认可的用量证据。","textChars":29,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/dkj6hcby","slide":15,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/cja5o7ud","slide":15,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/bi14f2ts","slide":15,"text":"15 / 18","textPreview":"15 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/qhsnmxcn","slide":15,"text":"服务目录\n模型 / 任务规格","textPreview":"服务目录 | 模型 / 任务规格","textChars":14,"textLines":2,"bbox":[62,218,211,95]}
+{"kind":"textbox","id":"sh/tofm58bu","slide":15,"text":"请求或任务\n统一关联 ID","textPreview":"请求或任务 | 统一关联 ID","textChars":13,"textLines":2,"bbox":[299,218,211,95]}
+{"kind":"shape","id":"sh/sn65c3u9","slide":15,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/y10z2pw7","slide":15,"text":"用量明细\n计数与状态","textPreview":"用量明细 | 计数与状态","textChars":10,"textLines":2,"bbox":[536,218,211,95]}
+{"kind":"shape","id":"sh/jm9gbads","slide":15,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/knih4fed","slide":15,"text":"对账确认\n差异与冲正","textPreview":"对账确认 | 差异与冲正","textChars":10,"textLines":2,"bbox":[773,218,211,95]}
+{"kind":"shape","id":"sh/lorydkvi","slide":15,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/6p0z6pw3","slide":15,"text":"结算条目\n单价与周期","textPreview":"结算条目 | 单价与周期","textChars":10,"textLines":2,"bbox":[1010,218,211,95]}
+{"kind":"shape","id":"sh/7q90fudo","slide":15,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/tsbih4vu","slide":15,"text":"技术可运行仍需平台认可模型、区域、容量与质量规格，才具备采购前提。","textPreview":"技术可运行仍需平台认可模型、区域、容量与质量规格，才具备采购前提。","textChars":33,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/3apgvm5o","slide":15,"name":"","rows":4,"cols":3,"preview":"必须约定 | 拟议处理方式 | 留存证据","bbox":[60,338,1160,246]}
+{"kind":"notes","id":"nt/8ayfu5","slide":15,"text":"本页为商务讨论清单，并非已签协议或法律意见。首批用同一请求样本比对Tokenizer、推理返回usage、接入记录及平台账单。需约定失败/取消/重试/部分输出及缓存口径，不能由技术默认免费或收费。检测/视频分别约定规格、质量、任务单位及价格。合同还需价格变更、税费、付款账户、争议处理和开票要求，以双方最终文本为准。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/7sckcf","slide":16,"title":"B3  商业协议","textShapes":6}
+{"kind":"textbox","id":"sh/hsz2torm","slide":16,"text":"B3  商业协议","textPreview":"B3  商业协议","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/up8ji9sb","slide":16,"text":"服务与责任：承诺范围匹配架构和实测能力","textPreview":"服务与责任：承诺范围匹配架构和实测能力","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/vqhkre9w","slide":16,"text":"拟议协议在可验收范围内确定服务窗口、维护、故障处理与责任。","textPreview":"拟议协议在可验收范围内确定服务窗口、维护、故障处理与责任。","textChars":29,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/4fq1o3ad","slide":16,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/5gz2h8ry","slide":16,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/it8jmts7","slide":16,"text":"16 / 18","textPreview":"16 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/sjals3q9","slide":16,"text":"SLA 数值和赔付条款留待验收及双方协商，现阶段不承诺未经验证的可用性。","textPreview":"SLA 数值和赔付条款留待验收及双方协商，现阶段不承诺未经验证的可用性。","textChars":36,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/mhkfix8n","slide":16,"name":"","rows":5,"cols":3,"preview":"当前约束 | 需要约定的边界 | 验收与责任证据","bbox":[60,214,1160,365]}
+{"kind":"notes","id":"nt/7sckcf","slide":16,"text":"拟议条款由商务/法务/财务评审。单交换机故障可能影响双机并行服务，同一资源池内独立单机服务的影响依赖网络与路由。合同约定故障责任归属、供应方与平台侧原因判定、不可用统计、维护排除项、赔付上限、退出与余额清算。数据最小留存及安全职责按实际数据和适用制度审查，不假定客户数据可任意留存或用于训练。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/6dlj6c","slide":17,"title":"B4  公司流程","textShapes":6}
+{"kind":"textbox","id":"sh/f2xs7y9g","slide":17,"text":"B4  公司流程","textPreview":"B4  公司流程","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/0369g3q1","slide":17,"text":"协作与回款：各角色按凭证完成交接","textPreview":"协作与回款：各角色按凭证完成交接","textChars":16,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/1ofa98rm","slide":17,"text":"建议流程：技术、商务和财务在每个阶段明确接收什么产物。","textPreview":"建议流程：技术、商务和财务在每个阶段明确接收什么产物。","textChars":27,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/qx4rat8z","slide":17,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/ryx83y9k","slide":17,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/sz69cjqp","slide":17,"text":"17 / 18","textPreview":"17 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/it4r698n","slide":17,"text":"同批请求贯通用量、对账确认、结算、发票与回款，才能宣称完成商业闭环。","textPreview":"同批请求贯通用量、对账确认、结算、发票与回款，才能宣称完成商业闭环。","textChars":34,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/8vehkn6l","slide":17,"name":"","rows":5,"cols":4,"preview":"责任角色 | 立项与准备 | 验收与试供给 | 月度经营与回款","bbox":[60,209,1160,371]}
+{"kind":"notes","id":"nt/6dlj6c","slide":17,"text":"表以角色为泳道、阶段为列。公司制度未提供，不虚构审批姓名或时限。重要交接：技术产能报告传商务财务形成报价；商务法务确认条款后技术按配额发布；技术给出用量明细、商务获取平台对账确认、财务形成结算及发票、商务财务跟踪到账。真实商业闭环需要实际交易与凭证；模拟账单仅作为计量验证。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/x1r29z","slide":18,"title":"B4  公司流程","textShapes":6}
+{"kind":"textbox","id":"sh/uhg3y58b","slide":18,"text":"B4  公司流程","textPreview":"B4  公司流程","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/1kr29k7m","slide":18,"text":"闭环验收：下一阶段通过条件与责任","textPreview":"闭环验收：下一阶段通过条件与责任","textChars":16,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/gjyl0fq1","slide":18,"text":"当前已确认资源基线与分柜原则，模型、平台采购和实测证据仍需逐步补齐。","textPreview":"当前已确认资源基线与分柜原则，模型、平台采购和实测证据仍需逐步补齐。","textChars":34,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/7epk3apk","slide":18,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/6tg3u58z","slide":18,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/tg725k7q","slide":18,"text":"18 / 18","textPreview":"18 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/ba94fupo","slide":18,"text":"当前决策建议：继续最小文本闭环验证。YOLO 与 Wan 保持独立 PoC。","textPreview":"当前决策建议：继续最小文本闭环验证。YOLO 与 Wan 保持独立 PoC。","textChars":38,"textLines":1,"bbox":[63,551,1154,65]}
+{"kind":"table","id":"tb/xsbmdofe","slide":18,"name":"","rows":4,"cols":3,"preview":"评审事项 | 进入下一阶段的通过条件 | 下一项证据 / 责任","bbox":[60,214,1160,312]}
+{"kind":"notes","id":"nt/x1r29z","slide":18,"text":"本次报告不声称设备已上架、模型已部署、压测已通过、合同已签或款项已到账。与第2页三项评审目标对应：确定首轮范围；明确资源资料及责任；设置试供给门槛。扩容依据需要实际质量、产能、订单与全成本经济性，不以峰值吞吐或能输出文本为充分理由。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}

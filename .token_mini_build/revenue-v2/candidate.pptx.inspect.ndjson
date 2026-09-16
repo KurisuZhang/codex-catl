@@ -1,0 +1,30 @@
+{"kind":"deck","id":"pr/xy7k4c","name":"Deck"}
+{"kind":"layout","layoutId":"9e3ff323-e32a-4411-84cd-c184103dc89a","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"8da58167-521a-4dce-8c03-9029f7100285","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/inlyt3","slide":1,"title":"B2  Token 收益分析","textShapes":10}
+{"kind":"textbox","id":"sh/t03mtcja","slide":1,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/6xc3ixkz","slide":1,"text":"月收入测算：三类 Token 分开计价，再求和","textPreview":"月收入测算：三类 Token 分开计价，再求和","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/7ylkr21k","slide":1,"text":"统一使用同一负载下整套服务的吞吐（token/min），单价单位为元 / 百万 Token。","textPreview":"统一使用同一负载下整套服务的吞吐（token/min），单价单位为元 / 百万 Token。","textChars":46,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/g3elo721","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/h4nmxcjm","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/u1c3mhkv","slide":1,"text":"13 / 18","textPreview":"13 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/f2l4vm1g","slide":1,"text":"月收入＝每分钟吞吐 × 43,200分钟 × 可计费产出比例 × 对应单价 ÷ 1,000,000","textPreview":"月收入＝每分钟吞吐 × 43,200分钟 × 可计费产出比例 × 对应单价 ÷ 1,000,000","textChars":49,"textLines":1,"bbox":[62,202,1156,44]}
+{"kind":"textbox","id":"sh/p8nm1wji","slide":1,"text":"43,200分钟＝30天 × 24小时 × 60分钟","textPreview":"43,200分钟＝30天 × 24小时 × 60分钟","textChars":26,"textLines":1,"bbox":[62,460,1156,29]}
+{"kind":"textbox","id":"sh/tcr2l8ni","slide":1,"text":"可计费产出比例：实际月度可计费用量，占“按该压测速度持续运行30天”理论用量的比例。\n单价使用双方约定的结算价格；三类吞吐已包含参与测试的卡数，不再乘一次卡数。","textPreview":"可计费产出比例：实际月度可计费用量，占“按该压测速度持续运行30天”理论用量的比例。 | 单价使用双方约定的结算价格；三类吞吐已包含参与测试的卡数，不再乘一次卡数。","textChars":80,"textLines":2,"bbox":[62,497,1156,61]}
+{"kind":"textbox","id":"sh/sby1s36x","slide":1,"text":"算例：输出 60,000 token/min × 43,200 × 50% × 2元 / 百万 ÷ 1,000,000＝2,592元 / 月","textPreview":"算例：输出 60,000 token/min × 43,200 × 50% × 2元 / 百万 ÷ 1,000,000＝2,592元 / 月","textChars":70,"textLines":1,"bbox":[62,577,1156,38]}
+{"kind":"textbox","id":"sh/rap0jy5s","slide":1,"text":"算例为假设，非实测收益。各类产出比例可不同；已有吞吐中的失败损失不重复扣除，独立峰值不能相加。","textPreview":"算例为假设，非实测收益。各类产出比例可不同；已有吞吐中的失败损失不重复扣除，独立峰值不能相加。","textChars":47,"textLines":1,"bbox":[62,631,1156,22]}
+{"kind":"table","id":"tb/dcnuhs7y","slide":1,"name":"","rows":4,"cols":2,"preview":"收入类别 | 可以直接代入的公式","bbox":[60,264,1160,182]}
+{"kind":"notes","id":"nt/inlyt3","slide":1,"text":"本页为量纲一致的收入估算，不是实测收入。定义每类整套服务吞吐为成功请求口径token/min，30天为43200分钟，每百万token价格除1000000。各类可计费产出比例分别估计，代表实际月可计费量除该类压测速率乘43200的参考量；不是简单设备利用率，应包含需求、在线时长和可结算范围中尚未体现的差异，避免重复扣减已有损失。混部时三类速率必须来自同一负载，且不能把每类独立峰值当作同时可交付。缓存命中输入是逻辑复用量，按缓存结算价，不是完整prefill计算量。使用整套服务吞吐不乘卡数，只有卡均吞吐才在其他口径下需要乘卡数。同一币种税口径结算。本版删除未经本轮核验的外部价格表，改为合同价格输入。算例60000×43200×0.5×2/1000000=2592元。"}
+{"kind":"slide","id":"sl/ac4n67","slide":2,"title":"B2  Token 收益分析","textShapes":9}
+{"kind":"textbox","id":"sh/90jqhozu","slide":2,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/mxsr69g3","slide":2,"text":"收入与利润：先算可结算收入，再扣项目成本","textPreview":"收入与利润：先算可结算收入，再扣项目成本","textChars":20,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/7y18feho","slide":2,"text":"预测收入用于评估产能；实际结算以双方认可的用量、合同价格及调整项为准。","textPreview":"预测收入用于评估产能；实际结算以双方认可的用量、合同价格及调整项为准。","textChars":35,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/w3a9cjyl","slide":2,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/h43qlofq","slide":2,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/u1sra9gf","slide":2,"text":"14 / 18","textPreview":"14 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/v218jex0","slide":2,"text":"文本月收入＝输出月收入＋未命中输入月收入＋缓存命中输入月收入","textPreview":"文本月收入＝输出月收入＋未命中输入月收入＋缓存命中输入月收入","textChars":30,"textLines":1,"bbox":[62,202,1156,45]}
+{"kind":"textbox","id":"sh/4ru9g3yh","slide":2,"text":"月经营结果＝文本收入＋检测收入＋视频收入－项目成本","textPreview":"月经营结果＝文本收入＋检测收入＋视频收入－项目成本","textChars":25,"textLines":1,"bbox":[62,261,1156,41]}
+{"kind":"textbox","id":"sh/hsbipcbi","slide":2,"text":"实际文本结算额＝三类实际可计费 Token 数分别乘对应单价 ÷ 1,000,000，再求和","textPreview":"实际文本结算额＝三类实际可计费 Token 数分别乘对应单价 ÷ 1,000,000，再求和","textChars":46,"textLines":1,"bbox":[62,513,1156,44]}
+{"kind":"textbox","id":"sh/gr21g7ax","slide":2,"text":"盈亏平衡：固定业务组合下，月总收入达到月项目成本。\n单独分析结算价格、需求利用、缓存比例与任务分配；调整组合后重新测算产能。","textPreview":"盈亏平衡：固定业务组合下，月总收入达到月项目成本。 | 单独分析结算价格、需求利用、缓存比例与任务分配；调整组合后重新测算产能。","textChars":62,"textLines":2,"bbox":[62,568,1156,63]}
+{"kind":"table","id":"tb/8zqt43yx","slide":2,"name":"","rows":3,"cols":3,"preview":"成本视角 | 纳入哪些成本 | 用于判断什么","bbox":[60,323,1160,168]}
+{"kind":"notes","id":"nt/ac4n67","slide":2,"text":"实际结算还可能有合同约定调整项，实际回款以银行记录为准。YOLO和Wan按图片、视频任务等约定单位计价，不套token公式。增量成本和全成本是不同分析视角，不重复累计。月电量使用实测平均功率乘小时，机柜10kW不是持续耗电值。设备购置款与同设备折旧不得在同一利润口径重复全额扣减。价格币种和税口径保持一致。T4在文本、检测和视频任务间分配卡时，总资源不能重复占用。原版k*符号公式改为中文盈亏条件，避免未定义变量。缺少实测、合同价格和成本时不给出确定利润。"}

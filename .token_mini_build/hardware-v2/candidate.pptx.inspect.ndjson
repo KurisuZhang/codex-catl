@@ -1,0 +1,62 @@
+{"kind":"deck","id":"pr/ky0x85","name":"Deck"}
+{"kind":"layout","layoutId":"e47717f1-f3bc-4d3e-8c61-86ae7df9237d","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ebfe73b4-f3df-4c8c-920c-8a126235f517","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/ndmvax","slide":1,"title":"A1  硬件设备","textShapes":28}
+{"kind":"textbox","id":"sh/mlkvu1cz","slide":1,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/9ovupgva","slide":1,"text":"机柜布局与服务器配置","textPreview":"机柜布局与服务器配置","textChars":10,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/onmdwbup","slide":1,"text":"14 台服务器分布于 3 个机柜：2 台 910B、6 台八卡 T4、6 台通算。","textPreview":"14 台服务器分布于 3 个机柜：2 台 910B、6 台八卡 T4、6 台通算。","textChars":41,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/bqdcrqdg","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/ap4vylcv","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/xsvut0vm","slide":1,"text":"03 / 18","textPreview":"03 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/wrmd0vu1","slide":1,"text":"机柜布局（示意，非实际 U 位）","textPreview":"机柜布局（示意，非实际 U 位）","textChars":16,"textLines":1,"bbox":[62,199,501,32]}
+{"kind":"shape","id":"sh/rutcfmdc","slide":1,"bbox":[62,239,152,312]}
+{"kind":"textbox","id":"sh/qt0bmhwr","slide":1,"text":"机柜 A","textPreview":"机柜 A","textChars":4,"textLines":1,"bbox":[65,248,146,29]}
+{"kind":"textbox","id":"sh/oj2d0vqp","slide":1,"text":"10 kW / 拟装载","textPreview":"10 kW / 拟装载","textChars":11,"textLines":1,"bbox":[65,277,146,25]}
+{"kind":"shape","id":"sh/9kbut07a","slide":1,"bbox":[72,314,132,67]}
+{"kind":"textbox","id":"sh/mhkvy58j","slide":1,"text":"910B-1\n8 张 NPU","textPreview":"910B-1 | 8 张 NPU","textChars":14,"textLines":2,"bbox":[77,316,122,63]}
+{"kind":"shape","id":"sh/nitcrqp4","slide":1,"bbox":[72,391,132,35]}
+{"kind":"textbox","id":"sh/w7md4fql","slide":1,"text":"T4-1  8 卡","textPreview":"T4-1  8 卡","textChars":9,"textLines":1,"bbox":[77,393,122,31]}
+{"kind":"shape","id":"sh/x8vuxk76","slide":1,"bbox":[72,435,132,35]}
+{"kind":"textbox","id":"sh/alkv258v","slide":1,"text":"T4-2  8 卡","textPreview":"T4-2  8 卡","textChars":9,"textLines":1,"bbox":[77,437,122,31]}
+{"kind":"shape","id":"sh/bmdcvap0","slide":1,"bbox":[72,479,132,35]}
+{"kind":"textbox","id":"sh/critsbqh","slide":1,"text":"T4-3  8 卡","textPreview":"T4-3  8 卡","textChars":9,"textLines":1,"bbox":[77,481,122,31]}
+{"kind":"shape","id":"sh/dcrulg72","slide":1,"bbox":[228,239,152,312]}
+{"kind":"textbox","id":"sh/twz298ve","slide":1,"text":"机柜 B","textPreview":"机柜 B","textChars":4,"textLines":1,"bbox":[231,248,146,29]}
+{"kind":"textbox","id":"sh/8vq10net","slide":1,"text":"10 kW / 拟装载","textPreview":"10 kW / 拟装载","textChars":11,"textLines":1,"bbox":[231,277,146,25]}
+{"kind":"shape","id":"sh/7uhk7ido","slide":1,"bbox":[238,314,132,67]}
+{"kind":"textbox","id":"sh/698jydw3","slide":1,"text":"910B-2\n8 张 NPU","textPreview":"910B-2 | 8 张 NPU","textChars":14,"textLines":2,"bbox":[243,316,122,63]}
+{"kind":"shape","id":"sh/h0j2dsvq","slide":1,"bbox":[238,391,132,35]}
+{"kind":"textbox","id":"sh/gza14ne5","slide":1,"text":"T4-4  8 卡","textPreview":"T4-4  8 卡","textChars":9,"textLines":1,"bbox":[243,393,122,31]}
+{"kind":"shape","id":"sh/vy1kbidk","slide":1,"bbox":[238,435,132,35]}
+{"kind":"textbox","id":"sh/uxsj2dwz","slide":1,"text":"T4-5  8 卡","textPreview":"T4-5  8 卡","textChars":9,"textLines":1,"bbox":[243,437,122,31]}
+{"kind":"shape","id":"sh/p4j2hsvm","slide":1,"bbox":[238,479,132,35]}
+{"kind":"textbox","id":"sh/43a187e1","slide":1,"text":"T4-6  8 卡","textPreview":"T4-6  8 卡","textChars":9,"textLines":1,"bbox":[243,481,122,31]}
+{"kind":"shape","id":"sh/m94z2pcj","slide":1,"bbox":[394,239,152,312]}
+{"kind":"textbox","id":"sh/nadgbud4","slide":1,"text":"机柜 C","textPreview":"机柜 C","textChars":4,"textLines":1,"bbox":[397,248,146,29]}
+{"kind":"textbox","id":"sh/obmh4zup","slide":1,"text":"既有 / 通算专用","textPreview":"既有 / 通算专用","textChars":9,"textLines":1,"bbox":[397,277,146,25]}
+{"kind":"shape","id":"sh/9cvyd4ba","slide":1,"bbox":[404,314,132,29]}
+{"kind":"textbox","id":"sh/ad4z69cv","slide":1,"text":"通算-1","textPreview":"通算-1","textChars":4,"textLines":1,"bbox":[409,316,122,25]}
+{"kind":"shape","id":"sh/bexgfetg","slide":1,"bbox":[404,350,132,29]}
+{"kind":"textbox","id":"sh/wf6h8jul","slide":1,"text":"通算-2","textPreview":"通算-2","textChars":4,"textLines":1,"bbox":[409,352,122,25]}
+{"kind":"shape","id":"sh/x0fyhob6","slide":1,"bbox":[404,386,132,29]}
+{"kind":"textbox","id":"sh/y1oza9cr","slide":1,"text":"通算-3","textPreview":"通算-3","textChars":4,"textLines":1,"bbox":[409,388,122,25]}
+{"kind":"shape","id":"sh/j2xgjetc","slide":1,"bbox":[404,422,132,29]}
+{"kind":"textbox","id":"sh/7ytgnelg","slide":1,"text":"通算-4","textPreview":"通算-4","textChars":4,"textLines":1,"bbox":[409,424,122,25]}
+{"kind":"shape","id":"sh/6xkzu94v","slide":1,"bbox":[404,458,132,29]}
+{"kind":"textbox","id":"sh/tkbypo3m","slide":1,"text":"通算-5","textPreview":"通算-5","textChars":4,"textLines":1,"bbox":[409,460,122,25]}
+{"kind":"shape","id":"sh/sz2hwjm1","slide":1,"bbox":[404,494,132,29]}
+{"kind":"textbox","id":"sh/fmdgryls","slide":1,"text":"通算-6","textPreview":"通算-6","textChars":4,"textLines":1,"bbox":[409,496,122,25]}
+{"kind":"textbox","id":"sh/ul4zyt47","slide":1,"text":"A / B：模型推理\nC：MASS 平台及支撑服务","textPreview":"A / B：模型推理 | C：MASS 平台及支撑服务","textChars":25,"textLines":2,"bbox":[62,560,490,53]}
+{"kind":"textbox","id":"sh/gnmh0jmx","slide":1,"text":"上架条件：每柜 1 台 910B＋3 台 T4＋网络设备的整机峰值及预留，不得超过机柜可用功率。","textPreview":"上架条件：每柜 1 台 910B＋3 台 T4＋网络设备的整机峰值及预留，不得超过机柜可用功率。","textChars":48,"textLines":1,"bbox":[62,619,1155,29]}
+{"kind":"table","id":"tb/id83ihcj","slide":1,"name":"","rows":4,"cols":2,"preview":"服务器 / 数量 | 单台配置","bbox":[580,204,638,394]}
+{"kind":"notes","id":"nt/ndmvax","slide":1,"text":"依据用户2026-09-16提供的硬件参考截图：/Users/lin/Desktop/截屏2026-09-16 14.01.50.png。已确定台数、卡数及RoCE配置来自本任务用户要求。参考配置为候选BOM，不代表现有实物验收结果。截图CPU型号照录Kunpeng 920_5250；加速卡照录Ascend 910_4-64G，与用户指定910B尚需按物料编码及设备报告确认，不把64G视为910B已验收显存。通算参考CPU单颗2.1GHz/20核，2颗合计40核；内存384GB。910B参考内存768GB。容量均原始配置，不推定RAID后的可用空间。T4的CPU、内存和磁盘无参考，故不编造。T4单卡16GB沿用原报告NVIDIA数据表 https://www.nvidia.cn/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet.pdf 。机柜C按最新用户要求展示6台既有通算，容量未指定。两台910B每台超过5kW为用户输入，A/B各一台；混装方案须核验整机峰值、U位、承重、制冷、PDU和故障供电。功率超过可用额度时调整T4位置，不表示本方案已通过上架验收。"}
+{"kind":"slide","id":"sl/vq01ja","slide":2,"title":"A1  硬件设备","textShapes":6}
+{"kind":"textbox","id":"sh/zm1grm5g","slide":2,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/0nuhkr61","slide":2,"text":"网络、存储与上架配套清单","textPreview":"网络、存储与上架配套清单","textChars":12,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/1o3ytwnm","slide":2,"text":"盘点口径：已确定数量直接列示，参考规格保留，选配设备单独计算。","textPreview":"盘点口径：已确定数量直接列示，参考规格保留，选配设备单独计算。","textChars":31,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/mpczm1o7","slide":2,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/nql0v65s","slide":2,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/8ruhob6d","slide":2,"text":"04 / 18","textPreview":"04 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/adczq143","slide":2,"text":"盘点结果应形成逐台配置表、逐端口接线表和逐柜功率表，再确定补购数量。","textPreview":"盘点结果应形成逐台配置表、逐端口接线表和逐柜功率表，再确定补购数量。","textChars":34,"textLines":1,"bbox":[62,625,1156,28]}
+{"kind":"table","id":"tb/8369sfi5","slide":2,"name":"","rows":8,"cols":3,"preview":"设备类别 | 数量 / 状态 | 配置与盘点要求","bbox":[60,204,1160,412]}
+{"kind":"notes","id":"nt/vq01ja","slide":2,"text":"来源：用户硬件参考截图 /Users/lin/Desktop/截屏2026-09-16 14.01.50.png 及用户本任务已确认配置。交换机48口等为参考规格，不是本期已批准采购清单。RoCE已确认1台；32×200GE与16×400GE为参考的两种选择，不累计成两台。400GE分拆还需核验breakout能力、端口模式、FEC、模块和线缆兼容，不能仅凭MPO线认定可用。32个200GE模块是两台910B共16条光链路双端总数，不包含业务网络模块。参考服务器网络原文：网卡0为6×GE（1个Mgmt管理网口、1个调试串口、4个板载口），另行写4×GE+4×25GE+2×200GE+2×200GE+2×200GE+2×200GE+2×25GE+IPMI。该参考将串口与GE混列、管理项可能重复，因此不直接累加成采购数量；RoCE按已确定每机8×200GE，业务网及BMC按实物端口表去重核验。对象存储参考CPU单颗2.4GHz/12核，硬盘原始容量不能直接作为可用容量，冗余策略及台数尚未定义。对象存储不计入14台已确定服务器，也不擅自放入现有三柜。所有整机配件包含检查完整性，并非主张现有设备全部重新采购。"}

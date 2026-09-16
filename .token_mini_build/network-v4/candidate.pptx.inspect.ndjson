@@ -1,0 +1,149 @@
+{"kind":"deck","id":"pr/8mxupv","name":"Deck"}
+{"kind":"layout","layoutId":"96cc3044-65db-4df1-9609-11d98966f1ac","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"08b47148-1e51-4c27-b810-34fd7d1e7611","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/e57nak","slide":1,"title":"A2  网络拓扑","textShapes":66}
+{"kind":"textbox","id":"sh/3exc3utg","slide":1,"text":"A2  网络拓扑","textPreview":"A2  网络拓扑","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/4f6twzu1","slide":1,"text":"跨柜 RoCE：两台 910B 共用一台交换机","textPreview":"跨柜 RoCE：两台 910B 共用一台交换机","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/5gfu5kb6","slide":1,"text":"已确认：1 台 RoCE 交换机、16 条 200GE 链路、双端 32 个光模块。","textPreview":"已确认：1 台 RoCE 交换机、16 条 200GE 链路、双端 32 个光模块。","textChars":42,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/u94bq5cj","slide":1,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/vadszat4","slide":1,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/gbmtsfup","slide":1,"text":"05 / 18","textPreview":"05 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/hcva1kba","slide":1,"text":"目标平台 / Internet / 压测入口","textPreview":"目标平台 / Internet / 压测入口","textChars":22,"textLines":1,"bbox":[451,194,362,32]}
+{"kind":"textbox","id":"sh/6lkbm5cn","slide":1,"text":"边界防火墙 / 访问控制（复用或补齐）","textPreview":"边界防火墙 / 访问控制（复用或补齐）","textChars":19,"textLines":1,"bbox":[451,239,362,32]}
+{"kind":"textbox","id":"sh/76dsvad8","slide":1,"text":"核心 / 业务汇聚交换设备","textPreview":"核心 / 业务汇聚交换设备","textChars":13,"textLines":1,"bbox":[451,285,362,32]}
+{"kind":"shape","id":"sh/3258na14","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/21w7u5kj","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/ponqpkju","slide":1,"text":"运维入口 / 管理区","textPreview":"运维入口 / 管理区","textChars":10,"textLines":1,"bbox":[61,241,273,32]}
+{"kind":"textbox","id":"sh/o3epwf29","slide":1,"text":"BMC 带外管理接入交换设备","textPreview":"BMC 带外管理接入交换设备","textChars":14,"textLines":1,"bbox":[104,351,313,35]}
+{"kind":"textbox","id":"sh/bq58ra10","slide":1,"text":"业务网接入交换设备","textPreview":"业务网接入交换设备","textChars":9,"textLines":1,"bbox":[698,351,314,35]}
+{"kind":"shape","id":"sh/qpw7ypkf","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/dsnqtkj6","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/crep0f2l","slide":1,"text":"交换设备\n管理口接入带外","textPreview":"交换设备 | 管理口接入带外","textChars":12,"textLines":2,"bbox":[63,292,145,48]}
+{"kind":"shape","id":"sh/rulofqlw","slide":1,"bbox":[909,202,37,3]}
+{"kind":"textbox","id":"sh/6ts7mlkb","slide":1,"text":"业务网：速率待盘点","textPreview":"业务网：速率待盘点","textChars":9,"textLines":1,"bbox":[957,192,276,24]}
+{"kind":"shape","id":"sh/u1kjad8v","slide":1,"bbox":[909,231,37,3]}
+{"kind":"textbox","id":"sh/v2tkjipg","slide":1,"text":"BMC 网：速率待盘点","textPreview":"BMC 网：速率待盘点","textChars":11,"textLines":1,"bbox":[957,221,276,24]}
+{"kind":"shape","id":"sh/g321cnq1","slide":1,"bbox":[909,260,37,3]}
+{"kind":"textbox","id":"sh/h4b2ls7m","slide":1,"text":"RoCE：200GE","textPreview":"RoCE：200GE","textChars":10,"textLines":1,"bbox":[957,250,276,24]}
+{"kind":"shape","id":"sh/6x0j6d8z","slide":1,"bbox":[909,289,37,3]}
+{"kind":"textbox","id":"sh/7yt0fipk","slide":1,"text":"存储网：可选","textPreview":"存储网：可选","textChars":6,"textLines":1,"bbox":[957,279,276,24]}
+{"kind":"shape","id":"sh/8z218nq5","slide":1,"bbox":[59,428,302,110]}
+{"kind":"shape","id":"sh/t0b2hs7q","slide":1,"bbox":[380,428,404,110]}
+{"kind":"shape","id":"sh/yt0j2t83","slide":1,"bbox":[804,428,417,110]}
+{"kind":"textbox","id":"sh/zu90by98","slide":1,"text":"机柜 A · 通算 ×6","textPreview":"机柜 A · 通算 ×6","textChars":12,"textLines":1,"bbox":[65,510,285,25]}
+{"kind":"textbox","id":"sh/1ozmhgrq","slide":1,"text":"机柜 B / 10 kW","textPreview":"机柜 B / 10 kW","textChars":12,"textLines":1,"bbox":[625,510,153,25]}
+{"kind":"textbox","id":"sh/0n658bal","slide":1,"text":"机柜 C / 10 kW","textPreview":"机柜 C / 10 kW","textChars":12,"textLines":1,"bbox":[1055,510,157,25]}
+{"kind":"shape","id":"sh/fmx4f690","slide":1,"bbox":[82,431,14,14]}
+{"kind":"shape","id":"sh/elo361sf","slide":1,"bbox":[100,431,14,14]}
+{"kind":"shape","id":"sh/dkfmdwru","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/sj6l4ra9","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/ryx4bm9o","slide":1,"text":"通算 1","textPreview":"通算 1","textChars":4,"textLines":1,"bbox":[70,448,82,49]}
+{"kind":"shape","id":"sh/qxo32hs3","slide":1,"bbox":[177,431,14,14]}
+{"kind":"shape","id":"sh/5wvm9wby","slide":1,"bbox":[195,431,14,14]}
+{"kind":"shape","id":"sh/4vml0rad","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/knel0r6x","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/5onmtwni","slide":1,"text":"通算 2…5","textPreview":"通算 2…5","textChars":6,"textLines":1,"bbox":[165,448,90,49]}
+{"kind":"shape","id":"sh/ilc3yho7","slide":1,"bbox":[280,431,14,14]}
+{"kind":"shape","id":"sh/jml4rm5c","slide":1,"bbox":[298,431,14,14]}
+{"kind":"shape","id":"sh/srel4b69","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/tcnmxgnu","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/6pw321o3","slide":1,"text":"通算 6","textPreview":"通算 6","textChars":4,"textLines":1,"bbox":[268,448,82,49]}
+{"kind":"shape","id":"sh/7q54v65o","slide":1,"bbox":[404,431,14,14]}
+{"kind":"shape","id":"sh/8vuls76p","slide":1,"bbox":[422,431,14,14]}
+{"kind":"shape","id":"sh/9g32lcna","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/bmtgnet4","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/qlkfe9cj","slide":1,"text":"910B-1 / 8 卡\n8×200GE","textPreview":"910B-1 / 8 卡 | 8×200GE","textChars":20,"textLines":2,"bbox":[392,448,136,49]}
+{"kind":"textbox","id":"sh/dobypoba","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[396,497,13,14]}
+{"kind":"textbox","id":"sh/cn2xgjup","slide":1,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[412,497,13,14]}
+{"kind":"textbox","id":"sh/3i9gjut8","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[428,497,13,14]}
+{"kind":"textbox","id":"sh/2h0fapcn","slide":1,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[444,497,13,14]}
+{"kind":"textbox","id":"sh/pkbyl4by","slide":1,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[460,497,13,14]}
+{"kind":"textbox","id":"sh/oj2xczud","slide":1,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[476,497,13,14]}
+{"kind":"textbox","id":"sh/fu9wfutw","slide":1,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[492,497,13,14]}
+{"kind":"textbox","id":"sh/et0f6pcb","slide":1,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[508,497,13,14]}
+{"kind":"shape","id":"sh/ipgzipwj","slide":1,"bbox":[552,431,14,14]}
+{"kind":"shape","id":"sh/jqpgruxo","slide":1,"bbox":[570,431,14,14]}
+{"kind":"shape","id":"sh/4ryhkfe9","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/5srytkfu","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/6t0zmpwf","slide":1,"text":"T4-1\n8 卡","textPreview":"T4-1 | 8 卡","textChars":8,"textLines":2,"bbox":[540,448,73,49]}
+{"kind":"shape","id":"sh/ru9gvux0","slide":1,"bbox":[631,431,14,14]}
+{"kind":"shape","id":"sh/sfihozel","slide":1,"bbox":[649,431,14,14]}
+{"kind":"shape","id":"sh/tgryx4f6","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/eh0zq9wb","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/fi9gzexw","slide":1,"text":"T4-2\n8 卡","textPreview":"T4-2 | 8 卡","textChars":8,"textLines":2,"bbox":[619,448,73,49]}
+{"kind":"shape","id":"sh/pcv2p8ze","slide":1,"bbox":[710,431,14,14]}
+{"kind":"shape","id":"sh/obm1g3yt","slide":1,"bbox":[728,431,14,14]}
+{"kind":"shape","id":"sh/3atknyh8","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/29kjetgn","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/dgv2t8za","slide":1,"text":"T4-3\n8 卡","textPreview":"T4-3 | 8 卡","textChars":8,"textLines":2,"bbox":[698,448,73,49]}
+{"kind":"shape","id":"sh/cfm1k3yp","slide":1,"bbox":[828,431,14,14]}
+{"kind":"shape","id":"sh/bedkrih4","slide":1,"bbox":[846,431,14,14]}
+{"kind":"shape","id":"sh/qd4jidgj","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/lkf2xsz6","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/kj61ony1","slide":1,"text":"910B-2 / 8 卡\n8×200GE","textPreview":"910B-2 / 8 卡 | 8×200GE","textChars":20,"textLines":2,"bbox":[816,448,136,49]}
+{"kind":"textbox","id":"sh/s72tkvyd","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[820,497,13,14]}
+{"kind":"textbox","id":"sh/t8bud0fy","slide":1,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[836,497,13,14]}
+{"kind":"textbox","id":"sh/65kbilg7","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[852,497,13,14]}
+{"kind":"textbox","id":"sh/76tcbqxs","slide":1,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[868,497,13,14]}
+{"kind":"textbox","id":"sh/kjitgvy1","slide":1,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[884,497,13,14]}
+{"kind":"textbox","id":"sh/54ru9gfm","slide":1,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[900,497,13,14]}
+{"kind":"textbox","id":"sh/ih0belgb","slide":1,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[916,497,13,14]}
+{"kind":"textbox","id":"sh/ji9c7qxg","slide":1,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[932,497,13,14]}
+{"kind":"shape","id":"sh/wfitcby5","slide":1,"bbox":[976,431,14,14]}
+{"kind":"shape","id":"sh/xgru5gfq","slide":1,"bbox":[994,431,14,14]}
+{"kind":"shape","id":"sh/zapcv61c","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/y9gvm10r","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/lc7uxgji","slide":1,"text":"T4-4\n8 卡","textPreview":"T4-4 | 8 卡","textChars":8,"textLines":2,"bbox":[964,448,73,49]}
+{"kind":"shape","id":"sh/0bydobix","slide":1,"bbox":[1055,431,14,14]}
+{"kind":"shape","id":"sh/ne9czqho","slide":1,"bbox":[1073,431,14,14]}
+{"kind":"shape","id":"sh/md0vql03","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/9gru1gze","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/8fidsbit","slide":1,"text":"T4-5\n8 卡","textPreview":"T4-5 | 8 卡","textChars":8,"textLines":2,"bbox":[1043,448,73,49]}
+{"kind":"shape","id":"sh/v29w3qhk","slide":1,"bbox":[1134,431,14,14]}
+{"kind":"shape","id":"sh/ah0vul0z","slide":1,"bbox":[1152,431,14,14]}
+{"kind":"shape","id":"sh/fm1gjq9o","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ulszql83","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/h8jyl0ru","slide":1,"text":"T4-6\n8 卡","textPreview":"T4-6 | 8 卡","textChars":8,"textLines":2,"bbox":[1122,448,86,49]}
+{"kind":"textbox","id":"sh/g7ahsvq9","slide":1,"text":"RoCE 交换机 ×1（拟放 B 柜）","textPreview":"RoCE 交换机 ×1（拟放 B 柜）","textChars":19,"textLines":1,"bbox":[513,593,513,33]}
+{"kind":"textbox","id":"sh/7ihgfq9s","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[540,579,18,14]}
+{"kind":"shape","id":"sh/6h8fml87","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/tkjyhgry","slide":1,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[565,579,18,14]}
+{"kind":"shape","id":"sh/sjqxobqd","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/jehgb69g","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[590,579,18,14]}
+{"kind":"shape","id":"sh/id8fi18v","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/8jmdc76t","slide":1,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[615,579,18,14]}
+{"kind":"shape","id":"sh/9kvelc7e","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/mh4vaxon","slide":1,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[640,579,18,14]}
+{"kind":"shape","id":"sh/nidwj2p8","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/wn6dgr65","slide":1,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[665,579,18,14]}
+{"kind":"shape","id":"sh/xofepc7q","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/alovehoz","slide":1,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[690,579,18,14]}
+{"kind":"shape","id":"sh/vmxwnmpk","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/cr2d4n6l","slide":1,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[715,579,18,14]}
+{"kind":"shape","id":"sh/dsbuds76","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/to3ahoza","slide":1,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[795,579,18,14]}
+{"kind":"shape","id":"sh/snut8jip","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/rmlsfeh4","slide":1,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[820,579,18,14]}
+{"kind":"shape","id":"sh/6lcb690j","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/1cnuloz6","slide":1,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[845,579,18,14]}
+{"kind":"shape","id":"sh/0betcjil","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/fa5cjeh0","slide":1,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[870,579,18,14]}
+{"kind":"shape","id":"sh/epcbat0f","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/pgnup8z2","slide":1,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[895,579,18,14]}
+{"kind":"shape","id":"sh/ofetg3ix","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/m9ozu1c3","slide":1,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[920,579,18,14]}
+{"kind":"shape","id":"sh/nax0n6to","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/8b6hwbut","slide":1,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[945,579,18,14]}
+{"kind":"shape","id":"sh/9cfipgbe","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/ad8zylcz","slide":1,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[970,579,18,14]}
+{"kind":"shape","id":"sh/veh0r6tk","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/wfqh0bu5","slide":1,"text":"16×200GE","textPreview":"16×200GE","textChars":8,"textLines":1,"bbox":[1045,593,172,26]}
+{"kind":"textbox","id":"sh/xgzitgbq","slide":1,"text":"共享 / 对象存储（可选）\n连接 A / B / C 三柜","textPreview":"共享 / 对象存储（可选） | 连接 A / B / C 三柜","textChars":29,"textLines":2,"bbox":[61,583,343,43]}
+{"kind":"shape","id":"sh/ih8z2lcb","slide":1,"bbox":[309,532,13,14]}
+{"kind":"shape","id":"sh/jih0vqtg","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/rydgfql0","slide":1,"bbox":[754,532,13,14]}
+{"kind":"shape","id":"sh/6x4zml4f","slide":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/t0fih03q","slide":1,"bbox":[1187,532,13,14]}
+{"kind":"shape","id":"sh/sz6hov25","slide":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/f2x0jqlw","slide":1,"text":"业务 / BMC 逐节点连线，存储网逐柜连线；RoCE 共 16 条物理链路。非 RoCE 设备规格待核定。","textPreview":"业务 / BMC 逐节点连线，存储网逐柜连线；RoCE 共 16 条物理链路。非 RoCE 设备规格待核定。","textChars":54,"textLines":1,"bbox":[62,632,1154,23]}
+{"kind":"notes","id":"nt/e57nak","slide":1,"text":"机柜命名按最新反馈：A为6台通算既有机柜，B/C为两台910B及6台T4所在的两个10kW机柜。机柜B含910B-1、T4-1至3，机柜C含910B-2、T4-4至6。业务网和BMC网以交换设备到各代表节点的独立连线展示。通算2…5代表4台分别接入的服务器。存储网明确连接A、B、C三柜，分别代表通算、910B和T4节点按需接入，每柜一条汇总示意线不等于每柜只有一个物理网口，也不代表新增机柜交换机。存储网仍保留可选状态，具体接口、带宽、设备台数、冗余与存储协议待确认。共享存储设备位置未指定。RoCE交换机1台拟放B柜，两台910B各8条200GE链路，16条光链路双端共32个光模块，T4不接入此计算通信组。机柜C至B跨柜布线。单台RoCE交换机不具备交换机级冗余。入口、防火墙、核心及接入交换设备为逻辑职责，复用及采购数量待核。未完成实机连通测试。硬件主题既有机柜字母将在统一编号时与本页保持一致。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
