@@ -1,0 +1,748 @@
+{"kind":"deck","id":"pr/irmzs5","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source02/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source02/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source03/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source03/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source04/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source04/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source05/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source05/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source06/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source06/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source07/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source07/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source08/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source08/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source09/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source09/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source10/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source10/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"/ppt/source11/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/source11/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"token 魔方","textShapes":4}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"token 魔方\nMini实验台","textPreview":"token 魔方 | Mini实验台","textChars":16,"textLines":2,"bbox":[70,142,1120,200]}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"text":"Token 生产与平台销售闭环验证","textPreview":"Token 生产与平台销售闭环验证","textChars":17,"textLines":1,"bbox":[74,385,1110,60]}
+{"kind":"shape","id":"sh/k3yl0zql","slide":1,"bbox":[74,520,1128,1]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"text":"prepare:张帅","textPreview":"prepare:张帅","textChars":10,"textLines":1,"bbox":[74,568,800,40]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"text":"2026年9月16日","textPreview":"2026年9月16日","textChars":10,"textLines":1,"bbox":[74,621,900,32]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"内部立项与跨部门评审。依据已确认的执行文档v1.5制作，保留11个主题，合计18页。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"目录","textShapes":34}
+{"kind":"textbox","id":"sh/wbidwb29","slide":2,"text":"目录","textPreview":"目录","textChars":2,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"text":"技术验证与商业验证","textPreview":"技术验证与商业验证","textChars":9,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"text":"从设备与软件适配，到部署、压测、文本收入与结算回款。","textPreview":"从设备与软件适配，到部署、压测、文本收入与结算回款。","textChars":26,"textLines":1,"bbox":[62,148,1156,38]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"text":"A  技术验证","textPreview":"A  技术验证","textChars":7,"textLines":1,"bbox":[60,205,550,44]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"text":"B  商业验证","textPreview":"B  商业验证","textChars":7,"textLines":1,"bbox":[675,205,545,44]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,267,460,29]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"text":"03–04","textPreview":"03–04","textChars":5,"textLines":1,"bbox":[530,267,80,29]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"text":"机柜布局、服务器配置与上架配套","textPreview":"机柜布局、服务器配置与上架配套","textChars":15,"textLines":1,"bbox":[60,300,550,26]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"text":"A2  网络拓扑","textPreview":"A2  网络拓扑","textChars":8,"textLines":1,"bbox":[60,340,460,29]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[530,340,80,29]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"text":"业务、带外管理、RoCE 与存储连接","textPreview":"业务、带外管理、RoCE 与存储连接","textChars":18,"textLines":1,"bbox":[60,373,550,26]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,413,460,29]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"text":"06–07","textPreview":"06–07","textChars":5,"textLines":1,"bbox":[530,413,80,29]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"text":"T4 / 910B 软件生态与模型部署支持","textPreview":"T4 / 910B 软件生态与模型部署支持","textChars":21,"textLines":1,"bbox":[60,446,550,26]}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"text":"A4  模型适配","textPreview":"A4  模型适配","textChars":8,"textLines":1,"bbox":[60,486,460,29]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"text":"08–09","textPreview":"08–09","textChars":5,"textLines":1,"bbox":[530,486,80,29]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"text":"适配方法论与现有设备候选模型清单","textPreview":"适配方法论与现有设备候选模型清单","textChars":16,"textLines":1,"bbox":[60,519,550,26]}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"text":"A5  模型部署","textPreview":"A5  模型部署","textChars":8,"textLines":1,"bbox":[60,559,460,29]}
+{"kind":"textbox","id":"sh/do3q9szq","slide":2,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[530,559,80,29]}
+{"kind":"textbox","id":"sh/t8byxkn2","slide":2,"text":"模型下载、环境准备、部署与验收","textPreview":"模型下载、环境准备、部署与验收","textChars":15,"textLines":1,"bbox":[60,592,550,26]}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"text":"B1  性能测试","textPreview":"B1  性能测试","textChars":8,"textLines":1,"bbox":[675,267,455,29]}
+{"kind":"textbox","id":"sh/76twva5c","slide":2,"text":"11–12","textPreview":"11–12","textChars":5,"textLines":1,"bbox":[1140,267,80,29]}
+{"kind":"textbox","id":"sh/65kfmpor","slide":2,"text":"压测方法、最大并发与关键指标记录","textPreview":"压测方法、最大并发与关键指标记录","textChars":16,"textLines":1,"bbox":[675,300,545,26]}
+{"kind":"textbox","id":"sh/hcvy14ne","slide":2,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[675,340,455,29]}
+{"kind":"textbox","id":"sh/gbmxszmt","slide":2,"text":"13–14","textPreview":"13–14","textChars":5,"textLines":1,"bbox":[1140,340,80,29]}
+{"kind":"textbox","id":"sh/fadgzu58","slide":2,"text":"文本收入公式与 DeepSeek 价格算例","textPreview":"文本收入公式与 DeepSeek 价格算例","textChars":21,"textLines":1,"bbox":[675,373,545,26]}
+{"kind":"textbox","id":"sh/u94fqp4n","slide":2,"text":"B3  商业协议","textPreview":"B3  商业协议","textChars":8,"textLines":1,"bbox":[675,413,455,29]}
+{"kind":"textbox","id":"sh/p0vy54na","slide":2,"text":"15–16","textPreview":"15–16","textChars":5,"textLines":1,"bbox":[1140,413,80,29]}
+{"kind":"textbox","id":"sh/4zmxwzmp","slide":2,"text":"计量结算、服务承诺与责任边界","textPreview":"计量结算、服务承诺与责任边界","textChars":14,"textLines":1,"bbox":[675,446,545,26]}
+{"kind":"textbox","id":"sh/mlgvq147","slide":2,"text":"B4  公司流程","textPreview":"B4  公司流程","textChars":8,"textLines":1,"bbox":[675,486,455,29]}
+{"kind":"textbox","id":"sh/nmpcj6ls","slide":2,"text":"17–18","textPreview":"17–18","textChars":5,"textLines":1,"bbox":[1140,486,80,29]}
+{"kind":"textbox","id":"sh/onydsbmd","slide":2,"text":"角色协作、凭证交接与闭环验收","textPreview":"角色协作、凭证交接与闭环验收","textChars":14,"textLines":1,"bbox":[675,519,545,26]}
+{"kind":"shape","id":"sh/9o7ulg3y","slide":2,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/a9gvulkj","slide":2,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/ba9cn6l4","slide":2,"text":"02 / 18","textPreview":"02 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"目录与当前11份子PPT的顺序一致。封面及目录占第1、2页，九个内容主题占第3至18页。模型适配与模型部署分别列示。收益分析限定文本收入。页码按照当前合并顺序计算。"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"A1  硬件设备","textShapes":28}
+{"kind":"textbox","id":"sh/ra9g3qh4","slide":3,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"text":"机柜布局与服务器配置","textPreview":"机柜布局与服务器配置","textChars":10,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"text":"14 台服务器分布于 3 个机柜：2 台 910B、6 台八卡 T4、6 台通算。","textPreview":"14 台服务器分布于 3 个机柜：2 台 910B、6 台八卡 T4、6 台通算。","textChars":41,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"text":"03 / 18","textPreview":"03 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"text":"机柜布局（示意，非实际 U 位）","textPreview":"机柜布局（示意，非实际 U 位）","textChars":16,"textLines":1,"bbox":[62,199,501,32]}
+{"kind":"shape","id":"sh/m5cra54z","slide":3,"bbox":[66,249,148,298]}
+{"kind":"shape","id":"sh/n6ls3alk","slide":3,"bbox":[62,239,152,305]}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"bbox":[68,286,140,249]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"text":"机柜 A","textPreview":"机柜 A","textChars":4,"textLines":1,"bbox":[70,246,136,27]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"text":"10 kW / 拟装载","textPreview":"10 kW / 拟装载","textChars":11,"textLines":1,"bbox":[66,272,144,22]}
+{"kind":"shape","id":"sh/83ulovat","slide":3,"bbox":[70,298,7,230]}
+{"kind":"shape","id":"sh/v6l4jq94","slide":3,"bbox":[199,298,7,230]}
+{"kind":"shape","id":"sh/a5c3ql8z","slide":3,"bbox":[72,305,3,4]}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"bbox":[201,305,3,4]}
+{"kind":"shape","id":"sh/w7ulsvqp","slide":3,"bbox":[72,319,3,4]}
+{"kind":"shape","id":"sh/ja54na9g","slide":3,"bbox":[201,319,3,4]}
+{"kind":"shape","id":"sh/i9w3u58v","slide":3,"bbox":[72,333,3,4]}
+{"kind":"shape","id":"sh/e10f2twf","slide":3,"bbox":[201,333,3,4]}
+{"kind":"shape","id":"sh/f29gbyx0","slide":3,"bbox":[72,347,3,4]}
+{"kind":"shape","id":"sh/03ix43e5","slide":3,"bbox":[201,347,3,4]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"bbox":[72,361,3,4]}
+{"kind":"shape","id":"sh/6d0fytg3","slide":3,"bbox":[201,361,3,4]}
+{"kind":"shape","id":"sh/re9g7yxo","slide":3,"bbox":[72,375,3,4]}
+{"kind":"shape","id":"sh/sfix03y9","slide":3,"bbox":[201,375,3,4]}
+{"kind":"shape","id":"sh/tgry9ofu","slide":3,"bbox":[72,389,3,4]}
+{"kind":"shape","id":"sh/a9kfadwn","slide":3,"bbox":[201,389,3,4]}
+{"kind":"shape","id":"sh/batgjixs","slide":3,"bbox":[72,403,3,4]}
+{"kind":"shape","id":"sh/l4fi9cza","slide":3,"bbox":[201,403,3,4]}
+{"kind":"shape","id":"sh/k3m1g7yp","slide":3,"bbox":[72,417,3,4]}
+{"kind":"shape","id":"sh/z2d07mh4","slide":3,"bbox":[201,417,3,4]}
+{"kind":"shape","id":"sh/y14jehgj","slide":3,"bbox":[72,431,3,4]}
+{"kind":"shape","id":"sh/x0vi5czy","slide":3,"bbox":[201,431,3,4]}
+{"kind":"shape","id":"sh/czmhc7id","slide":3,"bbox":[72,445,3,4]}
+{"kind":"shape","id":"sh/byd032h8","slide":3,"bbox":[201,445,3,4]}
+{"kind":"shape","id":"sh/ax4zax0n","slide":3,"bbox":[72,459,3,4]}
+{"kind":"shape","id":"sh/hwzihwzi","slide":3,"bbox":[201,459,3,4]}
+{"kind":"shape","id":"sh/wv61obyx","slide":3,"bbox":[72,473,3,4]}
+{"kind":"shape","id":"sh/4nuhs7uh","slide":3,"bbox":[201,473,3,4]}
+{"kind":"shape","id":"sh/po3ilcvm","slide":3,"bbox":[72,487,3,4]}
+{"kind":"shape","id":"sh/21szqxcb","slide":3,"bbox":[201,487,3,4]}
+{"kind":"shape","id":"sh/32l0j2dw","slide":3,"bbox":[72,501,3,4]}
+{"kind":"shape","id":"sh/cruhwrud","slide":3,"bbox":[201,501,3,4]}
+{"kind":"shape","id":"sh/ds3ipcvy","slide":3,"bbox":[72,515,3,4]}
+{"kind":"shape","id":"sh/qpczuhc7","slide":3,"bbox":[201,515,3,4]}
+{"kind":"shape","id":"sh/rql0nmds","slide":3,"bbox":[80,303,116,65]}
+{"kind":"shape","id":"sh/0ve10ru9","slide":3,"bbox":[80,303,4,65]}
+{"kind":"shape","id":"sh/1wnitwvu","slide":3,"bbox":[88,310,3,51]}
+{"kind":"textbox","id":"sh/v29cfu18","slide":3,"text":"910B-1\n8 张 NPU","textPreview":"910B-1 | 8 张 NPU","textChars":14,"textLines":2,"bbox":[95,304,91,63]}
+{"kind":"shape","id":"sh/a10b6p03","slide":3,"bbox":[189,311,3,3]}
+{"kind":"shape","id":"sh/xoruhkje","slide":3,"bbox":[80,374,116,34]}
+{"kind":"shape","id":"sh/w3it8zit","slide":3,"bbox":[80,374,4,34]}
+{"kind":"shape","id":"sh/nypcba1c","slide":3,"bbox":[88,381,3,20]}
+{"kind":"textbox","id":"sh/mxgb250r","slide":3,"text":"T4-1  8 卡","textPreview":"T4-1  8 卡","textChars":9,"textLines":1,"bbox":[95,375,91,32]}
+{"kind":"shape","id":"sh/90rudkji","slide":3,"bbox":[189,382,3,3]}
+{"kind":"shape","id":"sh/8zit4fix","slide":3,"bbox":[80,413,116,34]}
+{"kind":"shape","id":"sh/7utcne1g","slide":3,"bbox":[80,413,4,34]}
+{"kind":"shape","id":"sh/6tkve90v","slide":3,"bbox":[88,420,3,20]}
+{"kind":"textbox","id":"sh/2p4f6dk3","slide":3,"text":"T4-2  8 卡","textPreview":"T4-2  8 卡","textChars":9,"textLines":1,"bbox":[95,414,91,32]}
+{"kind":"shape","id":"sh/3qxwfilo","slide":3,"bbox":[189,421,3,3]}
+{"kind":"shape","id":"sh/or6x8329","slide":3,"bbox":[80,452,116,34]}
+{"kind":"shape","id":"sh/psfeh83u","slide":3,"bbox":[80,452,4,34]}
+{"kind":"shape","id":"sh/qtofadkf","slide":3,"bbox":[88,459,3,20]}
+{"kind":"textbox","id":"sh/bexwjil0","slide":3,"text":"T4-3  8 卡","textPreview":"T4-3  8 卡","textChars":9,"textLines":1,"bbox":[95,453,91,32]}
+{"kind":"shape","id":"sh/cf6xcn2l","slide":3,"bbox":[189,460,3,3]}
+{"kind":"shape","id":"sh/dgfyls3q","slide":3,"bbox":[82,497,112,3]}
+{"kind":"shape","id":"sh/6xkvytkb","slide":3,"bbox":[82,505,112,3]}
+{"kind":"shape","id":"sh/7idw7ylg","slide":3,"bbox":[82,513,112,3]}
+{"kind":"shape","id":"sh/9cjidwny","slide":3,"bbox":[77,544,25,5]}
+{"kind":"shape","id":"sh/8bahkrmt","slide":3,"bbox":[174,544,25,5]}
+{"kind":"shape","id":"sh/na10bm58","slide":3,"bbox":[232,249,148,298]}
+{"kind":"shape","id":"sh/m9szih4n","slide":3,"bbox":[228,239,152,305]}
+{"kind":"shape","id":"sh/xg3ihwna","slide":3,"bbox":[234,286,140,249]}
+{"kind":"textbox","id":"sh/wfahormp","slide":3,"text":"机柜 B","textPreview":"机柜 B","textChars":4,"textLines":1,"bbox":[236,246,136,27]}
+{"kind":"textbox","id":"sh/ve10fm54","slide":3,"text":"10 kW / 拟装载","textPreview":"10 kW / 拟装载","textChars":11,"textLines":1,"bbox":[232,272,144,22]}
+{"kind":"shape","id":"sh/adszm14j","slide":3,"bbox":[236,298,7,230]}
+{"kind":"shape","id":"sh/dkzy5cn6","slide":3,"bbox":[365,298,7,230]}
+{"kind":"shape","id":"sh/cjqhc7ml","slide":3,"bbox":[238,305,3,4]}
+{"kind":"shape","id":"sh/436lcve1","slide":3,"bbox":[367,305,3,4]}
+{"kind":"shape","id":"sh/54fm50vm","slide":3,"bbox":[238,319,3,4]}
+{"kind":"shape","id":"sh/ih43alwv","slide":3,"bbox":[367,319,3,4]}
+{"kind":"shape","id":"sh/3id43qdg","slide":3,"bbox":[238,333,3,4]}
+{"kind":"shape","id":"sh/gfml8ve5","slide":3,"bbox":[367,333,3,4]}
+{"kind":"shape","id":"sh/hgvm1gvq","slide":3,"bbox":[238,347,3,4]}
+{"kind":"shape","id":"sh/ud436lwz","slide":3,"bbox":[367,347,3,4]}
+{"kind":"shape","id":"sh/ved4zqdk","slide":3,"bbox":[238,361,3,4]}
+{"kind":"shape","id":"sh/0bq5kfu9","slide":3,"bbox":[367,361,3,4]}
+{"kind":"shape","id":"sh/1czmdkvu","slide":3,"bbox":[238,375,3,4]}
+{"kind":"shape","id":"sh/b61o3exw","slide":3,"bbox":[367,375,3,4]}
+{"kind":"shape","id":"sh/a5s7a9gb","slide":3,"bbox":[238,389,3,4]}
+{"kind":"shape","id":"sh/x8jq5of2","slide":3,"bbox":[367,389,3,4]}
+{"kind":"shape","id":"sh/w7apcjyh","slide":3,"bbox":[238,403,3,4]}
+{"kind":"shape","id":"sh/jul87yx8","slide":3,"bbox":[367,403,3,4]}
+{"kind":"shape","id":"sh/ytc7etwn","slide":3,"bbox":[238,417,3,4]}
+{"kind":"shape","id":"sh/lw3q9ofy","slide":3,"bbox":[367,417,3,4]}
+{"kind":"shape","id":"sh/kvupg3ed","slide":3,"bbox":[238,431,3,4]}
+{"kind":"shape","id":"sh/fyhovuxo","slide":3,"bbox":[367,431,3,4]}
+{"kind":"shape","id":"sh/ex872pg3","slide":3,"bbox":[238,445,3,4]}
+{"kind":"shape","id":"sh/fuhcnq50","slide":3,"bbox":[367,445,3,4]}
+{"kind":"shape","id":"sh/et8vel4f","slide":3,"bbox":[238,459,3,4]}
+{"kind":"shape","id":"sh/1wzup0nq","slide":3,"bbox":[367,459,3,4]}
+{"kind":"shape","id":"sh/0vqdgvml","slide":3,"bbox":[238,473,3,4]}
+{"kind":"shape","id":"sh/r6xcjq5o","slide":3,"bbox":[367,473,3,4]}
+{"kind":"shape","id":"sh/q5oval43","slide":3,"bbox":[238,487,3,4]}
+{"kind":"shape","id":"sh/d8zul0nu","slide":3,"bbox":[367,487,3,4]}
+{"kind":"shape","id":"sh/s7qdcvm9","slide":3,"bbox":[238,501,3,4]}
+{"kind":"shape","id":"sh/b21wva58","slide":3,"bbox":[367,501,3,4]}
+{"kind":"shape","id":"sh/a1svm54n","slide":3,"bbox":[238,515,3,4]}
+{"kind":"shape","id":"sh/8v210nyt","slide":3,"bbox":[367,515,3,4]}
+{"kind":"shape","id":"sh/9wbitsze","slide":3,"bbox":[246,303,116,65]}
+{"kind":"shape","id":"sh/mt0jydgn","slide":3,"bbox":[246,303,4,65]}
+{"kind":"shape","id":"sh/7u90rih8","slide":3,"bbox":[254,310,3,51]}
+{"kind":"textbox","id":"sh/wz214nyp","slide":3,"text":"910B-2\n8 张 NPU","textPreview":"910B-2 | 8 张 NPU","textChars":14,"textLines":2,"bbox":[261,304,91,63]}
+{"kind":"shape","id":"sh/h0bixsza","slide":3,"bbox":[355,311,3,3]}
+{"kind":"shape","id":"sh/uxkj2xgz","slide":3,"bbox":[246,374,116,34]}
+{"kind":"shape","id":"sh/vyt0vihk","slide":3,"bbox":[246,374,4,34]}
+{"kind":"shape","id":"sh/43m187y1","slide":3,"bbox":[254,381,3,20]}
+{"kind":"textbox","id":"sh/5ov21czm","slide":3,"text":"T4-4  8 卡","textPreview":"T4-4  8 卡","textChars":9,"textLines":1,"bbox":[261,375,91,32]}
+{"kind":"shape","id":"sh/dkrilsrq","slide":3,"bbox":[355,382,3,3]}
+{"kind":"shape","id":"sh/sji1s7q5","slide":3,"bbox":[246,413,116,34]}
+{"kind":"shape","id":"sh/ri90j29k","slide":3,"bbox":[246,413,4,34]}
+{"kind":"shape","id":"sh/qh0jqx8z","slide":3,"bbox":[254,420,3,20]}
+{"kind":"textbox","id":"sh/1oripcrm","slide":3,"text":"T4-5  8 卡","textPreview":"T4-5  8 卡","textChars":9,"textLines":1,"bbox":[261,414,91,32]}
+{"kind":"shape","id":"sh/0ni1w7q1","slide":3,"bbox":[355,421,3,3]}
+{"kind":"shape","id":"sh/fm90n29w","slide":3,"bbox":[246,452,116,34]}
+{"kind":"shape","id":"sh/el0jux8b","slide":3,"bbox":[246,452,4,34]}
+{"kind":"shape","id":"sh/hs7id8ri","slide":3,"bbox":[254,459,3,20]}
+{"kind":"textbox","id":"sh/gryhknqx","slide":3,"text":"T4-6  8 卡","textPreview":"T4-6  8 卡","textChars":9,"textLines":1,"bbox":[261,453,91,32]}
+{"kind":"shape","id":"sh/mxcfe9ov","slide":3,"bbox":[355,460,3,3]}
+{"kind":"shape","id":"sh/7y5gnepg","slide":3,"bbox":[248,497,112,3]}
+{"kind":"shape","id":"sh/8jexgj61","slide":3,"bbox":[248,505,112,3]}
+{"kind":"shape","id":"sh/tknypo76","slide":3,"bbox":[248,513,112,3]}
+{"kind":"shape","id":"sh/ulwfitor","slide":3,"bbox":[243,544,25,5]}
+{"kind":"shape","id":"sh/vm5grypc","slide":3,"bbox":[340,544,25,5]}
+{"kind":"shape","id":"sh/gnexk36x","slide":3,"bbox":[398,249,148,298]}
+{"kind":"shape","id":"sh/honyt87i","slide":3,"bbox":[394,239,152,305]}
+{"kind":"shape","id":"sh/apsf6pon","slide":3,"bbox":[400,286,140,249]}
+{"kind":"textbox","id":"sh/bq1wfup8","slide":3,"text":"机柜 C","textPreview":"机柜 C","textChars":4,"textLines":1,"bbox":[402,246,136,27]}
+{"kind":"textbox","id":"sh/rat43mdk","slide":3,"text":"既有 / 通算专用","textPreview":"既有 / 通算专用","textChars":9,"textLines":1,"bbox":[398,272,144,22]}
+{"kind":"shape","id":"sh/q9knu1wz","slide":3,"bbox":[402,298,7,230]}
+{"kind":"shape","id":"sh/dcbm5wvq","slide":3,"bbox":[531,298,7,230]}
+{"kind":"shape","id":"sh/sb25wru5","slide":3,"bbox":[404,305,3,4]}
+{"kind":"shape","id":"sh/fet476dw","slide":3,"bbox":[533,305,3,4]}
+{"kind":"shape","id":"sh/edkny1cb","slide":3,"bbox":[404,319,3,4]}
+{"kind":"shape","id":"sh/1gbmtgvm","slide":3,"bbox":[533,319,3,4]}
+{"kind":"shape","id":"sh/0f250buh","slide":3,"bbox":[404,333,3,4]}
+{"kind":"shape","id":"sh/n2d4v6ds","slide":3,"bbox":[533,333,3,4]}
+{"kind":"shape","id":"sh/214n2lc7","slide":3,"bbox":[404,347,3,4]}
+{"kind":"shape","id":"sh/k7mlsval","slide":3,"bbox":[533,347,3,4]}
+{"kind":"shape","id":"sh/l8fmlgb6","slide":3,"bbox":[404,361,3,4]}
+{"kind":"shape","id":"sh/y543qlsf","slide":3,"bbox":[533,361,3,4]}
+{"kind":"shape","id":"sh/z6d4jqt0","slide":3,"bbox":[404,375,3,4]}
+{"kind":"shape","id":"sh/c3mloba9","slide":3,"bbox":[533,375,3,4]}
+{"kind":"shape","id":"sh/x4vmhgbu","slide":3,"bbox":[404,389,3,4]}
+{"kind":"shape","id":"sh/ah43m1sj","slide":3,"bbox":[533,389,3,4]}
+{"kind":"shape","id":"sh/b2d4f6t4","slide":3,"bbox":[404,403,3,4]}
+{"kind":"shape","id":"sh/of2lkrad","slide":3,"bbox":[533,403,3,4]}
+{"kind":"shape","id":"sh/pgv2dwby","slide":3,"bbox":[404,417,3,4]}
+{"kind":"shape","id":"sh/pwn2hs3m","slide":3,"bbox":[533,417,3,4]}
+{"kind":"shape","id":"sh/4bu1on21","slide":3,"bbox":[404,431,3,4]}
+{"kind":"shape","id":"sh/3al0filg","slide":3,"bbox":[533,431,3,4]}
+{"kind":"shape","id":"sh/29cjmdkb","slide":3,"bbox":[404,445,3,4]}
+{"kind":"shape","id":"sh/h83ids3q","slide":3,"bbox":[533,445,3,4]}
+{"kind":"shape","id":"sh/g7u1kn25","slide":3,"bbox":[404,459,3,4]}
+{"kind":"shape","id":"sh/f6l0bilk","slide":3,"bbox":[533,459,3,4]}
+{"kind":"shape","id":"sh/u5cjid4z","slide":3,"bbox":[404,473,3,4]}
+{"kind":"shape","id":"sh/1472pc3u","slide":3,"bbox":[533,473,3,4]}
+{"kind":"shape","id":"sh/03e1w729","slide":3,"bbox":[404,487,3,4]}
+{"kind":"shape","id":"sh/y98za90r","slide":3,"bbox":[533,487,3,4]}
+{"kind":"shape","id":"sh/jahgje1c","slide":3,"bbox":[404,501,3,4]}
+{"kind":"shape","id":"sh/kbqhcjix","slide":3,"bbox":[533,501,3,4]}
+{"kind":"shape","id":"sh/lczyloji","slide":3,"bbox":[404,515,3,4]}
+{"kind":"shape","id":"sh/alofm9kv","slide":3,"bbox":[533,515,3,4]}
+{"kind":"shape","id":"sh/b6hgfu1g","slide":3,"bbox":[412,303,116,30]}
+{"kind":"shape","id":"sh/w7qxoz2l","slide":3,"bbox":[412,303,4,30]}
+{"kind":"shape","id":"sh/x8zyh4j6","slide":3,"bbox":[420,310,3,16]}
+{"kind":"textbox","id":"sh/uhszit0z","slide":3,"text":"通算-1","textPreview":"通算-1","textChars":4,"textLines":1,"bbox":[427,304,91,28]}
+{"kind":"shape","id":"sh/f21gry1k","slide":3,"bbox":[521,311,3,3]}
+{"kind":"shape","id":"sh/3mx8fupc","slide":3,"bbox":[412,338,116,30]}
+{"kind":"shape","id":"sh/2l47mpor","slide":3,"bbox":[412,338,4,30]}
+{"kind":"shape","id":"sh/pofqh47i","slide":3,"bbox":[420,345,3,16]}
+{"kind":"textbox","id":"sh/4n6poz6x","slide":3,"text":"通算-2","textPreview":"通算-2","textChars":4,"textLines":1,"bbox":[427,339,91,28]}
+{"kind":"shape","id":"sh/vidobupg","slide":3,"bbox":[521,346,3,3]}
+{"kind":"shape","id":"sh/uh47ipov","slide":3,"bbox":[412,373,116,30]}
+{"kind":"shape","id":"sh/hkv6dk7m","slide":3,"bbox":[412,373,4,30]}
+{"kind":"shape","id":"sh/gjmpkz61","slide":3,"bbox":[420,380,3,16]}
+{"kind":"textbox","id":"sh/7uto7ap4","slide":3,"text":"通算-3","textPreview":"通算-3","textChars":4,"textLines":1,"bbox":[427,374,91,28]}
+{"kind":"shape","id":"sh/6tk7e5oj","slide":3,"bbox":[521,381,3,3]}
+{"kind":"shape","id":"sh/wzi5obmh","slide":3,"bbox":[412,408,116,30]}
+{"kind":"shape","id":"sh/x0rmhgn2","slide":3,"bbox":[412,408,4,30]}
+{"kind":"shape","id":"sh/ax03m14b","slide":3,"bbox":[420,415,3,16]}
+{"kind":"textbox","id":"sh/by94f65w","slide":3,"text":"通算-4","textPreview":"通算-4","textChars":4,"textLines":1,"bbox":[427,409,91,28]}
+{"kind":"shape","id":"sh/kn25svmt","slide":3,"bbox":[521,416,3,3]}
+{"kind":"shape","id":"sh/lobml0ne","slide":3,"bbox":[412,443,116,30]}
+{"kind":"shape","id":"sh/yl0nql4n","slide":3,"bbox":[412,443,4,30]}
+{"kind":"shape","id":"sh/jm94jq58","slide":3,"bbox":[420,450,3,16]}
+{"kind":"textbox","id":"sh/0rylgrm9","slide":3,"text":"通算-5","textPreview":"通算-5","textChars":4,"textLines":1,"bbox":[427,444,91,28]}
+{"kind":"shape","id":"sh/1s7m9wnu","slide":3,"bbox":[521,451,3,3]}
+{"kind":"shape","id":"sh/k7mxsfep","slide":3,"bbox":[412,478,116,30]}
+{"kind":"shape","id":"sh/l8ve1kfa","slide":3,"bbox":[412,478,4,30]}
+{"kind":"shape","id":"sh/y54fq5wz","slide":3,"bbox":[420,485,3,16]}
+{"kind":"textbox","id":"sh/z6dwzaxk","slide":3,"text":"通算-6","textPreview":"通算-6","textChars":4,"textLines":1,"bbox":[427,479,91,28]}
+{"kind":"shape","id":"sh/c3mxovet","slide":3,"bbox":[521,486,3,3]}
+{"kind":"shape","id":"sh/x4vex0fe","slide":3,"bbox":[409,544,25,5]}
+{"kind":"shape","id":"sh/qhkfm5wn","slide":3,"bbox":[506,544,25,5]}
+{"kind":"textbox","id":"sh/bitwvax8","slide":3,"text":"A / B：模型推理\nC：MASS 平台及支撑服务","textPreview":"A / B：模型推理 | C：MASS 平台及支撑服务","textChars":25,"textLines":2,"bbox":[62,560,490,53]}
+{"kind":"textbox","id":"sh/pgbet0f2","slide":3,"text":"上架条件：每柜 1 台 910B＋3 台 T4＋网络设备的整机峰值及预留，不得超过机柜可用功率。","textPreview":"上架条件：每柜 1 台 910B＋3 台 T4＋网络设备的整机峰值及预留，不得超过机柜可用功率。","textChars":48,"textLines":1,"bbox":[62,619,1155,29]}
+{"kind":"table","id":"tb/vap43e9g","slide":3,"name":"","rows":4,"cols":2,"preview":"服务器 / 数量 | 单台配置","bbox":[580,204,638,394]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"依据用户2026-09-16提供的硬件参考截图：/Users/lin/Desktop/截屏2026-09-16 14.01.50.png。已确定台数、卡数及RoCE配置来自本任务用户要求。参考配置为候选BOM，不代表现有实物验收结果。截图CPU型号照录Kunpeng 920_5250；加速卡照录Ascend 910_4-64G，与用户指定910B尚需按物料编码及设备报告确认，不把64G视为910B已验收显存。通算参考CPU单颗2.1GHz/20核，2颗合计40核；内存384GB。910B参考内存768GB。容量均原始配置，不推定RAID后的可用空间。T4的CPU、内存和磁盘无参考，故不编造。T4单卡16GB沿用原报告NVIDIA数据表 https://www.nvidia.cn/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet.pdf 。机柜C按最新用户要求展示6台既有通算，容量未指定。两台910B每台超过5kW为用户输入，A/B各一台；混装方案须核验整机峰值、U位、承重、制冷、PDU和故障供电。功率超过可用额度时调整T4位置，不表示本方案已通过上架验收。"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"A1  硬件设备","textShapes":6}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"text":"A1  硬件设备","textPreview":"A1  硬件设备","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"text":"网络、存储与上架配套清单","textPreview":"网络、存储与上架配套清单","textChars":12,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"text":"盘点口径：已确定数量直接列示，参考规格保留，选配设备单独计算。","textPreview":"盘点口径：已确定数量直接列示，参考规格保留，选配设备单独计算。","textChars":31,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/rm1k7yt4","slide":4,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"text":"04 / 18","textPreview":"04 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"text":"盘点结果应形成逐台配置表、逐端口接线表和逐柜功率表，再确定补购数量。","textPreview":"盘点结果应形成逐台配置表、逐端口接线表和逐柜功率表，再确定补购数量。","textChars":34,"textLines":1,"bbox":[62,625,1156,28]}
+{"kind":"table","id":"tb/fe1wvuh4","slide":4,"name":"","rows":8,"cols":3,"preview":"设备类别 | 数量 / 状态 | 配置与盘点要求","bbox":[60,204,1160,412]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"来源：用户硬件参考截图 /Users/lin/Desktop/截屏2026-09-16 14.01.50.png 及用户本任务已确认配置。交换机48口等为参考规格，不是本期已批准采购清单。RoCE已确认1台；32×200GE与16×400GE为参考的两种选择，不累计成两台。400GE分拆还需核验breakout能力、端口模式、FEC、模块和线缆兼容，不能仅凭MPO线认定可用。32个200GE模块是两台910B共16条光链路双端总数，不包含业务网络模块。参考服务器网络原文：网卡0为6×GE（1个Mgmt管理网口、1个调试串口、4个板载口），另行写4×GE+4×25GE+2×200GE+2×200GE+2×200GE+2×200GE+2×25GE+IPMI。该参考将串口与GE混列、管理项可能重复，因此不直接累加成采购数量；RoCE按已确定每机8×200GE，业务网及BMC按实物端口表去重核验。对象存储参考CPU单颗2.4GHz/12核，硬盘原始容量不能直接作为可用容量，冗余策略及台数尚未定义。对象存储不计入14台已确定服务器，也不擅自放入现有三柜。所有整机配件包含检查完整性，并非主张现有设备全部重新采购。"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"A2  网络拓扑","textShapes":65}
+{"kind":"textbox","id":"sh/dgj6p0ru","slide":5,"text":"A2  网络拓扑","textPreview":"A2  网络拓扑","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"text":"跨柜 RoCE：两台 910B 共用一台交换机","textPreview":"跨柜 RoCE：两台 910B 共用一台交换机","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"text":"已确认：1 台 RoCE 交换机、16 条 200GE 链路、双端 32 个光模块。","textPreview":"已确认：1 台 RoCE 交换机、16 条 200GE 链路、双端 32 个光模块。","textChars":42,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/z2tcnm5s","slide":5,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"text":"05 / 18","textPreview":"05 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"text":"目标平台 / Internet / 压测入口","textPreview":"目标平台 / Internet / 压测入口","textChars":22,"textLines":1,"bbox":[451,194,362,32]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"text":"边界防火墙 / 访问控制（复用或补齐）","textPreview":"边界防火墙 / 访问控制（复用或补齐）","textChars":19,"textLines":1,"bbox":[451,239,362,32]}
+{"kind":"shape","id":"sh/cfe9sjat","slide":5,"bbox":[632,226,0,13]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"text":"运维入口 / 管理区","textPreview":"运维入口 / 管理区","textChars":10,"textLines":1,"bbox":[61,241,273,32]}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"text":"BMC 带外管理接入交换设备","textPreview":"BMC 带外管理接入交换设备","textChars":14,"textLines":1,"bbox":[104,351,313,35]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"text":"业务网接入交换设备","textPreview":"业务网接入交换设备","textChars":9,"textLines":1,"bbox":[698,351,314,35]}
+{"kind":"shape","id":"sh/obu9ozuh","slide":5,"bbox":[197.5,273,63,78]}
+{"kind":"shape","id":"sh/nalsvutw","slide":5,"bbox":[632,271,223,80]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"text":"交换设备\n管理口接入带外","textPreview":"交换设备 | 管理口接入带外","textChars":12,"textLines":2,"bbox":[63,292,145,48]}
+{"kind":"shape","id":"sh/i54fmlc7","slide":5,"bbox":[909,202,37,3]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"text":"业务网：速率待盘点","textPreview":"业务网：速率待盘点","textChars":9,"textLines":1,"bbox":[957,192,276,24]}
+{"kind":"shape","id":"sh/sb6xsvu9","slide":5,"bbox":[909,231,37,3]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"text":"BMC 网：速率待盘点","textPreview":"BMC 网：速率待盘点","textChars":11,"textLines":1,"bbox":[957,221,276,24]}
+{"kind":"shape","id":"sh/hgrmpwj2","slide":5,"bbox":[909,260,37,3]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"text":"RoCE：200GE","textPreview":"RoCE：200GE","textChars":10,"textLines":1,"bbox":[957,250,276,24]}
+{"kind":"shape","id":"sh/fe94nm1w","slide":5,"bbox":[909,289,37,3]}
+{"kind":"textbox","id":"sh/ud0ne10b","slide":5,"text":"存储网：可选","textPreview":"存储网：可选","textChars":6,"textLines":1,"bbox":[957,279,276,24]}
+{"kind":"shape","id":"sh/pkr6tgjy","slide":5,"bbox":[59,428,302,110]}
+{"kind":"shape","id":"sh/4ji5kbid","slide":5,"bbox":[380,428,404,110]}
+{"kind":"shape","id":"sh/3i94r61s","slide":5,"bbox":[804,428,417,110]}
+{"kind":"textbox","id":"sh/2h0ni107","slide":5,"text":"机柜 A · 通算 ×6","textPreview":"机柜 A · 通算 ×6","textChars":12,"textLines":1,"bbox":[65,510,285,25]}
+{"kind":"textbox","id":"sh/5o7mhcju","slide":5,"text":"机柜 B / 10 kW","textPreview":"机柜 B / 10 kW","textChars":12,"textLines":1,"bbox":[625,510,153,25]}
+{"kind":"textbox","id":"sh/kny587i9","slide":5,"text":"机柜 C / 10 kW","textPreview":"机柜 C / 10 kW","textChars":12,"textLines":1,"bbox":[1055,510,157,25]}
+{"kind":"shape","id":"sh/atcjidg7","slide":5,"bbox":[82,431,14,14]}
+{"kind":"shape","id":"sh/vu5kbihc","slide":5,"bbox":[100,431,14,14]}
+{"kind":"shape","id":"sh/7ud4rmpk","slide":5,"bbox":[89,386,171.5,45]}
+{"kind":"shape","id":"sh/6t43yh8z","slide":5,"bbox":[107,386,748,45]}
+{"kind":"textbox","id":"sh/ihw3mxg3","slide":5,"text":"通算 1","textPreview":"通算 1","textChars":4,"textLines":1,"bbox":[70,448,82,49]}
+{"kind":"shape","id":"sh/ji5kf2ho","slide":5,"bbox":[177,431,14,14]}
+{"kind":"shape","id":"sh/kjelony9","slide":5,"bbox":[195,431,14,14]}
+{"kind":"shape","id":"sh/uxon218b","slide":5,"bbox":[184,386,76.5,45]}
+{"kind":"shape","id":"sh/2547ql4f","slide":5,"bbox":[202,386,653,45]}
+{"kind":"textbox","id":"sh/zmlk3yhk","slide":5,"text":"通算 2…5","textPreview":"通算 2…5","textChars":6,"textLines":1,"bbox":[165,448,90,49]}
+{"kind":"shape","id":"sh/fid07u98","slide":5,"bbox":[280,431,14,14]}
+{"kind":"shape","id":"sh/ehkzepsn","slide":5,"bbox":[298,431,14,14]}
+{"kind":"shape","id":"sh/q9o7u54b","slide":5,"bbox":[260.5,386,26.5,45]}
+{"kind":"shape","id":"sh/rax8nalw","slide":5,"bbox":[305,386,550,45]}
+{"kind":"textbox","id":"sh/3md0bu94","slide":5,"text":"通算 6","textPreview":"通算 6","textChars":4,"textLines":1,"bbox":[268,448,82,49]}
+{"kind":"shape","id":"sh/2l4zip8j","slide":5,"bbox":[404,431,14,14]}
+{"kind":"shape","id":"sh/povid4ra","slide":5,"bbox":[422,431,14,14]}
+{"kind":"shape","id":"sh/zyx8ral8","slide":5,"bbox":[260.5,386,150.5,45]}
+{"kind":"shape","id":"sh/9szax4na","slide":5,"bbox":[429,386,426,45]}
+{"kind":"textbox","id":"sh/qp4jm98v","slide":5,"text":"910B-1 / 8 卡\n8×200GE","textPreview":"910B-1 / 8 卡 | 8×200GE","textChars":20,"textLines":2,"bbox":[392,448,136,49]}
+{"kind":"textbox","id":"sh/8f6hcj6t","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[396,497,13,14]}
+{"kind":"textbox","id":"sh/9gfy5o7e","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[412,497,13,14]}
+{"kind":"textbox","id":"sh/mdoza9o3","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[428,497,13,14]}
+{"kind":"textbox","id":"sh/nexg3epo","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[444,497,13,14]}
+{"kind":"textbox","id":"sh/0r6h8z6x","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[460,497,13,14]}
+{"kind":"textbox","id":"sh/lcfy147i","slide":5,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[476,497,13,14]}
+{"kind":"textbox","id":"sh/yp4z69or","slide":5,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[492,497,13,14]}
+{"kind":"textbox","id":"sh/zqxgzupc","slide":5,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[508,497,13,14]}
+{"kind":"shape","id":"sh/cnmh4z61","slide":5,"bbox":[552,431,14,14]}
+{"kind":"shape","id":"sh/dovyx476","slide":5,"bbox":[570,431,14,14]}
+{"kind":"shape","id":"sh/zu90fyxc","slide":5,"bbox":[260.5,386,298.5,45]}
+{"kind":"shape","id":"sh/ytgj6twr","slide":5,"bbox":[577,386,278,45]}
+{"kind":"textbox","id":"sh/r6lojmds","slide":5,"text":"T4-1\n8 卡","textPreview":"T4-1 | 8 卡","textChars":8,"textLines":2,"bbox":[540,448,73,49]}
+{"kind":"shape","id":"sh/65cnahc7","slide":5,"bbox":[631,431,14,14]}
+{"kind":"shape","id":"sh/5436hcv2","slide":5,"bbox":[649,431,14,14]}
+{"kind":"shape","id":"sh/mh0jadwn","slide":5,"bbox":[260.5,386,377.5,45]}
+{"kind":"shape","id":"sh/xob2psfa","slide":5,"bbox":[656,386,199,45]}
+{"kind":"textbox","id":"sh/i1cn6hcb","slide":5,"text":"T4-2\n8 卡","textPreview":"T4-2 | 8 卡","textChars":8,"textLines":2,"bbox":[619,448,73,49]}
+{"kind":"shape","id":"sh/p076tgv6","slide":5,"bbox":[710,431,14,14]}
+{"kind":"shape","id":"sh/ozepkbul","slide":5,"bbox":[728,431,14,14]}
+{"kind":"shape","id":"sh/gjupwvq1","slide":5,"bbox":[260.5,386,456.5,45]}
+{"kind":"shape","id":"sh/hk3qp0rm","slide":5,"bbox":[735,386,120,45]}
+{"kind":"textbox","id":"sh/87qlgna9","slide":5,"text":"T4-3\n8 卡","textPreview":"T4-3 | 8 卡","textChars":8,"textLines":2,"bbox":[698,448,73,49]}
+{"kind":"shape","id":"sh/98z298bu","slide":5,"bbox":[828,431,14,14]}
+{"kind":"shape","id":"sh/yho3atsr","slide":5,"bbox":[846,431,14,14]}
+{"kind":"shape","id":"sh/5o3qtkry","slide":5,"bbox":[260.5,386,574.5,45]}
+{"kind":"shape","id":"sh/qpw72583","slide":5,"bbox":[853,386,2,45]}
+{"kind":"textbox","id":"sh/lkz258bi","slide":5,"text":"910B-2 / 8 卡\n8×200GE","textPreview":"910B-2 / 8 卡 | 8×200GE","textChars":20,"textLines":2,"bbox":[816,448,136,49]}
+{"kind":"textbox","id":"sh/ids3mxsb","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[820,497,13,14]}
+{"kind":"textbox","id":"sh/je14f2tw","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[836,497,13,14]}
+{"kind":"textbox","id":"sh/ruxkz2l0","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[852,497,13,14]}
+{"kind":"textbox","id":"sh/qto36xkf","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[868,497,13,14]}
+{"kind":"textbox","id":"sh/dwz21s36","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[884,497,13,14]}
+{"kind":"textbox","id":"sh/sv6l8n2l","slide":5,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[900,497,13,14]}
+{"kind":"textbox","id":"sh/3qxkvilo","slide":5,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[916,497,13,14]}
+{"kind":"textbox","id":"sh/ipo32dk3","slide":5,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[932,497,13,14]}
+{"kind":"shape","id":"sh/5sf2xs3u","slide":5,"bbox":[976,431,14,14]}
+{"kind":"shape","id":"sh/4r6l4n29","slide":5,"bbox":[994,431,14,14]}
+{"kind":"shape","id":"sh/gralcrm1","slide":5,"bbox":[260.5,386,722.5,45]}
+{"kind":"shape","id":"sh/hsjmlw3m","slide":5,"bbox":[855,386,146,45]}
+{"kind":"textbox","id":"sh/0vi9cfet","slide":5,"text":"T4-4\n8 卡","textPreview":"T4-4 | 8 卡","textChars":8,"textLines":2,"bbox":[964,448,73,49]}
+{"kind":"shape","id":"sh/lwrqlkfe","slide":5,"bbox":[1055,431,14,14]}
+{"kind":"shape","id":"sh/yt0ra5wn","slide":5,"bbox":[1073,431,14,14]}
+{"kind":"shape","id":"sh/5wjmpg3i","slide":5,"bbox":[260.5,386,801.5,45]}
+{"kind":"shape","id":"sh/its3e147","slide":5,"bbox":[855,386,225,45]}
+{"kind":"textbox","id":"sh/9kbqpkfa","slide":5,"text":"T4-5\n8 卡","textPreview":"T4-5 | 8 卡","textChars":8,"textLines":2,"bbox":[1043,448,73,49]}
+{"kind":"shape","id":"sh/mx0repwz","slide":5,"bbox":[1134,431,14,14]}
+{"kind":"shape","id":"sh/ny98nuxk","slide":5,"bbox":[1152,431,14,14]}
+{"kind":"shape","id":"sh/dsvm9g7u","slide":5,"bbox":[260.5,386,880.5,45]}
+{"kind":"shape","id":"sh/c7ml0bq9","slide":5,"bbox":[855,386,304,45]}
+{"kind":"textbox","id":"sh/e1w7y5w7","slide":5,"text":"T4-6\n8 卡","textPreview":"T4-6 | 8 卡","textChars":8,"textLines":2,"bbox":[1122,448,86,49]}
+{"kind":"textbox","id":"sh/f25oraxs","slide":5,"text":"RoCE 交换机 ×1（拟放 B 柜）","textPreview":"RoCE 交换机 ×1（拟放 B 柜）","textChars":19,"textLines":1,"bbox":[513,593,513,33]}
+{"kind":"textbox","id":"sh/g3ep0fed","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[540,579,18,14]}
+{"kind":"shape","id":"sh/o32lwrqd","slide":5,"bbox":[402.5,511,146.5,68]}
+{"kind":"textbox","id":"sh/25w725wj","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[565,579,18,14]}
+{"kind":"shape","id":"sh/21k3u187","slide":5,"bbox":[418.5,511,155.5,68]}
+{"kind":"textbox","id":"sh/o7yp4fe9","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[590,579,18,14]}
+{"kind":"shape","id":"sh/gzilsrq1","slide":5,"bbox":[434.5,511,164.5,68]}
+{"kind":"textbox","id":"sh/i9cnqlwz","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[615,579,18,14]}
+{"kind":"shape","id":"sh/7u5sfy18","slide":5,"bbox":[450.5,511,173.5,68]}
+{"kind":"textbox","id":"sh/lorapoz2","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[640,579,18,14]}
+{"kind":"shape","id":"sh/tw7ah8je","slide":5,"bbox":[466.5,511,182.5,68]}
+{"kind":"textbox","id":"sh/zm98nehc","slide":5,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[665,579,18,14]}
+{"kind":"shape","id":"sh/j65sbylc","slide":5,"bbox":[482.5,511,191.5,68]}
+{"kind":"textbox","id":"sh/9sbatoze","slide":5,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[690,579,18,14]}
+{"kind":"shape","id":"sh/5snado3i","slide":5,"bbox":[498.5,511,200.5,68]}
+{"kind":"textbox","id":"sh/nqtsryh8","slide":5,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[715,579,18,14]}
+{"kind":"shape","id":"sh/v2ls7el0","slide":5,"bbox":[514.5,511,209.5,68]}
+{"kind":"textbox","id":"sh/pw7qx4zu","slide":5,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[795,579,18,14]}
+{"kind":"shape","id":"sh/e5s7m507","slide":5,"bbox":[804,511,22.5,68]}
+{"kind":"textbox","id":"sh/grm103ah","slide":5,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[820,579,18,14]}
+{"kind":"shape","id":"sh/07apofid","slide":5,"bbox":[829,511,13.5,68]}
+{"kind":"textbox","id":"sh/ep4zytsb","slide":5,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[845,579,18,14]}
+{"kind":"shape","id":"sh/m9s7qp0j","slide":5,"bbox":[854,511,4.5,68]}
+{"kind":"textbox","id":"sh/ofm143at","slide":5,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[870,579,18,14]}
+{"kind":"shape","id":"sh/8bupszip","slide":5,"bbox":[874.5,511,4.5,68]}
+{"kind":"textbox","id":"sh/2d4j2dsn","slide":5,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[895,579,18,14]}
+{"kind":"shape","id":"sh/2d87el0f","slide":5,"bbox":[890.5,511,13.5,68]}
+{"kind":"textbox","id":"sh/cj618nap","slide":5,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[920,579,18,14]}
+{"kind":"shape","id":"sh/tkvmhwzi","slide":5,"bbox":[906.5,511,22.5,68]}
+{"kind":"textbox","id":"sh/7eh4rmdc","slide":5,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[945,579,18,14]}
+{"kind":"shape","id":"sh/7id4fmhc","slide":5,"bbox":[922.5,511,31.5,68]}
+{"kind":"textbox","id":"sh/9gjmtwvi","slide":5,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[970,579,18,14]}
+{"kind":"shape","id":"sh/5gvmdczm","slide":5,"bbox":[938.5,511,40.5,68]}
+{"kind":"textbox","id":"sh/zahkn2dg","slide":5,"text":"16×200GE","textPreview":"16×200GE","textChars":8,"textLines":1,"bbox":[1045,593,172,26]}
+{"kind":"textbox","id":"sh/y983uxcv","slide":5,"text":"共享 / 对象存储（可选）\n连接 A / B / C 三柜","textPreview":"共享 / 对象存储（可选） | 连接 A / B / C 三柜","textChars":29,"textLines":2,"bbox":[61,583,343,43]}
+{"kind":"shape","id":"sh/lcz2pcvm","slide":5,"bbox":[309,532,13,14]}
+{"kind":"shape","id":"sh/pczmpgfq","slide":5,"bbox":[232.5,546,83,37]}
+{"kind":"shape","id":"sh/j614z6dk","slide":5,"bbox":[754,532,13,14]}
+{"kind":"shape","id":"sh/crahgnqp","slide":5,"bbox":[232.5,546,528,37]}
+{"kind":"shape","id":"sh/qt87u5sj","slide":5,"bbox":[1187,532,13,14]}
+{"kind":"shape","id":"sh/ap8zed8j","slide":5,"bbox":[232.5,546,961,37]}
+{"kind":"textbox","id":"sh/sfapwva9","slide":5,"text":"业务 / BMC 逐节点连线，存储网逐柜连线；RoCE 共 16 条物理链路。非 RoCE 设备规格待核定。","textPreview":"业务 / BMC 逐节点连线，存储网逐柜连线；RoCE 共 16 条物理链路。非 RoCE 设备规格待核定。","textChars":54,"textLines":1,"bbox":[62,632,1154,23]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"机柜命名按最新反馈：A为6台通算既有机柜，B/C为两台910B及6台T4所在的两个10kW机柜。机柜B含910B-1、T4-1至3，机柜C含910B-2、T4-4至6。业务网和BMC网以交换设备到各代表节点的独立连线展示。通算2…5代表4台分别接入的服务器。存储网明确连接A、B、C三柜，分别代表通算、910B和T4节点按需接入，每柜一条汇总示意线不等于每柜只有一个物理网口，也不代表新增机柜交换机。存储网仍保留可选状态，具体接口、带宽、设备台数、冗余与存储协议待确认。共享存储设备位置未指定。RoCE交换机1台拟放B柜，两台910B各8条200GE链路，16条光链路双端共32个光模块，T4不接入此计算通信组。机柜C至B跨柜布线。单台RoCE交换机不具备交换机级冗余。入口、防火墙及接入交换设备为逻辑职责，复用及采购数量待核。按用户最新要求移除核心/业务汇聚层，边界防火墙直接连接业务接入交换设备。未完成实机连通测试。硬件主题既有机柜字母将在统一编号时与本页保持一致。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"A3  软件架构","textShapes":44}
+{"kind":"textbox","id":"sh/9cjyhgj6","slide":6,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"text":"T4 与 910B 的完整软件生态对照","textPreview":"T4 与 910B 的完整软件生态对照","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"text":"分析：同一模型名称背后，是两套驱动、运行库、设备管理和算子实现。","textPreview":"分析：同一模型名称背后，是两套驱动、运行库、设备管理和算子实现。","textChars":32,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/87ipkzal","slide":6,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"text":"06 / 18","textPreview":"06 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"text":"T4 软件生态","textPreview":"T4 软件生态","textChars":7,"textLines":1,"bbox":[223,199,367,36]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"text":"模型执行路径","textPreview":"模型执行路径","textChars":6,"textLines":1,"bbox":[62,246,350,25]}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"text":"部署与运维支撑","textPreview":"部署与运维支撑","textChars":7,"textLines":1,"bbox":[432,246,188,25]}
+{"kind":"shape","id":"sh/w32twb6l","slide":6,"bbox":[62,278,350,60]}
+{"kind":"shape","id":"sh/v2tcn650","slide":6,"bbox":[62,278,4,60]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"text":"推理与服务","textPreview":"推理与服务","textChars":5,"textLines":1,"bbox":[75,281,325,19]}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"text":"文本：vLLM；SGLang 需核验 T4\nYOLO：TensorRT；Wan：独立管线","textPreview":"文本：vLLM；SGLang 需核验 T4 | YOLO：TensorRT；Wan：独立管线","textChars":44,"textLines":2,"bbox":[75,298,325,40]}
+{"kind":"shape","id":"sh/47mt0b6x","slide":6,"bbox":[234,338,2,2]}
+{"kind":"shape","id":"sh/j6dcr65c","slide":6,"bbox":[62,340,350,60]}
+{"kind":"shape","id":"sh/i54bylor","slide":6,"bbox":[62,340,4,60]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"text":"算子与量化","textPreview":"算子与量化","textChars":5,"textLines":1,"bbox":[75,343,325,19]}
+{"kind":"textbox","id":"sh/svmt4v6t","slide":6,"text":"CUDA / Triton kernel\nAWQ、GPTQ 等按 SM75 核验","textPreview":"CUDA / Triton kernel | AWQ、GPTQ 等按 SM75 核验","textChars":40,"textLines":2,"bbox":[75,360,325,40]}
+{"kind":"shape","id":"sh/cbe5g3ih","slide":6,"bbox":[234,400,2,2]}
+{"kind":"shape","id":"sh/dcnm98zm","slide":6,"bbox":[62,402,350,60]}
+{"kind":"shape","id":"sh/qpwnet0b","slide":6,"bbox":[62,402,4,60]}
+{"kind":"textbox","id":"sh/bq547yhw","slide":6,"text":"框架适配","textPreview":"框架适配","textChars":4,"textLines":1,"bbox":[75,405,325,19]}
+{"kind":"textbox","id":"sh/0fy5k3id","slide":6,"text":"PyTorch CUDA 构建\nTransformers / ONNX（按任务）","textPreview":"PyTorch CUDA 构建 | Transformers / ONNX（按任务）","textChars":40,"textLines":2,"bbox":[75,422,325,40]}
+{"kind":"shape","id":"sh/lg76d8zy","slide":6,"bbox":[234,462,2,2]}
+{"kind":"shape","id":"sh/ydgnit07","slide":6,"bbox":[62,464,350,60]}
+{"kind":"shape","id":"sh/zep4byhs","slide":6,"bbox":[62,464,4,60]}
+{"kind":"textbox","id":"sh/gju58ji9","slide":6,"text":"计算与通信","textPreview":"计算与通信","textChars":5,"textLines":1,"bbox":[75,467,325,19]}
+{"kind":"textbox","id":"sh/1k3mhozu","slide":6,"text":"CUDA Runtime / Toolkit\ncuBLAS、cuDNN、NCCL","textPreview":"CUDA Runtime / Toolkit | cuBLAS、cuDNN、NCCL","textChars":40,"textLines":2,"bbox":[75,484,325,40]}
+{"kind":"shape","id":"sh/jet8nm1c","slide":6,"bbox":[234,524,2,2]}
+{"kind":"shape","id":"sh/idk7ehkr","slide":6,"bbox":[62,526,350,60]}
+{"kind":"shape","id":"sh/50bqpcj2","slide":6,"bbox":[62,526,4,60]}
+{"kind":"textbox","id":"sh/4f2pgr2h","slide":6,"text":"宿主机","textPreview":"宿主机","textChars":3,"textLines":1,"bbox":[75,529,325,19]}
+{"kind":"textbox","id":"sh/va98j210","slide":6,"text":"Linux / 内核、NVIDIA Driver\nnvidia-smi / NVML","textPreview":"Linux / 内核、NVIDIA Driver | nvidia-smi / NVML","textChars":42,"textLines":2,"bbox":[75,546,325,40]}
+{"kind":"textbox","id":"sh/u907axkf","slide":6,"text":"容器接入","textPreview":"容器接入","textChars":4,"textLines":1,"bbox":[432,279,184,26]}
+{"kind":"textbox","id":"sh/hcrqlcj6","slide":6,"text":"containerd / Docker\nNVIDIA Container\nToolkit","textPreview":"containerd / Docker | NVIDIA Container | Toolkit","textChars":44,"textLines":3,"bbox":[432,305,183,72]}
+{"kind":"shape","id":"sh/wbipc72l","slide":6,"bbox":[432,377,183,1]}
+{"kind":"textbox","id":"sh/7698f214","slide":6,"text":"K8s 资源","textPreview":"K8s 资源","textChars":6,"textLines":1,"bbox":[432,383,184,26]}
+{"kind":"textbox","id":"sh/m5076xkj","slide":6,"text":"NVIDIA Device Plugin\nGFD / GPU Operator\n（统一管理）","textPreview":"NVIDIA Device Plugin | GFD / GPU Operator | （统一管理）","textChars":46,"textLines":3,"bbox":[432,409,183,72]}
+{"kind":"shape","id":"sh/2dkbalg3","slide":6,"bbox":[432,481,183,1]}
+{"kind":"textbox","id":"sh/netcjqxo","slide":6,"text":"监控与运维","textPreview":"监控与运维","textChars":5,"textLines":1,"bbox":[432,487,184,26]}
+{"kind":"textbox","id":"sh/of2tcvy9","slide":6,"text":"DCGM Exporter\nPrometheus / Nsight\n（性能定位）","textPreview":"DCGM Exporter | Prometheus / Nsight | （性能定位）","textChars":40,"textLines":3,"bbox":[432,513,183,72]}
+{"kind":"shape","id":"sh/pgbul0fu","slide":6,"bbox":[432,585,183,1]}
+{"kind":"textbox","id":"sh/fq9cfqxc","slide":6,"text":"910B 软件生态","textPreview":"910B 软件生态","textChars":9,"textLines":1,"bbox":[813,199,367,36]}
+{"kind":"textbox","id":"sh/0r2t8vyx","slide":6,"text":"模型执行路径","textPreview":"模型执行路径","textChars":6,"textLines":1,"bbox":[652,246,350,25]}
+{"kind":"textbox","id":"sh/1sbuh0fi","slide":6,"text":"部署与运维支撑","textPreview":"部署与运维支撑","textChars":7,"textLines":1,"bbox":[1022,246,188,25]}
+{"kind":"shape","id":"sh/ql0b21gv","slide":6,"bbox":[652,278,350,60]}
+{"kind":"shape","id":"sh/rm9sb6xg","slide":6,"bbox":[652,278,4,60]}
+{"kind":"textbox","id":"sh/9gfeh4zy","slide":6,"text":"推理与服务","textPreview":"推理与服务","textChars":5,"textLines":1,"bbox":[665,281,325,19]}
+{"kind":"textbox","id":"sh/8f6x8jid","slide":6,"text":"vLLM＋vLLM Ascend\nSGLang Ascend 后端 / MindIE","textPreview":"vLLM＋vLLM Ascend | SGLang Ascend 后端 / MindIE","textChars":42,"textLines":2,"bbox":[665,298,325,40]}
+{"kind":"shape","id":"sh/7exwfehs","slide":6,"bbox":[824,338,2,2]}
+{"kind":"shape","id":"sh/mdof6907","slide":6,"bbox":[652,340,350,60]}
+{"kind":"shape","id":"sh/lcfed4z2","slide":6,"bbox":[652,340,4,60]}
+{"kind":"textbox","id":"sh/kb6d4zih","slide":6,"text":"算子与量化","textPreview":"算子与量化","textChars":5,"textLines":1,"bbox":[665,343,325,19]}
+{"kind":"textbox","id":"sh/zaxwbuhw","slide":6,"text":"Ascend C / Triton-Ascend / ATB\nSGL Kernel NPU；量化按引擎核验","textPreview":"Ascend C / Triton-Ascend / ATB | SGL Kernel NPU；量化按引擎核验","textChars":53,"textLines":2,"bbox":[665,360,325,40]}
+{"kind":"shape","id":"sh/y94v2p0b","slide":6,"bbox":[824,400,2,2]}
+{"kind":"shape","id":"sh/x8ve9kzq","slide":6,"bbox":[652,402,350,60]}
+{"kind":"shape","id":"sh/c7md0zi5","slide":6,"bbox":[652,402,4,60]}
+{"kind":"textbox","id":"sh/o3a5cjud","slide":6,"text":"框架适配","textPreview":"框架适配","textChars":4,"textLines":1,"bbox":[665,405,325,19]}
+{"kind":"textbox","id":"sh/p4j6loby","slide":6,"text":"PyTorch＋torch_npu\nMindSpore（另一条框架路径）","textPreview":"PyTorch＋torch_npu | MindSpore（另一条框架路径）","textChars":36,"textLines":2,"bbox":[665,422,325,40]}
+{"kind":"shape","id":"sh/21snatc7","slide":6,"bbox":[824,462,2,2]}
+{"kind":"shape","id":"sh/n21ojets","slide":6,"bbox":[652,464,350,60]}
+{"kind":"shape","id":"sh/0zq58ju1","slide":6,"bbox":[652,464,4,60]}
+{"kind":"textbox","id":"sh/10z6hobm","slide":6,"text":"计算与通信","textPreview":"计算与通信","textChars":5,"textLines":1,"bbox":[665,467,325,19]}
+{"kind":"textbox","id":"sh/ed8n69cb","slide":6,"text":"CANN / AscendCL、算子包\nHCCL、ATB（按引擎）","textPreview":"CANN / AscendCL、算子包 | HCCL、ATB（按引擎）","textChars":33,"textLines":2,"bbox":[665,484,325,40]}
+{"kind":"shape","id":"sh/fyhofetw","slide":6,"bbox":[824,524,2,2]}
+{"kind":"shape","id":"sh/kvu5k3ul","slide":6,"bbox":[652,526,350,60]}
+{"kind":"shape","id":"sh/lw36d8b6","slide":6,"bbox":[652,526,4,60]}
+{"kind":"textbox","id":"sh/vq58j2d8","slide":6,"text":"宿主机","textPreview":"宿主机","textChars":3,"textLines":1,"bbox":[665,529,325,19]}
+{"kind":"textbox","id":"sh/upwraxwn","slide":6,"text":"Linux / 内核、NPU Driver＋固件\nnpu-smi / DCMI","textPreview":"Linux / 内核、NPU Driver＋固件 | npu-smi / DCMI","textChars":39,"textLines":2,"bbox":[665,546,325,40]}
+{"kind":"textbox","id":"sh/hs7qlcve","slide":6,"text":"容器接入","textPreview":"容器接入","textChars":4,"textLines":1,"bbox":[1022,279,184,26]}
+{"kind":"textbox","id":"sh/gre9c7et","slide":6,"text":"containerd / Docker*\nAscend Docker Runtime\n设备挂载","textPreview":"containerd / Docker* | Ascend Docker Runtime | 设备挂载","textChars":47,"textLines":3,"bbox":[1022,305,183,72]}
+{"kind":"shape","id":"sh/3up8nmd4","slide":6,"bbox":[1022,377,183,1]}
+{"kind":"textbox","id":"sh/itgrehwz","slide":6,"text":"K8s 资源","textPreview":"K8s 资源","textChars":6,"textLines":1,"bbox":[1022,383,184,26]}
+{"kind":"textbox","id":"sh/5w7qpwva","slide":6,"text":"Ascend Device Plugin\nVolcano / Ascend\nOperator（按需）","textPreview":"Ascend Device Plugin | Volcano / Ascend | Operator（按需）","textChars":50,"textLines":3,"bbox":[1022,409,183,72]}
+{"kind":"shape","id":"sh/4vy9grep","slide":6,"bbox":[1022,481,183,1]}
+{"kind":"textbox","id":"sh/zyl8bid0","slide":6,"text":"监控与运维","textPreview":"监控与运维","textChars":5,"textLines":1,"bbox":[1022,487,184,26]}
+{"kind":"textbox","id":"sh/yxc72dwf","slide":6,"text":"NPU Exporter / Prometheus\nNodeD / ClusterD / msprof\n（按需）","textPreview":"NPU Exporter / Prometheus | NodeD / ClusterD / msprof | （按需）","textChars":56,"textLines":3,"bbox":[1022,513,183,72]}
+{"kind":"shape","id":"sh/m9szm1kf","slide":6,"bbox":[1022,585,183,1]}
+{"kind":"shape","id":"sh/na1gf610","slide":6,"bbox":[62,601,1148,1]}
+{"kind":"textbox","id":"sh/8bahobil","slide":6,"text":"驱动与运行库：设备可用     框架、算子与引擎：模型能跑     部署组件与版本须配套核验","textPreview":"驱动与运行库：设备可用     框架、算子与引擎：模型能跑     部署组件与版本须配套核验","textChars":46,"textLines":1,"bbox":[62,610,1156,31]}
+{"kind":"image","id":"im/14r2lob6","slide":6,"name":"","bbox":[62,203.99,142,27.03]}
+{"kind":"image","id":"im/03i1cjul","slide":6,"name":"","bbox":[652,201.48,142,32.03]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"Logo取自NVIDIA官方品牌页及华为官网，仅标识两家技术生态。左侧主栈自底向上展示依赖，侧栏表示部署管理支撑，组件不要求全部安装。原部署影响：OS/CPU/驱动与镜像匹配；运行库ABI、算子与多卡通信；容器访问设备但不转换CUDA；K8s分配设备但不补模型算子；监控用于健康和性能；框架负责模型算子映射；kernel核验硬件/精度/形状；引擎的模型与特性支持取交集。容器、K8s和监控是部署管理面，框架、算子、运行库是模型执行面。各列列出组件范围及替代路径，不要求全部安装。GPU Operator可管理驱动、Container Toolkit、Device Plugin、GFD、DCGM等，不应与另一个驱动生命周期管理方式重复管理。K8s提供调度，不是推理必须条件，首轮可先单容器验通再纳管。NVIDIA宿主机需可用驱动，CUDA用户态库可位于镜像，运行预编译镜像不必把完整CUDA Toolkit一概装在宿主机。Toolkit用于开发编译，不能与Container Toolkit混淆。Ascend容器接入需按运行时、MindCluster和驱动版本选择部署方式，安装工具名称不能证明任意containerd版本兼容。MindCluster中的NodeD、ClusterD、Volcano与Operator按需要配置，非本项目全部必装。NVIDIA T4不假定具备新GPU的所有精度与kernel能力，不照抄MIG方案。跨机NCCL/HCCL还受网卡、RDMA驱动及网络配置影响，双910B沿已定RoCE方案单独验通信。CANN包含运行和开发能力，ATB按引擎需求装。SGLang Ascend依赖包括匹配的Triton-Ascend及SGL Kernel NPU。PD分离还需核验MemFabric等KV传输组件，MoE场景按版本考虑DeepEP兼容实现，这些属于特性依赖，不是所有模型的必装项。MindIE为另一推理路径，不是vLLM的必装前置。SGLang列为候选生态，并未宣称当前默认镜像支持本台T4。YOLO和Wan保持任务专用推理路径，不能因vLLM支持文本就认为其支持任意视觉模型。\n\n官方参考文档（查询2026-09-16，动态页面不是本项目冻结版本）：\n[1] NVIDIA GPU Operator\nhttps://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/\n[2] NVIDIA Container Toolkit\nhttps://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html\n[3] MindCluster 组件\nhttps://www.hiascend.com/document/detail/en/mindcluster/2600/clustersched/schedulingug/docs/en/scheduling/introduction/01_component_description.md\n[4] torch_npu 版本配套\nhttps://github.com/Ascend/pytorch/blob/master/COMPATIBILITY.en.md\n[5] vLLM GPU 安装\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n[7] vLLM Ascend 安装\nhttps://docs.vllm.ai/projects/ascend/en/latest/getting_started/installation.html\n[9] SGLang 安装与硬件入口\nhttps://docs.sglang.io/docs/get-started/install\n[11] SGLang Ascend 安装与依赖\nhttps://docs.sglang.io/docs/hardware-platforms/ascend-npus/getting-started/installation\n[12] MindIE 配套要求\nhttps://www.hiascend.com/document/detail/zh/mindie/1.0.RC1/envdeployment/instg/mindie_instg_0015.html"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"A3  软件架构","textShapes":16}
+{"kind":"textbox","id":"sh/50v2pgna","slide":7,"text":"A3  软件架构","textPreview":"A3  软件架构","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"text":"软件支持如何转化为模型可部署","textPreview":"软件支持如何转化为模型可部署","textChars":14,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"text":"方法论：对“模型＋权重格式＋硬件＋引擎版本＋服务规格”验证，而非只查模型名称。","textPreview":"方法论：对“模型＋权重格式＋硬件＋引擎版本＋服务规格”验证，而非只查模型名称。","textChars":39,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"text":"07 / 18","textPreview":"07 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"text":"01  定义任务","textPreview":"01  定义任务","textChars":8,"textLines":1,"bbox":[62,202,275,36]}
+{"kind":"shape","id":"sh/eh0ba1sr","slide":7,"bbox":[62,242,265,2]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"text":"固定模型 revision、精度 / 量化\n上下文、并发、TP / PP、接口","textPreview":"固定模型 revision、精度 / 量化 | 上下文、并发、TP / PP、接口","textChars":39,"textLines":2,"bbox":[62,253,275,65]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"text":"02  查支持交集","textPreview":"02  查支持交集","textChars":9,"textLines":1,"bbox":[356,202,275,36]}
+{"kind":"shape","id":"sh/a9ojq5kz","slide":7,"bbox":[356,242,265,2]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"text":"核对硬件、模型与特性矩阵\n反查算子、框架及运行库版本","textPreview":"核对硬件、模型与特性矩阵 | 反查算子、框架及运行库版本","textChars":26,"textLines":2,"bbox":[356,253,275,65]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"text":"03  冻结软件组合","textPreview":"03  冻结软件组合","textChars":10,"textLines":1,"bbox":[650,202,275,36]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"bbox":[650,242,265,2]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"text":"驱动 / 固件、镜像 digest\n框架、引擎 / 插件、权重 hash","textPreview":"驱动 / 固件、镜像 digest | 框架、引擎 / 插件、权重 hash","textChars":36,"textLines":2,"bbox":[650,253,275,65]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"text":"04  实机验收","textPreview":"04  实机验收","textChars":8,"textLines":1,"bbox":[944,202,275,36]}
+{"kind":"shape","id":"sh/o761ov2t","slide":7,"bbox":[944,242,265,2]}
+{"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"text":"单卡 / 单容器起测，再多卡 / K8s\n质量、显存、TTFT / TPOT、稳定性","textPreview":"单卡 / 单容器起测，再多卡 / K8s | 质量、显存、TTFT / TPOT、稳定性","textChars":42,"textLines":2,"bbox":[944,253,275,65]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"text":"结论：同一个模型，两套软件环境；能加载、答得对、速度达标，才算部署通过。","textPreview":"结论：同一个模型，两套软件环境；能加载、答得对、速度达标，才算部署通过。","textChars":36,"textLines":1,"bbox":[62,563,1156,48]}
+{"kind":"textbox","id":"sh/jedkn654","slide":7,"text":"官方依据：[1] GPU Operator  [3] MindCluster  [4] torch_npu 配套  [5–6] vLLM 硬件 / 量化","textPreview":"官方依据：[1] GPU Operator  [3] MindCluster  [4] torch_npu 配套  [5–6] vLLM 硬件 / 量化","textChars":76,"textLines":1,"bbox":[62,612,1156,21]}
+{"kind":"textbox","id":"sh/4fm1wb6p","slide":7,"text":"[7–8] vLLM Ascend 安装 / 模型矩阵  [9–10] SGLang 安装 / Ascend 模型表   完整链接见备注与参考文档","textPreview":"[7–8] vLLM Ascend 安装 / 模型矩阵  [9–10] SGLang 安装 / Ascend 模型表   完整链接见备注与参考文档","textChars":73,"textLines":1,"bbox":[62,636,1156,20]}
+{"kind":"table","id":"tb/hobu1o3y","slide":7,"name":"","rows":4,"cols":3,"preview":"例子：部署 Qwen3-8B | T4 上怎么做 | 910B 上怎么做","bbox":[60,337,1160,215]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"示例Qwen/Qwen3-8B用于解释软件依赖，不声称已经部署成功。8B参数×2字节约16GB是粗略十进制权重估算，不是实际模型文件精确大小；T4单卡16GB还需KV缓存及工作区，所以FP16可能超出容量。量化需有兼容权重格式和kernel，不能只改参数名称。910B具体显存仍待核验。方法论是本项目的归纳：可部署集合为模型结构、硬件、精度/量化实现、推理特性和依赖版本的交集，还要满足容量和服务目标。先固定模型revision与权重格式，再选择候选引擎release并反查其依赖，避免把每层latest任意拼接。启动后先测确定性小样本与质量，再观察逐卡权重、KV Cache和工作区峰值；多卡验证并行与通信；最后纳入K8s后复验资源分配、健康检查、失败恢复与同规格性能。T4的SM75满足vLLM基础门槛，不代表任何attention后端、量化或模型特性均可用。当前量化矩阵对Turing的支持随版本变化，不能长期沿用旧版Marlin结论。SGLang有NVIDIA和Ascend入口，但本次资料不能建立当前SGLang/T4完整可运行组合，故保留核验，不标成已支持或绝对不支持。910B按A2路径选择匹配算子和镜像；vLLM Ascend矩阵有Qwen、DeepSeek、GLM家族条目，必须核验具体结构、精度、TP/PP、PD、缓存等特性。SGLang Ascend与MindIE各有自己的版本和模型矩阵，不能相互外推。示例均为筛选判断，未做实机部署或基准测试。YOLO/Wan需以任务仓库、许可和所选后端验收；不新增对具体版本的兼容承诺。最终产物为按设备族和任务区分的镜像清单、模型支持表、测试记录及回退版本。\n\n官方参考文档（查询2026-09-16，动态页面不是本项目冻结版本）：\n[4] torch_npu 版本配套\nhttps://github.com/Ascend/pytorch/blob/master/COMPATIBILITY.en.md\n[5] vLLM GPU 安装\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n[6] vLLM 量化矩阵\nhttps://docs.vllm.ai/en/latest/features/quantization/\n[7] vLLM Ascend 安装\nhttps://docs.vllm.ai/projects/ascend/en/latest/getting_started/installation.html\n[8] vLLM Ascend 模型矩阵\nhttps://docs.vllm.ai/projects/ascend/en/latest/user_guide/support_matrix/supported_models.html\n[9] SGLang 安装与硬件入口\nhttps://docs.sglang.io/docs/get-started/install\n[10] SGLang Ascend 模型表\nhttps://github.com/sgl-project/sglang/blob/main/docs_new/docs/hardware-platforms/ascend-npus/reference/support_models.mdx\n[11] SGLang Ascend 安装与依赖\nhttps://docs.sglang.io/docs/hardware-platforms/ascend-npus/getting-started/installation\n[12] MindIE 配套要求\nhttps://www.hiascend.com/document/detail/zh/mindie/1.0.RC1/envdeployment/instg/mindie_instg_0015.html"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"A4  模型适配","textShapes":22}
+{"kind":"textbox","id":"sh/5sne5wne","slide":8,"text":"A4  模型适配","textPreview":"A4  模型适配","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"text":"适配方法论：逐关核验，最后用实机结果判定","textPreview":"适配方法论：逐关核验，最后用实机结果判定","textChars":20,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"text":"先固定模型版本、权重格式和服务目标：输入 / 输出长度、并发数，或图像 / 视频规格。","textPreview":"先固定模型版本、权重格式和服务目标：输入 / 输出长度、并发数，或图像 / 视频规格。","textChars":43,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/ri9g7uhw","slide":8,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"text":"08 / 18","textPreview":"08 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[62,201,57,45]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"text":"硬件支持这种精度吗？","textPreview":"硬件支持这种精度吗？","textChars":10,"textLines":1,"bbox":[135,201,1060,31]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"text":"查卡型、单卡显存和官方精度能力，再核对驱动 / CANN / CUDA 配套。\nT4 优先核验 FP16 / INT8 路径；4 位权重还需专用算子，不能只看“支持 INT8”。","textPreview":"查卡型、单卡显存和官方精度能力，再核对驱动 / CANN / CUDA 配套。 | T4 优先核验 FP16 / INT8 路径；4 位权重还需专用算子，不能只看“支持 INT8”。","textChars":89,"textLines":2,"bbox":[135,236,1060,51]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"text":"产物：卡型＋精度候选","textPreview":"产物：卡型＋精度候选","textChars":10,"textLines":1,"bbox":[860,202,355,28]}
+{"kind":"textbox","id":"sh/98rehwve","slide":8,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[62,301,57,45]}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"text":"推理引擎能运行这个模型吗？","textPreview":"推理引擎能运行这个模型吗？","textChars":13,"textLines":1,"bbox":[135,301,1060,31]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"text":"查具体模型结构、量化格式、注意力 / MoE 算子和多卡模式的版本支持。\n例如：T4 的 Qwen3.5-9B 先查 llama.cpp 的 GGUF 路径；910B 查 Ascend 后端。","textPreview":"查具体模型结构、量化格式、注意力 / MoE 算子和多卡模式的版本支持。 | 例如：T4 的 Qwen3.5-9B 先查 llama.cpp 的 GGUF 路径；910B 查 Ascend 后端。","textChars":96,"textLines":2,"bbox":[135,336,1060,51]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"text":"产物：可复现的软件组合","textPreview":"产物：可复现的软件组合","textChars":11,"textLines":1,"bbox":[860,302,355,28]}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[62,401,57,45]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"text":"每张卡的显存够吗？","textPreview":"每张卡的显存够吗？","textChars":9,"textLines":1,"bbox":[135,401,1060,31]}
+{"kind":"textbox","id":"sh/zipwbmdc","slide":8,"text":"逐卡峰值＝权重分片＋复制权重＋KV 缓存＋工作区 / 通信缓冲＋预留空间。\n例：9B × 2 字节 ≈18GB，仅 FP16 权重已超 T4 16GB，需量化或受支持的多卡方案。","textPreview":"逐卡峰值＝权重分片＋复制权重＋KV 缓存＋工作区 / 通信缓冲＋预留空间。 | 例：9B × 2 字节 ≈18GB，仅 FP16 权重已超 T4 16GB，需量化或受支持的多卡方案。","textChars":89,"textLines":2,"bbox":[135,436,1060,51]}
+{"kind":"textbox","id":"sh/kfixwbe1","slide":8,"text":"产物：卡数与负载上限","textPreview":"产物：卡数与负载上限","textChars":10,"textLines":1,"bbox":[860,402,355,28]}
+{"kind":"textbox","id":"sh/lgbepgvm","slide":8,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[62,501,57,45]}
+{"kind":"textbox","id":"sh/tw7e9gnq","slide":8,"text":"部署效果达到要求吗？","textPreview":"部署效果达到要求吗？","textChars":10,"textLines":1,"bbox":[135,501,1060,31]}
+{"kind":"textbox","id":"sh/svydgb65","slide":8,"text":"先加载并用固定样本检查输出质量，再增加上下文与并发，记录显存和响应时间。\n双机验证 HCCL / RoCE；YOLO 测检测精度与延迟，Wan 测视频质量与生成耗时。","textPreview":"先加载并用固定样本检查输出质量，再增加上下文与并发，记录显存和响应时间。 | 双机验证 HCCL / RoCE；YOLO 测检测精度与延迟，Wan 测视频质量与生成耗时。","textChars":83,"textLines":2,"bbox":[135,536,1060,51]}
+{"kind":"textbox","id":"sh/7u5w765k","slide":8,"text":"产物：测试记录与验收结论","textPreview":"产物：测试记录与验收结论","textChars":12,"textLines":1,"bbox":[860,502,355,28]}
+{"kind":"textbox","id":"sh/6twve1oz","slide":8,"text":"判定：四关通过才标“适配通过”；资料匹配标“候选”；缺少双机证据标“待验证”。","textPreview":"判定：四关通过才标“适配通过”；资料匹配标“候选”；缺少双机证据标“待验证”。","textChars":39,"textLines":1,"bbox":[62,606,1156,35]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"本页是项目适配方法。硬件支持、软件支持、容量和服务质量必须同时满足。权重量化位宽不等于所有计算都使用该精度，W4A8需要相应加载器、量化格式和kernel。不能看到T4支持INT8就认定任意4位或8位模型可用，也不能将BF16或FP8权重直接视为T4原生支持。冻结驱动/固件、CANN或CUDA、框架、引擎插件版本、镜像digest及模型revision。显存核算以实际文件和加载布局为准，MoE按全部权重而非激活参数，考虑复制与分片不均衡。短上下文低并发成功仅证明该规格，不能推断长上下文生产能力。910B每卡64GB仍是待核验假设。\n\n[1] DeepSeek-V4.1-Flash 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4.1-Flash.html\n\n[2] GLM-5.3-Flash 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3-Flash.html\n\n[3] GLM-5.3 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\n\n[4] MiniMax-M3 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/MiniMax-M3.html\n\n[5] Qwen3.8-27B 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html\n\n[6] Kimi-K2.6 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Kimi-K2.6.html\n\n[7] Qwen3.5 官方模型卡\nhttps://huggingface.co/Qwen/Qwen3.5-9B\n\n[8] Hugging Face 单卡 T4 部署目录\nhttps://endpoints.huggingface.co/catalog/collection/qwen?inferenceServer=llamacpp\n\n[9] YOLO26 官方文档\nhttps://docs.ultralytics.com/models/yolo26/\n\n[10] Wan2.1 官方仓库\nhttps://github.com/Wan-Video/Wan2.1\n\n[11] vLLM GPU 支持要求\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n\n[12] Qwen3.5 官方小模型\nhttps://huggingface.co/Qwen/Qwen3.5-4B"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"A4  模型适配","textShapes":7}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"text":"A4  模型适配","textPreview":"A4  模型适配","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"text":"现有设备的模型适配清单","textPreview":"现有设备的模型适配清单","textChars":11,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"text":"910B：2 台 × 8 卡，暂按 64GB / 卡；T4：6 台 × 8 卡 × 16GB。以下均未完成实机验收。","textPreview":"910B：2 台 × 8 卡，暂按 64GB / 卡；T4：6 台 × 8 卡 × 16GB。以下均未完成实机验收。","textChars":58,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/nex4jq5k","slide":9,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/mdonql4z","slide":9,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"text":"09 / 18","textPreview":"09 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"text":"结论：先验证 Qwen3.8-27B、T4 的 Qwen3.5-9B 量化与 YOLO26n，再扩展候选。","textPreview":"结论：先验证 Qwen3.8-27B、T4 的 Qwen3.5-9B 量化与 YOLO26n，再扩展候选。","textChars":53,"textLines":1,"bbox":[62,585,1156,34]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"text":"四机参考不等于双机不可部署。模型独立评估，不代表可同时驻留。Qwen 按总参数 <20B 筛选 T4 候选。","textPreview":"四机参考不等于双机不可部署。模型独立评估，不代表可同时驻留。Qwen 按总参数 <20B 筛选 T4 候选。","textChars":54,"textLines":1,"bbox":[62,624,1156,25]}
+{"kind":"table","id":"tb/2pw3ytsv","slide":9,"name":"","rows":11,"cols":3,"preview":"设备 / 候选模型 | 精度与引擎路径 | 参考规模 / 当前判断","bbox":[60,202,1160,374]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"查询2026-09-16。表中为特定路径资料初筛，不是全部模型普查或实机通过清单。A2/64GB需确认实际910B硬件。GLM5.3-Flash指南第5.2节为2台各8×64GB TP8/DP2参考。Kimi双A2 W4A8使用16卡。DeepSeek与GLM5.3的四A2方案只能证明参考范围，尚未完成双机逐卡权重、缓存、工作区、复制开销与并行算子核验，不能认定双机不可部署或必需扩容。DeepSeek参考TP8/DP4/EP32；改16卡需重新验证。GLM5.3是实验支持。T4 Qwen9B路径来自HF Endpoints目录unsloth/Qwen3.5-9B-GGUF Q4_K_M，不能当作本项目实测。Qwen0.8/2/4B是待验证候选，模型格式、vision projector与kernel须匹配。Wan官方8.19GB为1.3B参考数据，不保证T4速度或显存峰值。T4不默认原生BF16/FP8支持。W8A8为8位权重和激活，W4A8为4位权重/8位激活，C8为8位KV缓存。每个模型分别测容量和质量，不能将全16卡同时分配给多模型。\n\n[1] DeepSeek-V4.1-Flash 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/DeepSeek-V4.1-Flash.html\n\n[2] GLM-5.3-Flash 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3-Flash.html\n\n[3] GLM-5.3 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/GLM5.3.html\n\n[4] MiniMax-M3 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/MiniMax-M3.html\n\n[5] Qwen3.8-27B 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html\n\n[6] Kimi-K2.6 部署指南\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Kimi-K2.6.html\n\n[7] Qwen3.5 官方模型卡\nhttps://huggingface.co/Qwen/Qwen3.5-9B\n\n[8] Hugging Face 单卡 T4 部署目录\nhttps://endpoints.huggingface.co/catalog/collection/qwen?inferenceServer=llamacpp\n\n[9] YOLO26 官方文档\nhttps://docs.ultralytics.com/models/yolo26/\n\n[10] Wan2.1 官方仓库\nhttps://github.com/Wan-Video/Wan2.1\n\n[11] vLLM GPU 支持要求\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n\n[12] Qwen3.5 官方小模型\nhttps://huggingface.co/Qwen/Qwen3.5-4B"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"A5  模型部署","textShapes":45}
+{"kind":"textbox","id":"sh/2hkfu9w3","slide":10,"text":"A5  模型部署","textPreview":"A5  模型部署","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"text":"模型部署全流程","textPreview":"模型部署全流程","textChars":7,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"text":"从模型仓库到 MASS 服务：四个阶段推进，验收通过后发布。","textPreview":"从模型仓库到 MASS 服务：四个阶段推进，验收通过后发布。","textChars":30,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/l036l83y","slide":10,"text":"10 / 18","textPreview":"10 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[60,208,53,45]}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"text":"模型准备","textPreview":"模型准备","textChars":4,"textLines":1,"bbox":[116,208,210,45]}
+{"kind":"shape","id":"sh/m1cnetkj","slide":10,"bbox":[60,263,266,3]}
+{"kind":"textbox","id":"sh/s7yt4b21","slide":10,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[330,214,27,32]}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[358,208,53,45]}
+{"kind":"textbox","id":"sh/q5gb21kb","slide":10,"text":"运行环境","textPreview":"运行环境","textChars":4,"textLines":1,"bbox":[414,208,210,45]}
+{"kind":"shape","id":"sh/r6pcv6lw","slide":10,"bbox":[358,263,266,3]}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[628,214,27,32]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[656,208,53,45]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"text":"推理服务","textPreview":"推理服务","textChars":4,"textLines":1,"bbox":[712,208,210,45]}
+{"kind":"shape","id":"sh/fapcz6ls","slide":10,"bbox":[656,263,266,3]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[926,214,27,32]}
+{"kind":"textbox","id":"sh/p0ru503u","slide":10,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[954,208,53,45]}
+{"kind":"textbox","id":"sh/xwnupgvy","slide":10,"text":"验收与交付","textPreview":"验收与交付","textChars":5,"textLines":1,"bbox":[1010,208,210,45]}
+{"kind":"shape","id":"sh/wvetgbud","slide":10,"bbox":[954,263,266,3]}
+{"kind":"textbox","id":"sh/bu5cnqd8","slide":10,"text":"确定规格","textPreview":"确定规格","textChars":4,"textLines":1,"bbox":[60,283,266,29]}
+{"kind":"textbox","id":"sh/atwbelcn","slide":10,"text":"仓库 / revision、精度与卡数\n上下文 / 并发、许可与权限","textPreview":"仓库 / revision、精度与卡数 | 上下文 / 并发、许可与权限","textChars":34,"textLines":2,"bbox":[60,316,266,48]}
+{"kind":"textbox","id":"sh/lk7ut0va","slide":10,"text":"下载与校验","textPreview":"下载与校验","textChars":5,"textLines":1,"bbox":[60,369,266,29]}
+{"kind":"textbox","id":"sh/kjytkvup","slide":10,"text":"Hugging Face / ModelScope\n权重分片、配置、SHA256","textPreview":"Hugging Face / ModelScope | 权重分片、配置、SHA256","textChars":40,"textLines":2,"bbox":[60,402,266,48]}
+{"kind":"textbox","id":"sh/jypcrqd4","slide":10,"text":"准备权重","textPreview":"准备权重","textChars":4,"textLines":1,"bbox":[60,455,266,29]}
+{"kind":"textbox","id":"sh/yxgbilcj","slide":10,"text":"按需量化 / 格式转换\n补齐 tokenizer 与视觉组件","textPreview":"按需量化 / 格式转换 | 补齐 tokenizer 与视觉组件","textChars":30,"textLines":2,"bbox":[60,488,266,48]}
+{"kind":"textbox","id":"sh/1o3ahwvq","slide":10,"text":"节点与驱动","textPreview":"节点与驱动","textChars":5,"textLines":1,"bbox":[358,283,266,29]}
+{"kind":"textbox","id":"sh/0nut8rul","slide":10,"text":"OS、IP / 时间、磁盘 / 权限\n驱动与固件、设备健康","textPreview":"OS、IP / 时间、磁盘 / 权限 | 驱动与固件、设备健康","textChars":29,"textLines":2,"bbox":[358,316,266,48]}
+{"kind":"textbox","id":"sh/q9srixs3","slide":10,"text":"模型与镜像分发","textPreview":"模型与镜像分发","textChars":7,"textLines":1,"bbox":[358,369,266,29]}
+{"kind":"textbox","id":"sh/ru18r2to","slide":10,"text":"各节点权重一致、固定路径\n镜像配套、固定 digest","textPreview":"各节点权重一致、固定路径 | 镜像配套、固定 digest","textChars":27,"textLines":2,"bbox":[358,402,266,48]}
+{"kind":"textbox","id":"sh/cva9k7a9","slide":10,"text":"容器接入设备","textPreview":"容器接入设备","textChars":6,"textLines":1,"bbox":[358,455,266,29]}
+{"kind":"textbox","id":"sh/dwjqtcbu","slide":10,"text":"透传卡与驱动库、挂载目录\n共享内存 / 端口、容器内验卡","textPreview":"透传卡与驱动库、挂载目录 | 共享内存 / 端口、容器内验卡","textChars":28,"textLines":2,"bbox":[358,488,266,48]}
+{"kind":"textbox","id":"sh/exsrmhsf","slide":10,"text":"910B 分支","textPreview":"910B 分支","textChars":7,"textLines":1,"bbox":[656,283,266,29]}
+{"kind":"textbox","id":"sh/zyl8vmt0","slide":10,"text":"Ascend 镜像＋vLLM Ascend\n按 A2 配方配置精度与并行","textPreview":"Ascend 镜像＋vLLM Ascend | 按 A2 配方配置精度与并行","textChars":36,"textLines":2,"bbox":[656,316,266,48]}
+{"kind":"textbox","id":"sh/0zu9ora5","slide":10,"text":"T4 分支：按适配选引擎","textPreview":"T4 分支：按适配选引擎","textChars":12,"textLines":1,"bbox":[656,369,266,29]}
+{"kind":"textbox","id":"sh/103qxcbq","slide":10,"text":"vLLM / SGLang（核验支持）\nOllama / llama.cpp（候选）","textPreview":"vLLM / SGLang（核验支持） | Ollama / llama.cpp（候选）","textChars":42,"textLines":2,"bbox":[656,402,266,48]}
+{"kind":"textbox","id":"sh/u187adsv","slide":10,"text":"启动与扩展","textPreview":"启动与扩展","textChars":5,"textLines":1,"bbox":[656,455,266,29]}
+{"kind":"textbox","id":"sh/f2h8jitg","slide":10,"text":"先单机低负载；双机先验 RoCE\n再配 rank / TP / DP / EP","textPreview":"先单机低负载；双机先验 RoCE | 再配 rank / TP / DP / EP","textChars":39,"textLines":2,"bbox":[656,488,266,48]}
+{"kind":"textbox","id":"sh/bmpgrah8","slide":10,"text":"接口与质量","textPreview":"接口与质量","textChars":5,"textLines":1,"bbox":[954,283,266,29]}
+{"kind":"textbox","id":"sh/algfy50n","slide":10,"text":"健康检查、模型列表、推理 API\n固定样本、流式输出、停止条件","textPreview":"健康检查、模型列表、推理 API | 固定样本、流式输出、停止条件","textChars":31,"textLines":2,"bbox":[954,316,266,48]}
+{"kind":"textbox","id":"sh/xo7ytkzy","slide":10,"text":"负载与稳定性","textPreview":"负载与稳定性","textChars":6,"textLines":1,"bbox":[954,369,266,29]}
+{"kind":"textbox","id":"sh/wnyx0fit","slide":10,"text":"增加上下文 / 并发，记录显存\nTTFT / TPOT / 吞吐，视觉另测","textPreview":"增加上下文 / 并发，记录显存 | TTFT / TPOT / 吞吐，视觉另测","textChars":37,"textLines":2,"bbox":[954,402,266,48]}
+{"kind":"textbox","id":"sh/jq9gvuh4","slide":10,"text":"MASS 接入与发布","textPreview":"MASS 接入与发布","textChars":10,"textLines":1,"bbox":[954,455,266,29]}
+{"kind":"textbox","id":"sh/ip0f2p0j","slide":10,"text":"鉴权 / 路由 / 计量、端到端验证\n进程托管、监控、小流量与回退","textPreview":"鉴权 / 路由 / 计量、端到端验证 | 进程托管、监控、小流量与回退","textChars":33,"textLines":2,"bbox":[954,488,266,48]}
+{"kind":"shape","id":"sh/5cryx4za","slide":10,"bbox":[60,555,1160,1]}
+{"kind":"textbox","id":"sh/kbix4zyp","slide":10,"text":"✓  权重完整且可追溯","textPreview":"✓  权重完整且可追溯","textChars":11,"textLines":1,"bbox":[60,568,266,31]}
+{"kind":"textbox","id":"sh/7e9gzuhg","slide":10,"text":"✓  容器内设备可用","textPreview":"✓  容器内设备可用","textChars":10,"textLines":1,"bbox":[358,568,266,31]}
+{"kind":"textbox","id":"sh/6d0f6pgv","slide":10,"text":"✓  服务启动且可调用","textPreview":"✓  服务启动且可调用","textChars":11,"textLines":1,"bbox":[656,568,266,31]}
+{"kind":"textbox","id":"sh/4j2xwzet","slide":10,"text":"✓  效果达标并可恢复","textPreview":"✓  效果达标并可恢复","textChars":11,"textLines":1,"bbox":[954,568,266,31]}
+{"kind":"textbox","id":"sh/pkbep4fe","slide":10,"text":"文本引擎按模型 / 量化 / 算子支持选型；YOLO / Wan 使用独立管线。详细命令见配套操作清单。","textPreview":"文本引擎按模型 / 量化 / 算子支持选型；YOLO / Wan 使用独立管线。详细命令见配套操作清单。","textChars":52,"textLines":1,"bbox":[62,617,1156,29]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"本页将已确认的12步部署流程整合为四阶段。每阶段三项操作，底部为对应完成标准，勾号表示要求而非已经完成。保留权重下载、量化、分发、环境准备、容器设备透传、推理、扩展、验收、平台接入和故障恢复全部环节。T4与910B是不同的候选执行路径，具体模型以06适配结果为准。单机先验通，双机只在需要时执行，不能将所有模型默认扩至双机。MASS实际字段、镜像digest、模型revision和节点配置尚待现场确认。T4文本引擎候选包含vLLM、SGLang、Ollama和llama.cpp。需要核验具体模型、量化格式、SM75算子、软件版本、显存及性能，不代表每个组合都已支持。GGUF是权重格式，llama.cpp仅为此前示例路径。详细操作和命令见07_模型部署_操作清单.md。\nhttps://docs.ollama.com/gpu\nhttps://docs.sglang.io/docs/get-started/install\nhttps://docs.vllm.ai/en/latest/getting_started/installation/gpu/\n官方资料：\nhttps://huggingface.co/docs/huggingface_hub/en/guides/cli\nhttps://github.com/modelscope/modelscope/blob/master/docs/source/command.md\nhttps://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html\nhttps://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md\nhttps://docs.ultralytics.com/models/yolo26/\nhttps://github.com/Wan-Video/Wan2.1"}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"B1  性能测试","textShapes":14}
+{"kind":"textbox","id":"sh/zaxs3yhc","slide":11,"text":"B1  性能测试","textPreview":"B1  性能测试","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"text":"压测方法：逐级加压，找到满足服务目标的最大并发","textPreview":"压测方法：逐级加压，找到满足服务目标的最大并发","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"text":"从独立压测机直连推理服务测基线，再经 MASS 复测；固定模型、精度、卡数、长度和缓存场景。","textPreview":"从独立压测机直连推理服务测基线，再经 MASS 复测；固定模型、精度、卡数、长度和缓存场景。","textChars":46,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/n69grmpw","slide":11,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/250zy18b","slide":11,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"text":"11 / 18","textPreview":"11 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/o7ih0r6h","slide":11,"text":"01  选择开源压测工具","textPreview":"01  选择开源压测工具","textChars":12,"textLines":1,"bbox":[62,201,1156,33]}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"text":"02  构造三组负载","textPreview":"02  构造三组负载","textChars":10,"textLines":1,"bbox":[62,401,365,35]}
+{"kind":"textbox","id":"sh/ofqtgnyt","slide":11,"text":"无命中：独立前缀，核验命中≈0\n有命中：预热公共前缀＋不同后缀\n混合：按业务比例组合，实测命中率","textPreview":"无命中：独立前缀，核验命中≈0 | 有命中：预热公共前缀＋不同后缀 | 混合：按业务比例组合，实测命中率","textChars":48,"textLines":3,"bbox":[62,445,365,94]}
+{"kind":"textbox","id":"sh/9gza9sze","slide":11,"text":"03  逐级增加并发","textPreview":"03  逐级增加并发","textChars":10,"textLines":1,"bbox":[460,401,365,35]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"text":"示例：1、2、4、8、16、32…\n临界区细扫，直至超时 / SLA 失败\n记录实际在途请求与服务端排队","textPreview":"示例：1、2、4、8、16、32… | 临界区细扫，直至超时 / SLA 失败 | 记录实际在途请求与服务端排队","textChars":52,"textLines":3,"bbox":[460,445,365,94]}
+{"kind":"textbox","id":"sh/nehs7iho","slide":11,"text":"04  复测最大可用并发","textPreview":"04  复测最大可用并发","textChars":12,"textLines":1,"bbox":[858,401,365,35]}
+{"kind":"textbox","id":"sh/0b6tc3yx","slide":11,"text":"每档预热后测稳态，临界点重复3次\n吞吐不再增加且延迟上升时标饱和\n最大可用并发须满足延迟与成功率","textPreview":"每档预热后测稳态，临界点重复3次 | 吞吐不再增加且延迟上升时标饱和 | 最大可用并发须满足延迟与成功率","textChars":48,"textLines":3,"bbox":[858,445,365,94]}
+{"kind":"textbox","id":"sh/1cfa58zi","slide":11,"text":"测量纪律：流式响应计时；预热不计入；三组保持相同输入 / 输出长度；记录失败与提前结束。","textPreview":"测量纪律：流式响应计时；预热不计入；三组保持相同输入 / 输出长度；记录失败与提前结束。","textChars":44,"textLines":1,"bbox":[62,562,1156,30]}
+{"kind":"textbox","id":"sh/epobatgr","slide":11,"text":"交付结果：并发—吞吐—P95 延迟曲线，分别标注饱和点与满足 SLA 的最大可用并发。","textPreview":"交付结果：并发—吞吐—P95 延迟曲线，分别标注饱和点与满足 SLA 的最大可用并发。","textChars":43,"textLines":1,"bbox":[62,603,1156,33]}
+{"kind":"table","id":"tb/v6d07idw","slide":11,"name":"","rows":4,"cols":3,"preview":"工具 | 调用入口 | 本项目用法","bbox":[60,245,1160,134]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"并发阶梯、稳态复测次数为本项目测试方案，不是工具默认规则。先定义P95 TTFT/TPOT或E2E及成功率阈值。达到配置并发不等于服务端实际运行同等请求数，需记录在途、运行、等待和请求速率。闭环并发压测用无限到达率结合max-concurrency，有利于测给定并发承载；另按真实到达率做开放负载测试，验证队列不会持续增长。建议每档预热后至少测5分钟，临界点重复3次，再做30分钟持续验证；样本不足时延长。所有具体时长是建议。工具版本/参数以冻结版本--help核对，不能把SGLang工具误当作必须部署SGLang服务。缓存命中由服务端实际计数校验，重启或重置缓存应只在隔离测试实例上操作。缓存预热在计时外，正式缓存用例使用相同token前缀和不同后缀。前缀模板/BOS/系统提示会影响块级命中。压力机CPU网络需留余量。\n查询2026-09-16：\nhttps://docs.vllm.ai/en/latest/benchmarking/cli/\nhttps://docs.vllm.ai/en/latest/cli/bench/serve/\nhttps://github.com/sgl-project/sglang/blob/main/docs/developer_guide/benchmark_and_profiling.md\nhttps://github.com/modelscope/evalscope/blob/main/docs/en/user_guides/stress_test/quick_start.md\nhttps://docs.vllm.ai/en/latest/design/metrics/"}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"B1  性能测试","textShapes":7}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"text":"B1  性能测试","textPreview":"B1  性能测试","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"text":"记录指标：延迟、并发与三类 Token 吞吐","textPreview":"记录指标：延迟、并发与三类 Token 吞吐","textChars":22,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"text":"每个模型 × 精度 × 卡数 × 长度组合 × 缓存场景 × 并发档，单独保留一行结果和原始请求记录。","textPreview":"每个模型 × 精度 × 卡数 × 长度组合 × 缓存场景 × 并发档，单独保留一行结果和原始请求记录。","textChars":51,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/ra943il8","slide":12,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"text":"12 / 18","textPreview":"12 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/b6d4f2lc","slide":12,"text":"口径：统一测量窗口及请求集合；报告成功请求吞吐，同时保留失败请求数量和资源消耗。","textPreview":"口径：统一测量窗口及请求集合；报告成功请求吞吐，同时保留失败请求数量和资源消耗。","textChars":40,"textLines":1,"bbox":[62,584,1156,29]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"text":"缓存命中吞吐不是重新计算的算力吞吐。混部测得的是服务吞吐，不能直接当作独立 P / D 集群产能。","textPreview":"缓存命中吞吐不是重新计算的算力吞吐。混部测得的是服务吞吐，不能直接当作独立 P / D 集群产能。","textChars":49,"textLines":1,"bbox":[62,623,1156,27]}
+{"kind":"table","id":"tb/2hcz69w7","slide":12,"name":"","rows":8,"cols":3,"preview":"必须记录的指标 | 定义与单位 | 统计 / 取数方式","bbox":[60,201,1160,357]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"T为统一测量窗口秒数；同一批成功请求及其输入、实际命中、实际输出构成可对账数据。推荐测量阶段请求全部完成或超时后结束计时，包含排空时间，预热请求排除。若选择固定稳态窗口，只统计窗口内事件并明确跨界请求处理，不混用两种口径。客户端计时应记录发送、首有效token、最后有效token、请求结束时间。SSE空块、角色块不算首token，一个chunk可能包含多个token，因此只能估计token间隔时需明确标注；TPOT按实际token数量和首末时刻计算，不把每个chunk当token。TTFT并非纯prefill时延，需纯计算耗时另采引擎prefill/queue指标。TPOT逐请求后汇总，不能拿吞吐倒数替代。cached_tokens必须是实际复用量，不可使用设计前缀长度代替；如用服务端Prometheus计数，核实版本、单位和是否包含预热/失败/其他流量，计数器重启与跨卡汇总也要处理，不能无条件与成功请求口径混算。量化、缓存配置、引擎版本、镜像、并行、输入输出长度、工具、随机种子及完整命令都归档。单卡归一化token/s=token/min÷60÷实际占用卡数，仅作为同规格平均值；PD混部不能按同一批卡重复计算两份产能。所有表格为空白记录规范，未伪造测试结果。\n查询2026-09-16：\nhttps://docs.vllm.ai/en/latest/benchmarking/cli/\nhttps://docs.vllm.ai/en/latest/cli/bench/serve/\nhttps://github.com/sgl-project/sglang/blob/main/docs/developer_guide/benchmark_and_profiling.md\nhttps://github.com/modelscope/evalscope/blob/main/docs/en/user_guides/stress_test/quick_start.md\nhttps://docs.vllm.ai/en/latest/design/metrics/"}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"B2  Token 收益分析","textShapes":17}
+{"kind":"textbox","id":"sh/bmhgfatc","slide":13,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/q50nydsj","slide":13,"text":"月收入测算：三类 Token 分开计价，再求和","textPreview":"月收入测算：三类 Token 分开计价，再求和","textChars":23,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"text":"统一使用同一负载下整套服务的吞吐（token/min），单价取数值，单位为元 / 百万 Token。","textPreview":"统一使用同一负载下整套服务的吞吐（token/min），单价取数值，单位为元 / 百万 Token。","textChars":50,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/o3i5w3ad","slide":13,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/p4r6p8by","slide":13,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/21gnuts7","slide":13,"text":"13 / 18","textPreview":"13 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"shape","id":"sh/32ponyts","slide":13,"bbox":[60,199,1160,91]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"text":"输出月收入＝","textPreview":"输出月收入＝","textChars":6,"textLines":1,"bbox":[78,204,1124,27]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"text":"［整套服务输出吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textPreview":"［整套服务输出吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textChars":35,"textLines":1,"bbox":[78,232,1124,26]}
+{"kind":"textbox","id":"sh/hcfy9k3u","slide":13,"text":"  × 可计费产出比例 × 输出单价］÷ 1,000,000","textPreview":"× 可计费产出比例 × 输出单价］÷ 1,000,000","textChars":30,"textLines":1,"bbox":[78,259,1124,26]}
+{"kind":"shape","id":"sh/gb6x0zm9","slide":13,"bbox":[60,302,1160,91]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"text":"未命中输入月收入＝","textPreview":"未命中输入月收入＝","textChars":9,"textLines":1,"bbox":[78,307,1124,27]}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"text":"［整套服务未命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textPreview":"［整套服务未命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textChars":38,"textLines":1,"bbox":[78,335,1124,26]}
+{"kind":"textbox","id":"sh/t8fy5k3i","slide":13,"text":"  × 可计费产出比例 × 未命中输入单价］÷ 1,000,000","textPreview":"× 可计费产出比例 × 未命中输入单价］÷ 1,000,000","textChars":33,"textLines":1,"bbox":[78,362,1124,26]}
+{"kind":"shape","id":"sh/876xwfmx","slide":13,"bbox":[60,405,1160,91]}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"text":"缓存命中输入月收入＝","textPreview":"缓存命中输入月收入＝","textChars":10,"textLines":1,"bbox":[78,410,1124,27]}
+{"kind":"textbox","id":"sh/6l4fu547","slide":13,"text":"［整套服务缓存命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textPreview":"［整套服务缓存命中输入吞吐 ×（30天 × 24小时/天 × 60分钟/小时）","textChars":39,"textLines":1,"bbox":[78,438,1124,26]}
+{"kind":"textbox","id":"sh/lkvy103m","slide":13,"text":"  × 可计费产出比例 × 缓存命中输入单价］÷ 1,000,000","textPreview":"× 可计费产出比例 × 缓存命中输入单价］÷ 1,000,000","textChars":34,"textLines":1,"bbox":[78,465,1124,26]}
+{"kind":"textbox","id":"sh/kjmxsfm1","slide":13,"text":"吞吐用 token/min；单价取数值（元 / 百万 Token）。整套服务吞吐已包含卡数，不再乘卡数。","textPreview":"吞吐用 token/min；单价取数值（元 / 百万 Token）。整套服务吞吐已包含卡数，不再乘卡数。","textChars":52,"textLines":1,"bbox":[62,515,1156,29]}
+{"kind":"textbox","id":"sh/cnqh8fux","slide":13,"text":"可计费产出比例：实际月度可计费用量，占按该压测速度持续运行30天的理论用量比例。","textPreview":"可计费产出比例：实际月度可计费用量，占按该压测速度持续运行30天的理论用量比例。","textChars":40,"textLines":1,"bbox":[62,549,1156,28]}
+{"kind":"shape","id":"sh/xozyhkbi","slide":13,"bbox":[60,588,1160,52]}
+{"kind":"textbox","id":"sh/q18f65cr","slide":13,"text":"文本月收入＝输出月收入＋未命中输入月收入＋缓存命中输入月收入","textPreview":"文本月收入＝输出月收入＋未命中输入月收入＋缓存命中输入月收入","textChars":30,"textLines":1,"bbox":[75,598,1130,32]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"本页为量纲一致的收入估算，不是实测收入。定义每类整套服务吞吐为成功请求口径token/min，30天为43200分钟，每百万token价格除1000000。各类可计费产出比例分别估计，代表实际月可计费量除该类压测速率乘43200的参考量；不是简单设备利用率，应包含需求、在线时长和可结算范围中尚未体现的差异，避免重复扣减已有损失。混部时三类速率必须来自同一负载，且不能把每类独立峰值当作同时可交付。缓存命中输入是逻辑复用量，按缓存结算价，不是完整prefill计算量。使用整套服务吞吐不乘卡数，只有卡均吞吐才在其他口径下需要乘卡数。同一币种税口径结算。配套第二页使用DeepSeek官方价格作参考，假设算例合计6713.28元，非实测或实际收入。"}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"B2  Token 收益分析","textShapes":10}
+{"kind":"textbox","id":"sh/y5wjitgj","slide":14,"text":"B2  Token 收益分析","textPreview":"B2  Token 收益分析","textChars":14,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"text":"DeepSeek-V4.1-Flash：官方价格与文本收入算例","textPreview":"DeepSeek-V4.1-Flash：官方价格与文本收入算例","textChars":31,"textLines":1,"bbox":[130,96,1090,46]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"text":"人民币 / 百万 Token，查询日期 2026-09-16。API 模型名：deepseek-flash。","textPreview":"人民币 / 百万 Token，查询日期 2026-09-16。API 模型名：deepseek-flash。","textChars":54,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/jepwf2pc","slide":14,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/idgvmx8r","slide":14,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"text":"14 / 18","textPreview":"14 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"text":"高峰：北京时间周一至周五 9:00–12:00、14:00–18:00；其余为空闲时段。","textPreview":"高峰：北京时间周一至周五 9:00–12:00、14:00–18:00；其余为空闲时段。","textChars":44,"textLines":1,"bbox":[62,310,1156,27]}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"text":"假设同一负载：输入600,000 token/min，90%命中；输出60,000 token/min，产出比例50%。","textPreview":"假设同一负载：输入600,000 token/min，90%命中；输出60,000 token/min，产出比例50%。","textChars":60,"textLines":1,"bbox":[62,350,1156,31]}
+{"kind":"shape","id":"sh/a1wze9g7","slide":14,"bbox":[60,552,1160,49]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"text":"文本月收入估值＝1,296.00＋233.28＋5,184.00＝6,713.28元","textPreview":"文本月收入估值＝1,296.00＋233.28＋5,184.00＝6,713.28元","textChars":42,"textLines":1,"bbox":[75,560,1130,33]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"text":"吞吐与产出比例均为假设，非设备实测。此处统一按空闲价估值；实际跨时段须按各时段用量分别计价。","textPreview":"吞吐与产出比例均为假设，非设备实测。此处统一按空闲价估值；实际跨时段须按各时段用量分别计价。","textChars":46,"textLines":1,"bbox":[62,610,1156,25]}
+{"kind":"textbox","id":"sh/ls7idofu","slide":14,"text":"公开 API 零售价仅作参照，不等于平台采购价或已实现收入。官方价格链接见备注与配套说明。","textPreview":"公开 API 零售价仅作参照，不等于平台采购价或已实现收入。官方价格链接见备注与配套说明。","textChars":45,"textLines":1,"bbox":[62,638,1156,19]}
+{"kind":"table","id":"tb/bulsbixk","slide":14,"name":"","rows":3,"cols":4,"preview":"官方公开 API 单价 | 输入未命中 | 输入缓存命中 | 输出","bbox":[60,200,1160,103]}
+{"kind":"table","id":"tb/atcridgz","slide":14,"name":"","rows":4,"cols":3,"preview":"按空闲时段单价估值 | 月收入计算（元） | 结果","bbox":[60,394,1160,141]}
+{"kind":"image","id":"im/srad4v21","slide":14,"name":"","bbox":[60,97,58,58]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"本主题仅计算文本收入，不纳入YOLO或视频收入。官方中文价格页截至2026-09-16列DeepSeek-V4.1-Flash（deepseek-flash）：每百万token空闲输入未命中1元、命中0.02元、输出4元，高峰分别2、0.04、8元。高峰北京时间周一至周五9-12和14-18，其余空闲。来源https://api-docs.deepseek.com/zh-cn/quick_start/pricing/?article_id=article_1779470751466_8 。Logo来自官方GitHub账号https://github.com/deepseek-ai.png 。示例是以空闲价为统一基准的产能估值，不能将全天实际服务全部按空闲价视为真实结算。真实结算将高峰和空闲的实际可计费量分别乘相应价格后求和，合同采购价另按约定。全部吞吐是同一假设负载，输入600000分为未命中60000和命中540000；输出60000与输入不同类别，不从输入中扣除。乘50%只一次，全部吞吐为集群值不乘卡数。月理论分钟用30×24×60，三类金额1296、233.28、5184，总6713.28。尚未证明此模型能在项目两台910B按该负载部署，数值不代表容量或性能承诺。"}
+{"kind":"slide","id":"sl/vaxsvy10","slide":15,"title":"B3  商业协议","textShapes":11}
+{"kind":"textbox","id":"sh/0z29cbyh","slide":15,"text":"B3  商业协议","textPreview":"B3  商业协议","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/547mhg3m","slide":15,"text":"计量与结算：请求如何形成双方认可的账单","textPreview":"计量与结算：请求如何形成双方认可的账单","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/k3y5ov21","slide":15,"text":"拟议条款从平台接受的服务目录开始，连接双方认可的用量证据。","textPreview":"拟议条款从平台接受的服务目录开始，连接双方认可的用量证据。","textChars":29,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/76p4jqls","slide":15,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/65gnqlk7","slide":15,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/t87ml0ji","slide":15,"text":"15 / 18","textPreview":"15 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/s7y5sv2x","slide":15,"text":"服务目录\n模型 / 任务规格","textPreview":"服务目录 | 模型 / 任务规格","textChars":14,"textLines":2,"bbox":[62,218,211,95]}
+{"kind":"textbox","id":"sh/na5476l8","slide":15,"text":"请求或任务\n统一关联 ID","textPreview":"请求或任务 | 统一关联 ID","textChars":13,"textLines":2,"bbox":[299,218,211,95]}
+{"kind":"shape","id":"sh/361gvilk","slide":15,"bbox":[273,265.5,26,0]}
+{"kind":"textbox","id":"sh/wrm9kvep","slide":15,"text":"用量明细\n计数与状态","textPreview":"用量明细 | 计数与状态","textChars":10,"textLines":2,"bbox":[536,218,211,95]}
+{"kind":"shape","id":"sh/dc3y1s3m","slide":15,"bbox":[510,265.5,26,0]}
+{"kind":"textbox","id":"sh/upkrilwj","slide":15,"text":"对账确认\n差异与冲正","textPreview":"对账确认 | 差异与冲正","textChars":10,"textLines":2,"bbox":[773,218,211,95]}
+{"kind":"shape","id":"sh/uh4v2pkj","slide":15,"bbox":[747,265.5,26,0]}
+{"kind":"textbox","id":"sh/4vm9ovel","slide":15,"text":"结算条目\n单价与周期","textPreview":"结算条目 | 单价与周期","textChars":10,"textLines":2,"bbox":[1010,218,211,95]}
+{"kind":"shape","id":"sh/wj6d4z2p","slide":15,"bbox":[984,265.5,26,0]}
+{"kind":"textbox","id":"sh/judsvqxg","slide":15,"text":"技术可运行仍需平台认可模型、区域、容量与质量规格，才具备采购前提。","textPreview":"技术可运行仍需平台认可模型、区域、容量与质量规格，才具备采购前提。","textChars":33,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/i1cbixkz","slide":15,"name":"","rows":4,"cols":3,"preview":"必须约定 | 拟议处理方式 | 留存证据","bbox":[60,338,1160,246]}
+{"kind":"notes","id":"nt/vaxsvy10","slide":15,"text":"本页为商务讨论清单，并非已签协议或法律意见。首批用同一请求样本比对Tokenizer、推理返回usage、接入记录及平台账单。需约定失败/取消/重试/部分输出及缓存口径，不能由技术默认免费或收费。检测/视频分别约定规格、质量、任务单位及价格。合同还需价格变更、税费、付款账户、争议处理和开票要求，以双方最终文本为准。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/gny5sjyp","slide":16,"title":"B3  商业协议","textShapes":6}
+{"kind":"textbox","id":"sh/3qdg7qpo","slide":16,"text":"B3  商业协议","textPreview":"B3  商业协议","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/8z2h8bq1","slide":16,"text":"服务与责任：承诺范围匹配架构和实测能力","textPreview":"服务与责任：承诺范围匹配架构和实测能力","textChars":19,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/9kby1g7m","slide":16,"text":"拟议协议在可验收范围内确定服务窗口、维护、故障处理与责任。","textPreview":"拟议协议在可验收范围内确定服务窗口、维护、故障处理与责任。","textChars":29,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/ytkf2h8j","slide":16,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/zutgvm94","slide":16,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/kv2h4rqp","slide":16,"text":"16 / 18","textPreview":"16 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/ip4zel83","slide":16,"text":"SLA 数值和赔付条款留待验收及双方协商，现阶段不承诺未经验证的可用性。","textPreview":"SLA 数值和赔付条款留待验收及双方协商，现阶段不承诺未经验证的可用性。","textChars":36,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/obeds3mp","slide":16,"name":"","rows":5,"cols":3,"preview":"当前约束 | 需要约定的边界 | 验收与责任证据","bbox":[60,214,1160,365]}
+{"kind":"notes","id":"nt/gny5sjyp","slide":16,"text":"拟议条款由商务/法务/财务评审。单交换机故障可能影响双机并行服务，同一资源池内独立单机服务的影响依赖网络与路由。合同约定故障责任归属、供应方与平台侧原因判定、不可用统计、维护排除项、赔付上限、退出与余额清算。数据最小留存及安全职责按实际数据和适用制度审查，不假定客户数据可任意留存或用于训练。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/14bup87q","slide":17,"title":"B4  公司流程","textShapes":6}
+{"kind":"textbox","id":"sh/ihcvml4j","slide":17,"text":"B4  公司流程","textPreview":"B4  公司流程","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/1c7e50ni","slide":17,"text":"协作与回款：各角色按凭证完成交接","textPreview":"协作与回款：各角色按凭证完成交接","textChars":16,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/gbedwfmx","slide":17,"text":"建议流程：技术、商务和财务在每个阶段明确接收什么产物。","textPreview":"建议流程：技术、商务和财务在每个阶段明确接收什么产物。","textChars":27,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/rm5czq50","slide":17,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/6lwvql4v","slide":17,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/t8ne10n6","slide":17,"text":"17 / 18","textPreview":"17 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/jilcvq54","slide":17,"text":"同批请求贯通用量、对账确认、结算、发票与回款，才能宣称完成商业闭环。","textPreview":"同批请求贯通用量、对账确认、结算、发票与回款，才能宣称完成商业闭环。","textChars":34,"textLines":1,"bbox":[62,600,1156,43]}
+{"kind":"table","id":"tb/jet0vi5k","slide":17,"name":"","rows":5,"cols":4,"preview":"责任角色 | 立项与准备 | 验收与试供给 | 月度经营与回款","bbox":[60,209,1160,371]}
+{"kind":"notes","id":"nt/14bup87q","slide":17,"text":"表以角色为泳道、阶段为列。公司制度未提供，不虚构审批姓名或时限。重要交接：技术产能报告传商务财务形成报价；商务法务确认条款后技术按配额发布；技术给出用量明细、商务获取平台对账确认、财务形成结算及发票、商务财务跟踪到账。真实商业闭环需要实际交易与凭证；模拟账单仅作为计量验证。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
+{"kind":"slide","id":"sl/y5wne50z","slide":18,"title":"B4  公司流程","textShapes":6}
+{"kind":"textbox","id":"sh/rip4retw","slide":18,"text":"B4  公司流程","textPreview":"B4  公司流程","textChars":8,"textLines":1,"bbox":[60,28,1160,61]}
+{"kind":"textbox","id":"sh/wrelszu9","slide":18,"text":"闭环验收：下一阶段通过条件与责任","textPreview":"闭环验收：下一阶段通过条件与责任","textChars":16,"textLines":1,"bbox":[62,96,1156,46]}
+{"kind":"textbox","id":"sh/hsn2l4bu","slide":18,"text":"当前已确认资源基线与分柜原则，模型、平台采购和实测证据仍需逐步补齐。","textPreview":"当前已确认资源基线与分柜原则，模型、平台采购和实测证据仍需逐步补齐。","textChars":34,"textLines":1,"bbox":[62,148,1156,43]}
+{"kind":"shape","id":"sh/itw3upcf","slide":18,"bbox":[60,659,1160,1]}
+{"kind":"textbox","id":"sh/je5knut0","slide":18,"text":"token 魔方 Mini实验台","textPreview":"token 魔方 Mini实验台","textChars":16,"textLines":1,"bbox":[60,674,1000,22]}
+{"kind":"textbox","id":"sh/4felwzu5","slide":18,"text":"18 / 18","textPreview":"18 / 18","textChars":7,"textLines":1,"bbox":[1105,674,115,22]}
+{"kind":"textbox","id":"sh/6hw3y9sb","slide":18,"text":"当前决策建议：继续最小文本闭环验证。YOLO 与 Wan 保持独立 PoC。","textPreview":"当前决策建议：继续最小文本闭环验证。YOLO 与 Wan 保持独立 PoC。","textChars":38,"textLines":1,"bbox":[63,551,1154,65]}
+{"kind":"table","id":"tb/8z2x03ih","slide":18,"name":"","rows":4,"cols":3,"preview":"评审事项 | 进入下一阶段的通过条件 | 下一项证据 / 责任","bbox":[60,214,1160,312]}
+{"kind":"notes","id":"nt/y5wne50z","slide":18,"text":"本次报告不声称设备已上架、模型已部署、压测已通过、合同已签或款项已到账。与第2页三项评审目标对应：确定首轮范围；明确资源资料及责任；设置试供给门槛。扩容依据需要实际质量、产能、订单与全成本经济性，不以峰值吞吐或能输出文本为充分理由。\n\n资料查询日期：2026-09-16。方案报告，尚未执行设备部署、压测和交易。\n"}
