@@ -1,0 +1,33 @@
+{"kind":"deck","id":"pr/51kl2w","name":"Deck"}
+{"kind":"layout","layoutId":"d5c093cc-7ead-4a06-812d-fc86ce2d110c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"36f9a22e-5fe1-4a77-8f8d-b0118f9d8f89","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/awlw03","slide":1,"title":"工作进展汇报","textShapes":28}
+{"kind":"textbox","id":"sh/yl0zelcv","slide":1,"text":"工作进展汇报","textPreview":"工作进展汇报","textChars":6,"textLines":1,"bbox":[78,48,1400,68]}
+{"kind":"textbox","id":"sh/l8ry9gbm","slide":1,"text":"Token 实验台建设与 P8000 测试","textPreview":"Token 实验台建设与 P8000 测试","textChars":21,"textLines":1,"bbox":[80,128,1390,42]}
+{"kind":"textbox","id":"sh/07ihgbu1","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[80,224,64,48]}
+{"kind":"textbox","id":"sh/bipg36dk","slide":1,"text":"Token 魔方 Mini","textPreview":"Token 魔方 Mini","textChars":13,"textLines":1,"bbox":[164,217,345,48]}
+{"kind":"textbox","id":"sh/qhgfa1cz","slide":1,"text":"实验台","textPreview":"实验台","textChars":3,"textLines":1,"bbox":[164,262,345,45]}
+{"kind":"textbox","id":"sh/dkry5gva","slide":1,"text":"已完成梳理","textPreview":"已完成梳理","textChars":5,"textLines":1,"bbox":[164,319,330,35]}
+{"kind":"textbox","id":"sh/cjyhcbup","slide":1,"text":"完成 Token 生产与平台销售闭环验证内容梳理","textPreview":"完成 Token 生产与平台销售闭环验证内容梳理","textChars":24,"textLines":1,"bbox":[580,221,950,48]}
+{"kind":"textbox","id":"sh/3epgz6d8","slide":1,"text":"技术验证","textPreview":"技术验证","textChars":4,"textLines":1,"bbox":[580,281,135,40]}
+{"kind":"textbox","id":"sh/2dgf61cn","slide":1,"text":"硬件设备、网络拓扑、软件架构、模型适配与部署","textPreview":"硬件设备、网络拓扑、软件架构、模型适配与部署","textChars":22,"textLines":1,"bbox":[728,281,785,40]}
+{"kind":"textbox","id":"sh/8fyh8rel","slide":1,"text":"商业验证","textPreview":"商业验证","textChars":4,"textLines":1,"bbox":[580,330,135,40]}
+{"kind":"textbox","id":"sh/9g7i1wvq","slide":1,"text":"性能测试、Token 收益分析","textPreview":"性能测试、Token 收益分析","textChars":15,"textLines":1,"bbox":[728,330,785,40]}
+{"kind":"textbox","id":"sh/mdwz6hwf","slide":1,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[80,431,64,48]}
+{"kind":"textbox","id":"sh/7e50zmd0","slide":1,"text":"移动迷你试验台","textPreview":"移动迷你试验台","textChars":7,"textLines":1,"bbox":[164,424,350,48]}
+{"kind":"textbox","id":"sh/0beh47e9","slide":1,"text":"租赁推进","textPreview":"租赁推进","textChars":4,"textLines":1,"bbox":[164,469,345,45]}
+{"kind":"textbox","id":"sh/lcnyxcvu","slide":1,"text":"待商务流程初稿","textPreview":"待商务流程初稿","textChars":7,"textLines":1,"bbox":[164,526,355,35]}
+{"kind":"textbox","id":"sh/y9wz2hw3","slide":1,"text":"已确定配置：2 台 910B + 6 台 NVIDIA T4","textPreview":"已确定配置：2 台 910B + 6 台 NVIDIA T4","textChars":30,"textLines":1,"bbox":[580,428,950,48]}
+{"kind":"textbox","id":"sh/za5gvmdo","slide":1,"text":"当前进展","textPreview":"当前进展","textChars":4,"textLines":1,"bbox":[580,489,135,40]}
+{"kind":"textbox","id":"sh/47ihgbud","slide":1,"text":"持续推动租赁，等待夏新完成商务流程初稿","textPreview":"持续推动租赁，等待夏新完成商务流程初稿","textChars":19,"textLines":1,"bbox":[728,489,785,40]}
+{"kind":"textbox","id":"sh/58ri9gvy","slide":1,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[80,636,64,48]}
+{"kind":"textbox","id":"sh/donitgn2","slide":1,"text":"P8000 测试","textPreview":"P8000 测试","textChars":8,"textLines":1,"bbox":[164,629,360,48]}
+{"kind":"textbox","id":"sh/snehkbmx","slide":1,"text":"细化测试进行中","textPreview":"细化测试进行中","textChars":7,"textLines":1,"bbox":[164,695,355,35]}
+{"kind":"textbox","id":"sh/r25gr65c","slide":1,"text":"已完成一轮初步测试，正在学习并开展细化测试","textPreview":"已完成一轮初步测试，正在学习并开展细化测试","textChars":21,"textLines":1,"bbox":[580,633,950,48]}
+{"kind":"textbox","id":"sh/q1wzi14r","slide":1,"text":"环境与通信","textPreview":"环境与通信","textChars":5,"textLines":1,"bbox":[580,695,150,40]}
+{"kind":"textbox","id":"sh/503ypwn6","slide":1,"text":"RDMA 测试、驱动环境验证","textPreview":"RDMA 测试、驱动环境验证","textChars":14,"textLines":1,"bbox":[751,695,760,40]}
+{"kind":"textbox","id":"sh/4zuhgrml","slide":1,"text":"模型与推理","textPreview":"模型与推理","textChars":5,"textLines":1,"bbox":[580,744,150,40]}
+{"kind":"textbox","id":"sh/3ylgnm50","slide":1,"text":"模型文件验证、模型可用性验证、推理引擎参数确定","textPreview":"模型文件验证、模型可用性验证、推理引擎参数确定","textChars":23,"textLines":1,"bbox":[751,744,760,40]}
+{"kind":"textbox","id":"sh/ixcze14f","slide":1,"text":"性能测试","textPreview":"性能测试","textChars":4,"textLines":1,"bbox":[580,793,150,40]}
+{"kind":"textbox","id":"sh/hw3ylwnu","slide":1,"text":"LLM 吞吐性能测试","textPreview":"LLM 吞吐性能测试","textChars":10,"textLines":1,"bbox":[751,793,760,40]}
+{"kind":"notes","id":"nt/awlw03","slide":1,"text":"信息来源：用户提供的三项工作内容。第一项仅明确完成实验台与闭环验证内容梳理，不将其表述为所有技术及商业验证均已完成。第二项设备数量单位为台，非卡数。P8000仅完成一轮初步测试，细化测试仍在进行，未提供测试结果或性能指标。"}
